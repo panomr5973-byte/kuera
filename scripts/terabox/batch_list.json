@@ -1,0 +1,38 @@
+{
+    "description": "Batch upload list for KUERA backup to Terabox",
+    "created": "2026-05-10",
+    "items": [
+        {
+            "type": "folder",
+            "source": "../../models/llm",
+            "remote": "/KUERA_Backup/models/llm",
+            "pattern": "*.gguf",
+            "note": "All LLM models (~25 GB)"
+        },
+        {
+            "type": "file",
+            "source": "../../data/kuera_database.db",
+            "remote": "/KUERA_Backup/data",
+            "note": "Main KUERA database (~2.3 GB)"
+        },
+        {
+            "type": "file",
+            "source": "../../data/international_data.db",
+            "remote": "/KUERA_Backup/data",
+            "note": "International data"
+        },
+        {
+            "type": "file",
+            "source": "../../data/worldbank_indonesia.db",
+            "remote": "/KUERA_Backup/data",
+            "note": "WorldBank Indonesia data"
+        },
+        {
+            "type": "folder",
+            "source": "../../logs",
+            "remote": "/KUERA_Backup/logs",
+            "pattern": "*.log",
+            "note": "Application logs"
+        }
+    ]
+}

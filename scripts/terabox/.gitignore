@@ -1,0 +1,6 @@
+# Never commit real credentials
+cookies.json
+*.token
+*.session
+__pycache__/
+*.pyc

@@ -74,5 +74,6 @@ desktop.ini
 !memory_consolidation.template.env
 *.key
 *.pem
+scripts/terabox/cookies.json
 
 ollama-setup.exe
