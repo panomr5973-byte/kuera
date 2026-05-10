@@ -78,6 +78,42 @@ def create_app(process_manager, model_registry_loader) -> Flask:
             "timestamp": datetime.now().isoformat()
         })
 
+    # ─── AUDIT TOOLKIT ROUTES ────────────────────────────────────────────
+    @app.route("/api/audit/files")
+    def audit_files():
+        from ..data.audit_connector import list_uploaded_files
+        return jsonify({"files": list_uploaded_files()})
+
+    @app.route("/api/audit/analyze", methods=["POST"])
+    def audit_analyze():
+        from ..data.audit_connector import analyze_excel
+        data = request.get_json() or {}
+        filepath = data.get("filepath", "")
+        if not filepath:
+            return jsonify({"status": "error", "message": "filepath required"}), 400
+        result = analyze_excel(filepath)
+        return jsonify(result)
+
+    # ─── WORLDBANK ROUTES ────────────────────────────────────────────────
+    @app.route("/api/economy/indonesia")
+    def economy_indonesia():
+        from ..data.worldbank_connector import get_latest_economic_data
+        return jsonify(get_latest_economic_data())
+
+    @app.route("/api/economy/indicators")
+    def economy_indicators():
+        from ..data.worldbank_connector import get_indicators_list
+        return jsonify(get_indicators_list())
+
+    @app.route("/api/economy/historical")
+    def economy_historical():
+        from ..data.worldbank_connector import get_historical_data
+        code = request.args.get("code", "")
+        years = int(request.args.get("years", 10))
+        if not code:
+            return jsonify({"status": "error", "message": "code parameter required"}), 400
+        return jsonify(get_historical_data(code, years))
+
     return app
 
 
