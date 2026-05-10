@@ -49,22 +49,25 @@ Every chat iteration should refine existing code, not spawn new files. There wer
 
 | Component | File | Status |
 |-----------|------|--------|
-| Unified Control Panel | `kuera_unified_desktop.py` | ✅ Active (port 7777) |
+| Unified Control Panel | `main.py` + `src/` | ✅ Active (port 7777) |
 | WebSocket Gateway | `gateway_server.py` | ✅ Active (port 18789) |
 | WorldBank Data | `data/worldbank_indonesia.db` | ✅ 212 records |
 | International Data | `data/international_data.db` | ✅ 10 currencies + crypto |
 | Memory System | `memory/` | ✅ Retroactive fill complete |
 | Git | `.git/` | ✅ Initialized 2026-05-10 |
+| Terabox Backup | `scripts/terabox/` | ✅ Ready (needs cookies) |
+| Modularized src/ | `src/core/`, `src/web/`, `src/utils/`, `src/data/` | ✅ Complete |
 
 ---
 
 ## What Needs Attention
 
-1. **Port conflict**: `kuera_admin` and `kuera_web_v2` both use port 5000.
+1. **Port conflict**: `kuera_admin` moved to 5001. `kuera_web_v2` stays at 5000.
 2. **Memory gap filled**: 23-day hiatus (12 Apr – 5 May) now documented.
 3. **Log rotation**: Large logs compressed. `data/kuera_database.db` is 2.36 GB — monitor growth.
 4. **HEARTBEAT.md empty**: No periodic tasks configured.
 5. **`.sixth/skills` empty**: Skill system never used.
+6. **Terabox backup**: Scripts ready but requires manual cookie extraction from browser.
 
 ---
 
@@ -91,5 +94,10 @@ Based on observation:
 ## Last Words
 
 This project is a study in builder's trap: too many ideas, too little consolidation. The Unified Desktop (Fase 7) is not elegant architecture — it's survival. The real growth will come from disciplined cleanup, not new features.
+
+**Terabox Backup Target** (~27 GB):
+- `models/llm/*.gguf` → ~25 GB (12 models)
+- `data/kuera_database.db` → ~2.3 GB
+- `data/*.db` → ~200 KB
 
 *"Don't build more. Build better."*
