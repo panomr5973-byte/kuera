@@ -1,0 +1,76 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ===== Virtual Environments =====
+.venv/
+ai_env/
+venv/
+ENV/
+env/
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== Model Files (Large Binaries) =====
+models/llm/*.gguf
+models/llm/*.bin
+models/llm/*.safetensors
+models/worldbank/*.pkl
+models/*.pkl
+models/*.h5
+models/*.onnx
+
+# ===== Data & Databases =====
+data/**/*.db
+!data/**/*.template.db
+*.sqlite
+*.sqlite3
+*.db
+
+# ===== Logs (Keep structure, ignore bulk) =====
+logs/feedback/*.db
+logs/**/*.log
+logs/startup/*.log
+logs/unified/*.log
+logs/kuwera/*.log
+!logs/.gitkeep
+!logs/**/.gitkeep
+
+# ===== Archives & Exports =====
+archive_incomplete/
+archive_bat_old/
+*.tar.gz
+*.zip
+
+# ===== MLflow =====
+mlruns/
+
+# ===== Test & Cache =====
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Secrets =====
+*.env
+!*.template.env
+!memory_consolidation.template.env
+*.key
+*.pem
