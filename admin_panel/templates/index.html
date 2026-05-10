@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUWERA Admin Panel - AI Evolution Control Center</title>
+    <link rel="stylesheet" href="../static/css/admin-panel.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="brain-loading">
+                <div class="neural-node"></div>
+                <div class="neural-node"></div>
+                <div class="neural-node"></div>
+                <div class="neural-node"></div>
+                <div class="neural-node"></div>
+            </div>
+            <p class="loading-text">INITIALIZING KUWERA CORE...</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div id="app" class="hidden">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">K</div>
+                <div class="logo-text">
+                    <span class="logo-main">KUWERA</span>
+                    <span class="logo-sub">AI Control Center</span>
+                </div>
+            </div>
+            
+            <div class="nav-section">
+                <div class="nav-title">MAIN</div>
+                <ul class="nav-menu">
+                    <li class="nav-item active" data-panel="dashboard">
+                        <span class="nav-icon">◈</span>
+                        <span class="nav-label">Dashboard</span>
+                    </li>
+                    <li class="nav-item" data-panel="evolution">
+                        <span class="nav-icon">◉</span>
+                        <span class="nav-label">Evolution</span>
+                    </li>
+                    <li class="nav-item" data-panel="models">
+                        <span class="nav-icon">◆</span>
+                        <span class="nav-label">Models</span>
+                    </li>
+                    <li class="nav-item" data-panel="interactions">
+                        <span class="nav-icon">◎</span>
+                        <span class="nav-label">Interactions</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-section">
+                <div class="nav-title">SYSTEM</div>
+                <ul class="nav-menu">
+                    <li class="nav-item" data-panel="paths">
+                        <span class="nav-icon">⌘</span>
+                        <span class="nav-label">Path Manager</span>
+                    </li>
+                    <li class="nav-item" data-panel="sync">
+                        <span class="nav-icon">⟲</span>
+                        <span class="nav-label">Sync Status</span>
+                    </li>
+                    <li class="nav-item" data-panel="roadmap">
+                        <span class="nav-icon">⧉</span>
+                        <span class="nav-label">Roadmap</span>
+                    </li>
+                    <li class="nav-item" data-panel="history">
+                        <span class="nav-icon">◐</span>
+                        <span class="nav-label">History</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="system-status">
+                <div class="status-indicator online"></div>
+                <span class="status-text">SYSTEM ONLINE</span>
+                <div class="uptime">UPTIME: <span id="uptime-counter">00:00:00</span></div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <div class="search-box">
+                    <input type="text" placeholder="Search commands, data, logs...">
+                    <button class="search-btn">⌕</button>
+                </div>
+                <div class="top-actions">
+                    <div class="notification-bell">
+                        <span class="bell-icon">🔔</span>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-profile">
+                        <div class="avatar">AD</div>
+                        <span class="username">Administrator</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Panel -->
+            <div class="panel active" id="panel-dashboard">
+                <!-- 3D Avatar Section -->
+                <section class="avatar-section">
+                    <div class="avatar-container">
+                        <div id="avatar-3d"></div>
+                        <div class="avatar-overlay">
+                            <div class="avatar-status">
+                                <span class="status-dot listening"></span>
+                                <span class="status-text">LISTENING</span>
+                            </div>
+                            <div class="voice-wave">
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avatar-controls">
+                        <button class="btn-control" id="btn-speak">🎤 SPEAK</button>
+                        <button class="btn-control" id="btn-listen">👂 LISTEN</button>
+                        <button class="btn-control" id="btn-animate">🎭 ANIMATE</button>
+                    </div>
+                    <div class="avatar-chat">
+                        <div class="chat-display" id="avatar-chat-display">
+                            <div class="chat-message system">
+                                <span class="timestamp">[SYSTEM]</span>
+                                <span class="text">KUWERA Admin Panel initialized. Ready for interaction.</span>
+                            </div>
+                        </div>
+                        <div class="chat-input-area">
+                            <input type="text" id="avatar-chat-input" placeholder="Type message to KUWERA...">
+                            <button id="btn-send-chat">➤</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stats Grid -->
+                <section class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon model">◆</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-models">6</span>
+                            <span class="stat-label">Active Models</span>
+                        </div>
+                        <div class="stat-trend up">+2</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon interaction">◎</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-interactions">1,002,258</span>
+                            <span class="stat-label">Total Interactions</span>
+                        </div>
+                        <div class="stat-trend up">+1.2%</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon accuracy">◈</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-accuracy">67.3%</span>
+                            <span class="stat-label">Best Accuracy</span>
+                        </div>
+                        <div class="stat-trend up">+4.7%</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon space">◉</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-space">67.9 GB</span>
+                            <span class="stat-label">Free Space (C:)</span>
+                        </div>
+                        <div class="stat-trend down">-7 GB</div>
+                    </div>
+                </section>
+
+                <!-- Charts Section -->
+                <section class="charts-section">
+                    <div class="chart-container">
+                        <h3>Evolution Timeline</h3>
+                        <canvas id="evolution-chart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Interaction Distribution</h3>
+                        <canvas id="interaction-chart"></canvas>
+                    </div>
+                </section>
+
+                <!-- Quick Actions -->
+                <section class="quick-actions">
+                    <h3>Quick Actions</h3>
+                    <div class="action-grid">
+                        <button class="action-btn" onclick="syncModels()">
+                            <span class="action-icon">⟲</span>
+                            <span class="action-label">Sync Models</span>
+                        </button>
+                        <button class="action-btn" onclick="retrainModel()">
+                            <span class="action-icon">⚡</span>
+                            <span class="action-label">Retrain Model</span>
+                        </button>
+                        <button class="action-btn" onclick="backupData()">
+                            <span class="action-icon">💾</span>
+                            <span class="action-label">Backup Data</span>
+                        </button>
+                        <button class="action-btn" onclick="cleanLogs()">
+                            <span class="action-icon">🧹</span>
+                            <span class="action-label">Clean Logs</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Evolution Panel -->
+            <div class="panel" id="panel-evolution">
+                <h2 class="panel-title">AI Evolution Tracker</h2>
+                <div class="evolution-timeline">
+                    <div class="timeline-header">
+                        <span class="phase">Phase</span>
+                        <span class="model">Model</span>
+                        <span class="metrics">Metrics</span>
+                        <span class="status">Status</span>
+                    </div>
+                    <div class="timeline-content" id="evolution-timeline-content">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+                <div class="evolution-stats">
+                    <div class="evo-card">
+                        <h4>Current Generation</h4>
+                        <span class="big-number">Gen 6</span>
+                    </div>
+                    <div class="evo-card">
+                        <h4>Evolution Score</h4>
+                        <span class="big-number">80%</span>
+                    </div>
+                    <div class="evo-card">
+                        <h4>F1 Score Trend</h4>
+                        <span class="big-number positive">↗ 0.673</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Models Panel -->
+            <div class="panel" id="panel-models">
+                <h2 class="panel-title">Model Registry</h2>
+                <div class="models-grid" id="models-grid">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+
+            <!-- Interactions Panel -->
+            <div class="panel" id="panel-interactions">
+                <h2 class="panel-title">User Interactions</h2>
+                <div class="interaction-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="chat">Chat</button>
+                    <button class="filter-btn" data-filter="voice">Voice</button>
+                    <button class="filter-btn" data-filter="api">API</button>
+                </div>
+                <div class="interaction-log" id="interaction-log">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+
+            <!-- Paths Panel -->
+            <div class="panel" id="panel-paths">
+                <h2 class="panel-title">Path Manager</h2>
+                <div class="path-visualization">
+                    <div class="drive-node c-drive">
+                        <div class="drive-header">
+                            <span class="drive-letter">C:</span>
+                            <span class="drive-type">System Drive</span>
+                        </div>
+                        <div class="drive-usage">
+                            <div class="usage-bar">
+                                <div class="usage-fill" style="width: 77.4%"></div>
+                            </div>
+                            <span class="usage-text">77.4% used (67.9 GB free)</span>
+                        </div>
+                        <div class="path-list" id="c-paths">
+                            <!-- Filled by JS -->
+                        </div>
+                    </div>
+                    <div class="sync-arrows">
+                        <div class="arrow">→</div>
+                        <div class="arrow-label">Auto-Sync</div>
+                        <div class="arrow">←</div>
+                    </div>
+                    <div class="drive-node d-drive">
+                        <div class="drive-header">
+                            <span class="drive-letter">D:</span>
+                            <span class="drive-type">Archive Drive</span>
+                        </div>
+                        <div class="drive-usage">
+                            <div class="usage-bar">
+                                <div class="usage-fill warning" style="width: 88%"></div>
+                            </div>
+                            <span class="usage-text">88% used (78 GB free)</span>
+                        </div>
+                        <div class="path-list" id="d-paths">
+                            <!-- Filled by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sync Panel -->
+            <div class="panel" id="panel-sync">
+                <h2 class="panel-title">Synchronization Status</h2>
+                <div class="sync-dashboard">
+                    <div class="sync-status-card">
+                        <div class="sync-indicator active"></div>
+                        <h3>Last Sync</h3>
+                        <p class="sync-time" id="last-sync-time">2026-04-09 13:08:10</p>
+                        <p class="sync-status">✓ All systems synchronized</p>
+                    </div>
+                    <div class="sync-stats">
+                        <div class="sync-stat">
+                            <span class="stat-number">8</span>
+                            <span class="stat-label">Models Synced</span>
+                        </div>
+                        <div class="sync-stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Registry Files</span>
+                        </div>
+                        <div class="sync-stat">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Pending</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sync-log" id="sync-log">
+                    <h3>Sync History</h3>
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+
+            <!-- Roadmap Panel -->
+            <div class="panel" id="panel-roadmap">
+                <h2 class="panel-title">Development Roadmap</h2>
+                <div class="roadmap-container">
+                    <div class="roadmap-timeline">
+                        <div class="roadmap-phase completed">
+                            <div class="phase-marker">✓</div>
+                            <div class="phase-content">
+                                <h4>Phase 1: Inception</h4>
+                                <p>Initial model creation</p>
+                                <span class="phase-date">Apr 2026</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-phase completed">
+                            <div class="phase-marker">✓</div>
+                            <div class="phase-content">
+                                <h4>Phase 2: Data Collection</h4>
+                                <p>1M+ interactions collected</p>
+                                <span class="phase-date">Apr 2026</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-phase active">
+                            <div class="phase-marker">●</div>
+                            <div class="phase-content">
+                                <h4>Phase 3: Nusantara Consciousness</h4>
+                                <p>Indonesian culture integration</p>
+                                <span class="phase-date">Current</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-phase">
+                            <div class="phase-marker">○</div>
+                            <div class="phase-content">
+                                <h4>Phase 4: Bhineka AI</h4>
+                                <p>F1 Score 0.80+ target</p>
+                                <span class="phase-date">Q2 2026</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-phase">
+                            <div class="phase-marker">○</div>
+                            <div class="phase-content">
+                                <h4>Phase 5: Pancasila AI</h4>
+                                <p>Ethical AI with Indonesian values</p>
+                                <span class="phase-date">Q3 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History Panel -->
+            <div class="panel" id="panel-history">
+                <h2 class="panel-title">System History</h2>
+                <div class="history-filters">
+                    <input type="date" id="history-date-from">
+                    <input type="date" id="history-date-to">
+                    <select id="history-type">
+                        <option value="all">All Events</option>
+                        <option value="model">Model Events</option>
+                        <option value="sync">Sync Events</option>
+                        <option value="error">Errors</option>
+                    </select>
+                </div>
+                <div class="history-timeline" id="history-timeline">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../static/js/avatar-3d.js"></script>
+    <script src="../static/js/admin-panel.js"></script>
+</body>
+</html>

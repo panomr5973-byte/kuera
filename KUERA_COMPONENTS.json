@@ -1,0 +1,227 @@
+{
+  "generated_at": "2026-04-11T20:40:24.328457",
+  "status": "INTEGRITY_CHECK_COMPLETE",
+  "components": {
+    "CORE_COMPLETE": {
+      "description": "Core system files - verified working",
+      "files": [
+        {
+          "name": "kuera_evolution_engine.py",
+          "size_kb": 11.9,
+          "description": "Evolution tracking & self-learning"
+        },
+        {
+          "name": "kuera_persona.py",
+          "size_kb": 12.3,
+          "description": "Persona system with workspace integration"
+        },
+        {
+          "name": "kuera_with_check.py",
+          "size_kb": 1.4,
+          "description": "Diagnostic wrapper"
+        },
+        {
+          "name": "kuwera_autostart.py",
+          "size_kb": 13.5,
+          "description": "Auto-start system"
+        },
+        {
+          "name": "kuwera_health_check.py",
+          "size_kb": 5.7,
+          "description": "Health monitoring"
+        }
+      ]
+    },
+    "WEB_COMPLETE": {
+      "description": "Web interface & server - production ready",
+      "files": [
+        {
+          "name": "kuwera_web_server_v2.py",
+          "size_kb": 9.6,
+          "description": "Flask web server v2.0 (RECOMMENDED)"
+        }
+      ]
+    },
+    "MODEL_COMPLETE": {
+      "description": "Model integration - 8 models supported",
+      "files": [
+        {
+          "name": "kuera_integrated_system.py",
+          "size_kb": 17.3,
+          "description": "Main integrated chat system"
+        },
+        {
+          "name": "kuera_llm_ctransformers.py",
+          "size_kb": 9.8,
+          "description": "CTransformers wrapper"
+        },
+        {
+          "name": "kuera_multi_model_manager.py",
+          "size_kb": 14.4,
+          "description": "Multi-model routing (8 models)"
+        }
+      ]
+    },
+    "DATA_COMPLETE": {
+      "description": "World Bank & international data",
+      "files": [
+        {
+          "name": "kuera_international_chat.py",
+          "size_kb": 13.8,
+          "description": "Multi-source data chat"
+        },
+        {
+          "name": "kuera_international_integration.py",
+          "size_kb": 20.8,
+          "description": "International data"
+        },
+        {
+          "name": "kuera_worldbank_chat.py",
+          "size_kb": 14.4,
+          "description": "Economic analysis chat"
+        },
+        {
+          "name": "kuera_worldbank_integration.py",
+          "size_kb": 17.4,
+          "description": "World Bank integration"
+        },
+        {
+          "name": "kuera_worldbank_setup.py",
+          "size_kb": 6.7,
+          "description": "World Bank data pipeline"
+        }
+      ]
+    },
+    "WORKSPACE_COMPLETE": {
+      "description": "Workspace memory integration",
+      "files": [
+        {
+          "name": "kuwera_memory_bridge.py",
+          "size_kb": 14.9,
+          "description": "Memory consolidation bridge"
+        },
+        {
+          "name": "kuwera_workspace_integration.py",
+          "size_kb": 8.6,
+          "description": "Workspace memory sync"
+        }
+      ]
+    },
+    "ARCHIVED": {
+      "description": "Moved to archive - old/duplicate/incomplete",
+      "files": [
+        {
+          "name": "kuera_analyser.py",
+          "size_kb": 6.8,
+          "reason": "Old analysis script"
+        },
+        {
+          "name": "kuera_chat.py",
+          "size_kb": 13.2,
+          "reason": "Old version - superseded by integrated system"
+        },
+        {
+          "name": "kuera_chat_demo.py",
+          "size_kb": 9.0,
+          "reason": "Demo version - not for production"
+        },
+        {
+          "name": "kuera_chat_improved.py",
+          "size_kb": 9.4,
+          "reason": "Superseded by integrated system"
+        },
+        {
+          "name": "kuera_chat_simple.py",
+          "size_kb": 5.6,
+          "reason": "Simple version - not needed"
+        },
+        {
+          "name": "kuera_human_like.py",
+          "size_kb": 20.7,
+          "reason": "Duplicate functionality"
+        },
+        {
+          "name": "kuera_llm_integration.py",
+          "size_kb": 11.0,
+          "reason": "Superseded by ctransformers wrapper"
+        },
+        {
+          "name": "kuera_model_downloader.py",
+          "size_kb": 17.8,
+          "reason": "Incomplete - scheduled for later download"
+        },
+        {
+          "name": "kuera_qwen_chat.py",
+          "size_kb": 6.6,
+          "reason": "Incomplete - scheduled for later"
+        },
+        {
+          "name": "kuera_setup_database.py",
+          "size_kb": 13.8,
+          "reason": "Superseded by evolution engine"
+        },
+        {
+          "name": "kuera_smart_chat.py",
+          "size_kb": 8.8,
+          "reason": "Superseded by integrated system"
+        },
+        {
+          "name": "kuera_ultimate_chat.py",
+          "size_kb": 11.8,
+          "reason": "Incomplete - scheduled for later"
+        },
+        {
+          "name": "kuera_web_access.py",
+          "size_kb": 12.5,
+          "reason": "Old version - not needed"
+        },
+        {
+          "name": "kuera_web_server.py",
+          "size_kb": 25.6,
+          "reason": "Old version - use v2"
+        },
+        {
+          "name": "kuera_web_server_fixed.py",
+          "size_kb": 20.1,
+          "reason": "Old version - use kuwera_web_server_v2.py"
+        },
+        {
+          "name": "kuera_worldbank_demo.py",
+          "size_kb": 1.1,
+          "reason": "Demo only"
+        },
+        {
+          "name": "kuera_worldbank_trainer.py",
+          "size_kb": 14.3,
+          "reason": "Training script - completed"
+        },
+        {
+          "name": "kuwera_persona.py",
+          "size_kb": 5.3,
+          "reason": "Duplicate - use kuera_persona.py"
+        },
+        {
+          "name": "kuwera_web_interface.py",
+          "size_kb": 11.4,
+          "reason": "Superseded by v2 template"
+        },
+        {
+          "name": "kuwera_web_server.py",
+          "size_kb": 11.6,
+          "reason": "Old version - use v2"
+        }
+      ]
+    },
+    "SCHEDULED": {
+      "description": "To be downloaded later if needed",
+      "files": [
+        "kuera_model_downloader.py",
+        "kuera_qwen_chat.py",
+        "kuera_ultimate_chat.py",
+        "kuera_rag_system.py",
+        "kuera_voice_interface.py",
+        "kuera_vision_system.py"
+      ]
+    }
+  }
+}

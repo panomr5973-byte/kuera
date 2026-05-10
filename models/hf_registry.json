@@ -1,0 +1,11 @@
+{
+  "current_production": "hf_phi2",
+  "trained_adapters": {
+    "pretraining": null,
+    "sft": null,
+    "rlhf": null,
+    "constitutional_ai": null,
+    "curriculum": null
+  },
+  "enriched_at": "2024-04-02"
+}

@@ -1,0 +1,29 @@
+{
+  "stm": {
+    "count": 1,
+    "last_ts": "2026-04-08T12:00:54.199799",
+    "last_sessions": 1,
+    "last_messages": 45,
+    "last_chars": 5210
+  },
+  "diary": {
+    "count": 6,
+    "last_ts": "2026-04-11T03:49:46.666013",
+    "last_day": 4,
+    "last_sessions": 1,
+    "last_messages": 13,
+    "last_filename": "day4-2026-04-11-aku_kira_dia_salahkan_aku.md",
+    "last_latency_s": 13.2,
+    "last_skip": "conversation_hash_unchanged"
+  },
+  "compact": {
+    "count": 6,
+    "last_ts": "2026-04-11T03:49:55.317338",
+    "last_invoke": 3,
+    "last_sessions": 3,
+    "last_messages": 85,
+    "last_latency_s": 8.4,
+    "last_model": "k2p5",
+    "last_skip": "stm_hash_unchanged"
+  }
+}

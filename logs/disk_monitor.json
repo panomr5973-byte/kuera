@@ -1,0 +1,146 @@
+[
+  {
+    "timestamp": "2026-04-09T13:06:21.501722",
+    "disks": {
+      "C": {
+        "drive": "C:/",
+        "total_gb": 300.66,
+        "used_gb": 232.77,
+        "free_gb": 67.89,
+        "percent_used": 77.4,
+        "timestamp": "2026-04-09T13:06:21.501920"
+      },
+      "D": {
+        "drive": "D:/",
+        "total_gb": 651.94,
+        "used_gb": 573.9,
+        "free_gb": 78.05,
+        "percent_used": 88.0,
+        "timestamp": "2026-04-09T13:06:21.502037"
+      }
+    },
+    "folders": {
+      "active_models": {
+        "path": "C:\\AI-Project\\models",
+        "size_gb": 0.0,
+        "files": 17
+      },
+      "model_backup": {
+        "path": "D:\\AI-Backup-2026\\models",
+        "size_gb": 0.0,
+        "files": 16
+      },
+      "model_archive": {
+        "path": "D:\\AI-Models-Archive\\models",
+        "size_gb": 44.55,
+        "files": 185
+      },
+      "logs": {
+        "path": "C:\\AI-Project\\logs",
+        "size_gb": 2.03,
+        "files": 15
+      },
+      "data": {
+        "path": "C:\\AI-Project\\data",
+        "size_gb": 2.37,
+        "files": 24
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T13:08:10.915597",
+    "disks": {
+      "C": {
+        "drive": "C:/",
+        "total_gb": 300.66,
+        "used_gb": 232.77,
+        "free_gb": 67.89,
+        "percent_used": 77.4,
+        "timestamp": "2026-04-09T13:08:10.915797"
+      },
+      "D": {
+        "drive": "D:/",
+        "total_gb": 651.94,
+        "used_gb": 573.9,
+        "free_gb": 78.05,
+        "percent_used": 88.0,
+        "timestamp": "2026-04-09T13:08:10.915969"
+      }
+    },
+    "folders": {
+      "active_models": {
+        "path": "C:\\AI-Project\\models",
+        "size_gb": 0.0,
+        "files": 17
+      },
+      "model_backup": {
+        "path": "D:\\AI-Backup-2026\\models",
+        "size_gb": 0.0,
+        "files": 16
+      },
+      "model_archive": {
+        "path": "D:\\AI-Models-Archive\\models",
+        "size_gb": 44.55,
+        "files": 185
+      },
+      "logs": {
+        "path": "C:\\AI-Project\\logs",
+        "size_gb": 2.03,
+        "files": 16
+      },
+      "data": {
+        "path": "C:\\AI-Project\\data",
+        "size_gb": 2.37,
+        "files": 24
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T13:54:29.307176",
+    "disks": {
+      "C": {
+        "drive": "C:/",
+        "total_gb": 300.66,
+        "used_gb": 232.8,
+        "free_gb": 67.86,
+        "percent_used": 77.4,
+        "timestamp": "2026-04-09T13:54:29.307272"
+      },
+      "D": {
+        "drive": "D:/",
+        "total_gb": 651.94,
+        "used_gb": 573.9,
+        "free_gb": 78.05,
+        "percent_used": 88.0,
+        "timestamp": "2026-04-09T13:54:29.307357"
+      }
+    },
+    "folders": {
+      "active_models": {
+        "path": "C:\\AI-Project\\models",
+        "size_gb": 0.0,
+        "files": 17
+      },
+      "model_backup": {
+        "path": "D:\\AI-Backup-2026\\models",
+        "size_gb": 0.0,
+        "files": 16
+      },
+      "model_archive": {
+        "path": "D:\\AI-Models-Archive\\models",
+        "size_gb": 44.55,
+        "files": 185
+      },
+      "logs": {
+        "path": "C:\\AI-Project\\logs",
+        "size_gb": 2.03,
+        "files": 16
+      },
+      "data": {
+        "path": "C:\\AI-Project\\data",
+        "size_gb": 2.37,
+        "files": 24
+      }
+    }
+  }
+]

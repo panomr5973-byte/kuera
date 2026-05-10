@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-05-05T11:06:05.950024",
+  "services": {
+    "api_server": {
+      "status": "running",
+      "started_at": "2026-05-05T10:55:33.733860",
+      "pid": 36300,
+      "restarts": 0
+    },
+    "scheduler": {
+      "status": "running",
+      "started_at": "2026-05-05T10:55:34.740194",
+      "pid": 3980,
+      "restarts": 0
+    }
+  },
+  "summary": {
+    "running": 2,
+    "failed": 0,
+    "total": 2
+  }
+}

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Project - Disk Monitor</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; border-bottom: 3px solid #007acc; padding-bottom: 10px; }
+        .alert { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .alert-critical { background: #ffebee; color: #c62828; border-left: 4px solid #c62828; }
+        .alert-warning { background: #fff3e0; color: #ef6c00; border-left: 4px solid #ef6c00; }
+        .disk-card { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .progress-bar { width: 100%; height: 20px; background: #e0e0e0; border-radius: 10px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, #4caf50, #8bc34a); transition: width 0.3s; }
+        .progress-fill.warning { background: linear-gradient(90deg, #ff9800, #ffc107); }
+        .progress-fill.critical { background: linear-gradient(90deg, #f44336, #ff5722); }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #007acc; color: white; }
+        tr:hover { background: #f5f5f5; }
+        .timestamp { color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Project - Disk Space Monitoring</h1>
+        <p class="timestamp">Generated: 2026-04-09 13:54:29</p>
+        
+        <h2>Alerts</h2>
+<div class="alert" style="background: #e8f5e9; color: #2e7d32; border-left: 4px solid #4caf50;">All drives healthy!</div><h2>Disk Usage</h2>
+        <div class="disk-card">
+            <h3>Drive C: - 67.9 GB free</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 77.4%"></div>
+            </div>
+            <p>Total: 300.7 GB | Used: 232.8 GB (77.4%)</p>
+        </div>
+
+        <div class="disk-card">
+            <h3>Drive D: - 78.0 GB free</h3>
+            <div class="progress-bar">
+                <div class="progress-fill warning" style="width: 88.0%"></div>
+            </div>
+            <p>Total: 651.9 GB | Used: 573.9 GB (88.0%)</p>
+        </div>
+
+        <h2>Folder Sizes</h2>
+        <table>
+            <tr>
+                <th>Folder</th>
+                <th>Size (GB)</th>
+                <th>Files</th>
+            </tr>
+
+            <tr>
+                <td>active_models</td>
+                <td>0.00</td>
+                <td>17</td>
+            </tr>
+
+            <tr>
+                <td>model_backup</td>
+                <td>0.00</td>
+                <td>16</td>
+            </tr>
+
+            <tr>
+                <td>model_archive</td>
+                <td>44.55</td>
+                <td>185</td>
+            </tr>
+
+            <tr>
+                <td>logs</td>
+                <td>2.03</td>
+                <td>16</td>
+            </tr>
+
+            <tr>
+                <td>data</td>
+                <td>2.37</td>
+                <td>24</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>

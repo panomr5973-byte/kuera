@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-04-02T09:51:28.467807",
+  "steps": [
+    {
+      "step": "handle_missing",
+      "method": "drop",
+      "dropped_rows": "397"
+    },
+    {
+      "step": "feature_engineering"
+    },
+    {
+      "step": "encode_categorical",
+      "columns": [
+        "gender",
+        "city"
+      ]
+    },
+    {
+      "step": "scaling",
+      "columns": [
+        "age",
+        "income",
+        "gender",
+        "city",
+        "purchase_amount",
+        "num_purchases",
+        "is_member",
+        "num_sum",
+        "num_mean"
+      ]
+    }
+  ],
+  "original_shape": [
+    1000,
+    9
+  ],
+  "split": {
+    "train_size": 526,
+    "test_size": 132,
+    "test_ratio": 0.2
+  }
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "timestamp": "2026-04-06T13:21:55.554347",
+    "event": "PII detected",
+    "epsilon": 0.5,
+    "details": {
+      "names": [
+        "Hubungi Budi"
+      ],
+      "email": [
+        "budi@email.com"
+      ],
+      "phone": [
+        "081234567890"
+      ],
+      "ktp": [
+        "1234567890123456"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-06T13:26:41.616389",
+    "event": "PII detected",
+    "epsilon": 0.5,
+    "details": {
+      "names": [
+        "Hubungi Budi"
+      ],
+      "email": [
+        "budi@email.com"
+      ],
+      "phone": [
+        "081234567890"
+      ],
+      "ktp": [
+        "1234567890123456"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-06T13:27:46.853147",
+    "event": "PII detected",
+    "epsilon": 0.5,
+    "details": {
+      "names": [
+        "Hubungi Budi"
+      ],
+      "email": [
+        "budi@email.com"
+      ],
+      "phone": [
+        "081234567890"
+      ],
+      "ktp": [
+        "1234567890123456"
+      ]
+    }
+  }
+]

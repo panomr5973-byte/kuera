@@ -1,0 +1,824 @@
+{
+  "project_name": "AI Kuera - AI-Project",
+  "analysis_date": "2026-04-12",
+  "total_files": 132000,
+  "total_size": {
+    "gb": 37.08,
+    "mb": 37968.81
+  },
+  "folders": [
+    {
+      "name": ".dist",
+      "size_gb": 0,
+      "size_mb": 0,
+      "description": "Distribution files"
+    },
+    {
+      "name": ".sixth",
+      "size_gb": 0,
+      "size_mb": 0,
+      "description": "Configuration/Cache"
+    },
+    {
+      "name": ".vscode",
+      "size_gb": 0,
+      "size_mb": 0,
+      "description": "VS Code settings"
+    },
+    {
+      "name": "admin_panel",
+      "size_gb": 0,
+      "size_mb": 0.1,
+      "description": "Admin interface files"
+    },
+    {
+      "name": "ai_env",
+      "size_gb": 2.84,
+      "size_mb": 2909.3,
+      "description": "Python virtual environment"
+    },
+    {
+      "name": "ai_production",
+      "size_gb": 0.03,
+      "size_mb": 27.29,
+      "description": "Production AI deployment files"
+    },
+    {
+      "name": "app",
+      "size_gb": 0,
+      "size_mb": 0.07,
+      "description": "Application source code"
+    },
+    {
+      "name": "archive_incomplete",
+      "size_gb": 0,
+      "size_mb": 0.23,
+      "description": "Incomplete archives"
+    },
+    {
+      "name": "config",
+      "size_gb": 0,
+      "size_mb": 0.02,
+      "description": "Configuration files"
+    },
+    {
+      "name": "data",
+      "size_gb": 2.37,
+      "size_mb": 2422.3,
+      "description": "Dataset and database files"
+    },
+    {
+      "name": "deployment",
+      "size_gb": 0,
+      "size_mb": 0.02,
+      "description": "Deployment scripts and configs"
+    },
+    {
+      "name": "evaluation",
+      "size_gb": 0,
+      "size_mb": 0.01,
+      "description": "Model evaluation results"
+    },
+    {
+      "name": "exports",
+      "size_gb": 0,
+      "size_mb": 0.68,
+      "description": "Export files"
+    },
+    {
+      "name": "infrastructure",
+      "size_gb": 0,
+      "size_mb": 0,
+      "description": "Infrastructure configuration"
+    },
+    {
+      "name": "logs",
+      "size_gb": 2.04,
+      "size_mb": 2090.22,
+      "description": "Log files and monitoring data"
+    },
+    {
+      "name": "memorized_diary",
+      "size_gb": 0,
+      "size_mb": 0.01,
+      "description": "Memory diary data"
+    },
+    {
+      "name": "memory",
+      "size_gb": 0,
+      "size_mb": 0,
+      "description": "Memory storage"
+    },
+    {
+      "name": "memory_consolidation",
+      "size_gb": 0,
+      "size_mb": 0.12,
+      "description": "Memory consolidation state"
+    },
+    {
+      "name": "mlruns",
+      "size_gb": 0.01,
+      "size_mb": 7.86,
+      "description": "MLflow experiment tracking"
+    },
+    {
+      "name": "models",
+      "size_gb": 29.47,
+      "size_mb": 30173.85,
+      "description": "Trained AI/ML models (largest folder)"
+    },
+    {
+      "name": "monitoring",
+      "size_gb": 0,
+      "size_mb": 0.03,
+      "description": "Monitoring configuration"
+    },
+    {
+      "name": "notebooks",
+      "size_gb": 0,
+      "size_mb": 0,
+      "description": "Jupyter notebooks"
+    },
+    {
+      "name": "personal_ai",
+      "size_gb": 0,
+      "size_mb": 0.07,
+      "description": "Personal AI settings"
+    },
+    {
+      "name": "reports",
+      "size_gb": 0,
+      "size_mb": 0,
+      "description": "Generated reports"
+    },
+    {
+      "name": "scripts",
+      "size_gb": 0,
+      "size_mb": 0.03,
+      "description": "Utility scripts"
+    },
+    {
+      "name": "self_evolving",
+      "size_gb": 0,
+      "size_mb": 0.19,
+      "description": "Self-evolution system files"
+    },
+    {
+      "name": "src",
+      "size_gb": 0,
+      "size_mb": 0.09,
+      "description": "Source code"
+    },
+    {
+      "name": "templates",
+      "size_gb": 0,
+      "size_mb": 0.07,
+      "description": "Template files"
+    },
+    {
+      "name": "training",
+      "size_gb": 0,
+      "size_mb": 0.01,
+      "description": "Training configuration"
+    },
+    {
+      "name": "workspace",
+      "size_gb": 0,
+      "size_mb": 0.16,
+      "description": "Workspace files"
+    },
+    {
+      "name": "__pycache__",
+      "size_gb": 0,
+      "size_mb": 0.3,
+      "description": "Python cache files"
+    }
+  ],
+  "py_files_root": [
+    "analyze_indonesia.py (4.11 KB)",
+    "analyze_kalimantan.py (4.03 KB)",
+    "audit_toolkit_complete.py (17.52 KB)",
+    "auto_interact.py (4.51 KB)",
+    "auto_interact_human.py (11.79 KB)",
+    "auto_startup.py (8.66 KB)",
+    "bulk_interact.py (3.86 KB)",
+    "check_download_progress.py (2.57 KB)",
+    "check_evolution.py (6.3 KB)",
+    "check_health.py (3.51 KB)",
+    "check_models.py (1.78 KB)",
+    "check_worldbank_db.py (1.16 KB)",
+    "copy_to_wsl.py (4.2 KB)",
+    "create_model_registry.py (4.14 KB)",
+    "data_knowledge_foundation.py (6.3 KB)",
+    "demo_7day_evolusi.py (13.49 KB)",
+    "demo_agent.py (1.99 KB)",
+    "demo_alignment.py (0.95 KB)",
+    "demo_loop.py (2.64 KB)",
+    "demo_nusantara.py (1.01 KB)",
+    "demo_nusantara_complete.py (1.59 KB)",
+    "demo_nusantara_fixed.py (2.37 KB)",
+    "demo_real_evolution.py (10.04 KB)",
+    "docx_extractor.py (0.81 KB)",
+    "download_all_models.py (7.52 KB)",
+    "download_auto.py (2.6 KB)",
+    "download_bartowski_models.py (4.19 KB)",
+    "download_hf_new_cli.py (1.96 KB)",
+    "download_models.py (8.57 KB)",
+    "download_models_simple.py (3.32 KB)",
+    "download_models_smart.py (4.13 KB)",
+    "download_priorities.py (4.07 KB)",
+    "download_progressive.py (4.9 KB)",
+    "download_simple.py (3.43 KB)",
+    "file_processor.py (9.7 KB)",
+    "fix_ctransformers_issue.py (4.81 KB)",
+    "fix_encoding.py (0.98 KB)",
+    "fix_kuera_syntax.py (1.11 KB)",
+    "fix_llm_serving_nusantara.py (4.54 KB)",
+    "fix_persona.py (1.6 KB)",
+    "fix_persona2.py (1.28 KB)",
+    "fix_persona_all.py (3.04 KB)",
+    "fix_search.py (1.71 KB)",
+    "fix_search2.py (1.48 KB)",
+    "fix_search3.py (1.62 KB)",
+    "fix_search4.py (2.43 KB)",
+    "fix_uploaded_files.py (0.54 KB)",
+    "indonesia_sabang_merauke.py (12.98 KB)",
+    "integrate_all_new_models.py (5.69 KB)",
+    "integrate_bartowski_models.py (5.54 KB)",
+    "integrate_models.py (4.74 KB)",
+    "interact.py (5.8 KB)",
+    "kalimantan_bps_simulation.py (12.17 KB)",
+    "kuera_evolution_engine.py (11.88 KB)",
+    "kuera_integrated_system.py (17.3 KB)",
+    "KUERA_INTEGRITY_CLEANUP.py (13.84 KB)",
+    "kuera_international_chat.py (13.78 KB)",
+    "kuera_international_integration.py (20.79 KB)",
+    "kuera_llm_ctransformers.py (9.85 KB)",
+    "kuera_multi_model_manager.py (14.43 KB)",
+    "kuera_persona.py (11.92 KB)",
+    "kuera_with_check.py (1.36 KB)",
+    "kuera_worldbank_chat.py (14.36 KB)",
+    "kuera_worldbank_integration.py (17.36 KB)",
+    "kuera_worldbank_setup.py (6.67 KB)",
+    "kuwera_autostart.py (13.53 KB)",
+    "kuwera_health_check.py (5.7 KB)",
+    "kuwera_memory_bridge.py (14.95 KB)",
+    "kuwera_web_server_v2.py (9.57 KB)",
+    "kuwera_workspace_integration.py (8.6 KB)",
+    "maintenance.py (23.17 KB)",
+    "mcp_client_qt.py (0 KB)",
+    "mega_fast.py (4.3 KB)",
+    "mega_simulation.py (12.88 KB)",
+    "migrate_to_cloud.py (11.9 KB)",
+    "pdf_extractor.py (0.83 KB)",
+    "quick_analyze.py (1.84 KB)",
+    "run_pipeline.py (3.33 KB)",
+    "run_self_evolving.py (3.84 KB)",
+    "setup_ollama.py (1.42 KB)",
+    "speedup_config.py (1.89 KB)",
+    "start_api.py (1.88 KB)",
+    "start_dashboard.py (1.57 KB)",
+    "start_scheduler.py (1.05 KB)",
+    "start_scheduler_simple.py (2.16 KB)",
+    "template_audit_kinerja.py (14.24 KB)",
+    "template_audit_spi.py (13.37 KB)",
+    "template_master.py (10.63 KB)",
+    "test_api.py (1.76 KB)",
+    "test_chat_page.py (1.39 KB)",
+    "test_dashboard.py (3.69 KB)",
+    "test_direct.py (0.54 KB)",
+    "test_qwen_indonesian.py (3.63 KB)",
+    "test_smart_chat.py (1.48 KB)",
+    "update_registry_coder.py (1.68 KB)",
+    "verify_and_start.py (4.56 KB)",
+    "verify_env.py (2.52 KB)",
+    "watch_evolution.py (4.67 KB)",
+    "web_interface.py (12.81 KB)"
+  ],
+  "md_files_root": [
+    "3_MONTH_TIMELINE.md (9.28 KB)",
+    "ADMIN_PANEL_GUIDE.md (5.71 KB)",
+    "ADMIN_PANEL_SUMMARY.md (11.16 KB)",
+    "AGENTS.md (7.69 KB)",
+    "AI_REQUIREMENTS.md (5.99 KB)",
+    "AUTO_STARTUP_GUIDE.md (5.77 KB)",
+    "BARTOWSKI_FINAL_STATUS.md (6.26 KB)",
+    "BARTOWSKI_INTEGRATION_GUIDE.md (4.93 KB)",
+    "BARTOWSKI_INTEGRATION_SUMMARY.md (6.37 KB)",
+    "BOOTSTRAP.md (1.44 KB)",
+    "CHAT_INTERFACE_README.md (2.85 KB)",
+    "DEVELOPMENT_ROADMAP.md (17.1 KB)",
+    "DOWNLOAD_MANUAL.md (6.91 KB)",
+    "EVOLUTION_ANALYSIS.md (6.72 KB)",
+    "EVOLUTION_REPORT.md (2.97 KB)",
+    "FIX_CRASH_LOOP.md (1.79 KB)",
+    "HEARTBEAT.md (0.16 KB)",
+    "HUMAN_LIKE_AI_GUIDE.md (8.06 KB)",
+    "IDENTITY.md (3.78 KB)",
+    "INDONESIA_COMPLETE_REPORT.md (7.09 KB)",
+    "INTERACT_GUIDE.md (3.94 KB)",
+    "KALIMANTAN_BPS_REPORT.md (5.01 KB)",
+    "KUERA_CLEANUP_COMPLETE.md (5.76 KB)",
+    "KUERA_COMPLETE_SETUP.md (4.45 KB)",
+    "KUERA_FINAL_REPORT.md (6.27 KB)",
+    "KUERA_INTEGRATION_COMPLETE.md (5.23 KB)",
+    "KUERA_MODEL_COLLECTION.md (6.33 KB)",
+    "KUERA_MODEL_RECOMMENDATIONS.md (7.43 KB)",
+    "KUERA_NAMING.md (4.57 KB)",
+    "KUERA_QWEN_SETUP.md (4.79 KB)",
+    "KUERA_WORLDBANK_README.md (2.59 KB)",
+    "KUERA_WORLDBANK_SUMMARY.md (5.92 KB)",
+    "KUWERA_AUTOSTART_GUIDE.md (6.26 KB)",
+    "KUWERA_INTEGRATED_SYSTEM_GUIDE.md (6.39 KB)",
+    "KUWERA_MODEL_RESUME.md (10.17 KB)",
+    "KUWERA_STATUS_COMPLETE.md (9.59 KB)",
+    "KUWERA_ULTIMATE_INTEGRATION.md (5.19 KB)",
+    "KUWERA_V2_INTEGRATION_GUIDE.md (10.25 KB)",
+    "MEGA_EVOLUTION_REPORT.md (2.47 KB)",
+    "production_ready.md (1.15 KB)",
+    "PROJECT_COMPLETE_SUMMARY.md (8.43 KB)",
+    "QUICKSTART.md (4.46 KB)",
+    "README.md (4.75 KB)",
+    "README_AUDIT_AI.md (3.75 KB)",
+    "SOUL.md (5.26 KB)",
+    "SWAGGER_UI_GUIDE.md (3.07 KB)",
+    "TODO-alignment.md (1.76 KB)",
+    "TODO-evaluation.md (0.35 KB)",
+    "TODO-nusantara.md (0.54 KB)",
+    "TODO-training.md (1.21 KB)",
+    "TODO.md (1.42 KB)",
+    "TODO_steps.md (0.77 KB)",
+    "TOOLS.md (0.84 KB)",
+    "USER.md (10.76 KB)",
+    "WEB_INTERFACE_INFO.md (3.97 KB)",
+    "WORKSPACE_SETUP_COMPLETE.md (7.03 KB)"
+  ],
+  "db_files": [
+    {
+      "path": "ai_production/data/db/interactions.db",
+      "size_mb": 0.11
+    },
+    {
+      "path": "data/international_data.db",
+      "size_mb": 0.07
+    },
+    {
+      "path": "data/kuera_cloud_migration.sql",
+      "size_mb": 0
+    },
+    {
+      "path": "data/kuera_database.db",
+      "size_mb": 2396.11
+    },
+    {
+      "path": "data/kuera_evolution.db",
+      "size_mb": 0.02
+    },
+    {
+      "path": "data/kuwera_memory.db",
+      "size_mb": 0.03
+    },
+    {
+      "path": "data/worldbank_indonesia.db",
+      "size_mb": 0.08
+    },
+    {
+      "path": "exports/kuera_cloud_migration.sql",
+      "size_mb": 0.68
+    },
+    {
+      "path": "logs/feedback/self_improve.db",
+      "size_mb": 2076.36
+    },
+    {
+      "path": "mlflow.db",
+      "size_mb": 0.83
+    }
+  ],
+  "config_files": [
+    {
+      "path": ".vscode/settings.json",
+      "size_kb": 0.12
+    },
+    {
+      "path": "ai_production/config/registry.json",
+      "size_kb": 0.75
+    },
+    {
+      "path": "bartowski_models.json",
+      "size_kb": 0.61
+    },
+    {
+      "path": "data/processed/pipeline_metadata.json",
+      "size_kb": 0.72
+    },
+    {
+      "path": "data/workspace_knowledge.json",
+      "size_kb": 29.49
+    },
+    {
+      "path": "docker-compose.yml",
+      "size_kb": 2.01
+    },
+    {
+      "path": "kuera_bartowski_selection.json",
+      "size_kb": 0.55
+    },
+    {
+      "path": "KUERA_COMPONENTS.json",
+      "size_kb": 6.38
+    },
+    {
+      "path": "logs/disk_monitor.json",
+      "size_kb": 3.38
+    },
+    {
+      "path": "logs/kuwera/status.json",
+      "size_kb": 0.43
+    },
+    {
+      "path": "logs/personal/usage.json",
+      "size_kb": 19.62
+    },
+    {
+      "path": "logs/privacy_reports.json",
+      "size_kb": 1.02
+    },
+    {
+      "path": "logs/startup/status.json",
+      "size_kb": 0.14
+    },
+    {
+      "path": "logs/sync_history.json",
+      "size_kb": 12.8
+    },
+    {
+      "path": "memory_consolidation/memory_consolidation.env",
+      "size_kb": 3.44
+    },
+    {
+      "path": "memory_consolidation/memory_consolidation.template.env",
+      "size_kb": 3.44
+    },
+    {
+      "path": "memory_consolidation/state/diary_state.json",
+      "size_kb": 0.06
+    },
+    {
+      "path": "memory_consolidation/state/ltm.json",
+      "size_kb": 2.29
+    },
+    {
+      "path": "memory_consolidation/state/state.json",
+      "size_kb": 0.67
+    },
+    {
+      "path": "models/hf_registry.json",
+      "size_kb": 0.22
+    },
+    {
+      "path": "models/llm/llm_registry.json",
+      "size_kb": 3.34
+    },
+    {
+      "path": "models/llm/model_registry_active.json",
+      "size_kb": 6.11
+    },
+    {
+      "path": "models/model_metadata.json",
+      "size_kb": 1.43
+    },
+    {
+      "path": "models/model_registry.json",
+      "size_kb": 2.35
+    },
+    {
+      "path": "models/model_registry_fixed.json",
+      "size_kb": 2.35
+    },
+    {
+      "path": "monitoring/prometheus.yml",
+      "size_kb": 0.29
+    },
+    {
+      "path": "personal_ai/safety_rules.json",
+      "size_kb": 1.1
+    },
+    {
+      "path": "personal_ai/safety_rules_updated.json",
+      "size_kb": 5.26
+    },
+    {
+      "path": "test_output.json",
+      "size_kb": 217.31
+    },
+    {
+      "path": "training/config.json",
+      "size_kb": 0.94
+    }
+  ],
+  "model_files": {
+    "llm_models": [
+      {
+        "path": "models/llm/gemma-2-2b-it-Q5_K_M.gguf",
+        "size_mb": 1834.18,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+        "size_mb": 1925.83,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/Llama-3.2-3B-Instruct-Q5_K_M.gguf",
+        "size_mb": 2214.58,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/Merak-7B-v4-model-q4_k_m.gguf",
+        "size_mb": 4166.08,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+        "size_mb": 4692.78,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "size_mb": 1065.56,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/qwen2.5-3b-instruct-q2_k.gguf",
+        "size_mb": 1313.07,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/qwen2.5-3b-instruct-q4_k_m.gguf",
+        "size_mb": 2007.42,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+        "size_mb": 4466.13,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/Qwen2.5-Coder-3B-Instruct-Q4_K_M.gguf",
+        "size_mb": 1840.5,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/SeaLLM-7B-v2.q4_0.gguf",
+        "size_mb": 4007.45,
+        "type": "GGUF"
+      },
+      {
+        "path": "models/llm/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
+        "size_mb": 637.81,
+        "type": "GGUF"
+      }
+    ],
+    "ml_models": [
+      {
+        "path": "models/best_model_lightgbm.pkl",
+        "size_mb": 0.07,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/best_model_logistic_regression.pkl",
+        "size_mb": 0,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/model_20260402_100050.pkl",
+        "size_mb": 0.04,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/model_20260402_113959.pkl",
+        "size_mb": 0.05,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/model_20260402_115503.pkl",
+        "size_mb": 0.13,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/model_20260402_115503_gb.joblib",
+        "size_mb": 0.07,
+        "type": "Joblib"
+      },
+      {
+        "path": "models/model_20260402_121344.pkl",
+        "size_mb": 0.13,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/model_20260402_135212.pkl",
+        "size_mb": 0.13,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/model_20260402_150537.pkl",
+        "size_mb": 0.13,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/vectorizer_gb.joblib",
+        "size_mb": 0,
+        "type": "Joblib"
+      }
+    ],
+    "worldbank_models": [
+      {
+        "path": "models/worldbank/worldbank_ensemble_20260410_134455.pkl",
+        "size_mb": 0.36,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/worldbank/worldbank_ensemble_20260410_134905.pkl",
+        "size_mb": 0.35,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/worldbank/worldbank_ensemble_20260410_134920.pkl",
+        "size_mb": 0.35,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/worldbank/worldbank_ensemble_20260410_134935.pkl",
+        "size_mb": 0.35,
+        "type": "Pickle"
+      },
+      {
+        "path": "models/worldbank/worldbank_ensemble_20260410_135013.pkl",
+        "size_mb": 0.29,
+        "type": "Pickle"
+      }
+    ],
+    "mlflow_models": [
+      {
+        "path": "mlruns/0/models/m-14446465271643799cfcfde6d55cf511/artifacts/model.pkl",
+        "size_mb": 0.13,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/0/models/m-771f2245cec447d2a3b4afc56f745bfb/artifacts/model.pkl",
+        "size_mb": 0.13,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/1/models/m-22968a83254d4840958713003a9d4c4f/artifacts/model.pkl",
+        "size_mb": 0.18,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/1/models/m-9637088763a94f0b9b3400e35c7b837b/artifacts/model.pkl",
+        "size_mb": 0,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-15446ff3db45418a9a0f254f52f0665a/artifacts/model.pkl",
+        "size_mb": 0.12,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-25c9e7571fff44df88e5c1395dbcac48/artifacts/model.pkl",
+        "size_mb": 1.89,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-3c2701614a564304acdf822ad6408fd5/artifacts/model.pkl",
+        "size_mb": 0,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-3fbad461d94d4f4a87e197b2658be0e3/artifacts/model.pkl",
+        "size_mb": 0.18,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-52040a4bb4e845dcb662b6b9d30e3ed2/artifacts/model.pkl",
+        "size_mb": 0.04,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-5f158f5627bb4dae9b2dc06792d9145a/artifacts/model.pkl",
+        "size_mb": 0.18,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-6761b754488b49f8b2226097f72c27f6/artifacts/model.pkl",
+        "size_mb": 0,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-6788a28d01b649a0a1b3cf459ff137e1/artifacts/model.pkl",
+        "size_mb": 0.12,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-6e217051a7d14f338c25cd8514f9d0ea/artifacts/model.pkl",
+        "size_mb": 1.89,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-a4ccd8e8e69e4a65955794913a67a226/artifacts/model.pkl",
+        "size_mb": 0.18,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-a50e5b3061e1411f9b3a21de035777e7/artifacts/model.pkl",
+        "size_mb": 0,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-ab6fdbb962bc40f48a10b89ad033c289/artifacts/model.pkl",
+        "size_mb": 0.12,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-bc0e1ebd69f34b15bc1d818e6d316b12/artifacts/model.pkl",
+        "size_mb": 1.89,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-c9a4e5df441e4674966cea7bdc6befd3/artifacts/model.pkl",
+        "size_mb": 0.23,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-eef1bd2769c148739c8060a2163af6f8/artifacts/model.pkl",
+        "size_mb": 0.04,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-ef275c4b6e174561a566686fa8145f55/artifacts/model.pkl",
+        "size_mb": 0.23,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-f0521b369e7d4436a65dbefe7633a9e6/artifacts/model.pkl",
+        "size_mb": 0.23,
+        "type": "Pickle"
+      },
+      {
+        "path": "mlruns/2/models/m-fcd7c76314b347d5a08e260d36af5df2/artifacts/model.pkl",
+        "size_mb": 0.04,
+        "type": "Pickle"
+      }
+    ]
+  },
+  "statistics": {
+    "file_extensions_top_20": [
+      { "extension": ".py", "count": 47022 },
+      { "extension": ".pyc", "count": 46868 },
+      { "extension": ".h", "count": 10016 },
+      { "extension": ".pb", "count": 5912 },
+      { "extension": "(no extension)", "count": 3192 },
+      { "extension": ".pyi", "count": 2610 },
+      { "extension": ".onnx", "count": 1830 },
+      { "extension": ".js", "count": 1448 },
+      { "extension": ".json", "count": 1386 },
+      { "extension": ".mo", "count": 1362 },
+      { "extension": ".po", "count": 1308 },
+      { "extension": ".dat", "count": 1120 },
+      { "extension": ".gz", "count": 1027 },
+      { "extension": ".txt", "count": 829 },
+      { "extension": ".pyd", "count": 525 },
+      { "extension": ".svg", "count": 511 },
+      { "extension": ".html", "count": 362 },
+      { "extension": ".png", "count": 328 },
+      { "extension": ".map", "count": 288 },
+      { "extension": ".csv", "count": 269 }
+    ],
+    "total_languages": {
+      "python_files": 47022,
+      "markdown_files": 198,
+      "database_files": 10,
+      "config_files": 50,
+      "model_files": 39
+    },
+    "folder_sizes_ranked": [
+      { "rank": 1, "folder": "models", "size_gb": 29.47, "percentage": 79.5 },
+      { "rank": 2, "folder": "ai_env", "size_gb": 2.84, "percentage": 7.7 },
+      { "rank": 3, "folder": "data", "size_gb": 2.37, "percentage": 6.4 },
+      { "rank": 4, "folder": "logs", "size_gb": 2.04, "percentage": 5.5 },
+      { "rank": 5, "folder": "ai_production", "size_gb": 0.03, "percentage": 0.1 }
+    ],
+    "key_insights": [
+      "Total 132,000 files consuming 37.08 GB storage",
+      "Models folder is the largest at 29.47 GB (79.5% of total)",
+      "12 GGUF LLM models stored (ranging 637MB - 4.7GB each)",
+      "2 Large SQLite databases: kuera_database.db (2.4GB) and self_improve.db (2.1GB)",
+      "47,022 Python source files (.py)",
+      "46,868 Compiled Python files (.pyc)",
+      "AI Environment (ai_env) uses 2.84 GB",
+      "198 Markdown documentation files",
+      "MLflow tracking with 22 trained models"
+    ]
+  }
+}

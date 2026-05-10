@@ -1,0 +1,7 @@
+﻿HuggingFace Models Archived
+==========================
+Location: D:\AI-Models-Archive\models\hf_models
+Moved: 04/09/2026 13:04:12
+Size: ~7.2 GB
+
+To restore: Copy folder back to C:\AI-Project\models\

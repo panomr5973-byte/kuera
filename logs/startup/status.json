@@ -1,0 +1,7 @@
+{
+  "status": "running",
+  "started_at": "2026-05-05T17:35:36.208039",
+  "pid_api": 75852,
+  "pid_scheduler": 67844,
+  "check_interval": 60
+}

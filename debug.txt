@@ -1,0 +1,6 @@
+filename, content, summary, keywords = result
+                    # Return summary if available, otherwise first part of content
+                    if summary and len(summary) > 50:
+                        return f"📄 **{filename}**\\n\\n📝 **Ringkasan:**\\n{summary[:800]}"
+                    elif content:
+                        return f"📄 **{filename}**\\n\\n📝 **Isi Dokumen:**\\n{content[:800]}.

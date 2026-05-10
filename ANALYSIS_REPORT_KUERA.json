@@ -1,0 +1,637 @@
+{
+  "report_metadata": {
+    "generated_at": "2026-04-12T18:58:34+07:00",
+    "project_name": "KUERA AI Project",
+    "total_files": 132002,
+    "python_files_root": 99,
+    "analysis_scope": [
+      "Root Python Files",
+      "Infrastructure Folders",
+      "Configuration & Environment",
+      "Log Files"
+    ]
+  },
+  
+  "root_python_files": {
+    "total_count": 99,
+    "total_size_kb": 850.5,
+    "categories": {
+      "api_web_server": {
+        "description": "API endpoints, web servers, dan launchers",
+        "files": [
+          {"name": "start_api.py", "size": 1925, "purpose": "Production API launcher with integrated testing"},
+          {"name": "web_interface.py", "size": 13119, "purpose": "Simple HTTP server for AI interaction interface"},
+          {"name": "kuwera_web_server_v2.py", "size": 9802, "purpose": "Flask web server with memory integration"},
+          {"name": "start_dashboard.py", "size": 1612, "purpose": "Streamlit dashboard launcher"},
+          {"name": "verify_and_start.py", "size": 4671, "purpose": "Verification and startup script"}
+        ],
+        "file_count": 5,
+        "recommendation": "Consolidate web servers into single unified server"
+      },
+      
+      "core_integrated_systems": {
+        "description": "Sistem inti dan integrasi utama",
+        "files": [
+          {"name": "kuera_integrated_system.py", "size": 17715, "purpose": "Main integrated multi-model system v2.0"},
+          {"name": "kuera_multi_model_manager.py", "size": 14775, "purpose": "Multi-model manager with smart routing"},
+          {"name": "kuera_evolution_engine.py", "size": 12167, "purpose": "AI evolution engine"},
+          {"name": "kuera_persona.py", "size": 12210, "purpose": "Persona management system"},
+          {"name": "kuera_llm_ctransformers.py", "size": 10083, "purpose": "LLM integration with ctransformers"},
+          {"name": "kuera_with_check.py", "size": 1392, "purpose": "Wrapper with health check"}
+        ],
+        "file_count": 6,
+        "recommendation": "These are core files - keep organized in src/ folder"
+      },
+      
+      "worldbank_international": {
+        "description": "Integrasi World Bank dan International",
+        "files": [
+          {"name": "kuera_worldbank_integration.py", "size": 17773, "purpose": "World Bank data integration"},
+          {"name": "kuera_worldbank_chat.py", "size": 14704, "purpose": "World Bank chat interface"},
+          {"name": "kuera_worldbank_setup.py", "size": 6829, "purpose": "World Bank setup utility"},
+          {"name": "kuera_international_integration.py", "size": 21285, "purpose": "International data integration"},
+          {"name": "kuera_international_chat.py", "size": 14113, "purpose": "International chat interface"},
+          {"name": "check_worldbank_db.py", "size": 1191, "purpose": "World Bank DB checker"}
+        ],
+        "file_count": 6,
+        "recommendation": "Move to integrations/worldbank/ folder"
+      },
+      
+      "kuwera_modules": {
+        "description": "Modul KUWERA (subsystem)",
+        "files": [
+          {"name": "kuwera_autostart.py", "size": 13851, "purpose": "Auto-start functionality"},
+          {"name": "kuwera_health_check.py", "size": 5832, "purpose": "Health monitoring"},
+          {"name": "kuwera_memory_bridge.py", "size": 15305, "purpose": "Memory bridge integration"},
+          {"name": "kuwera_workspace_integration.py", "size": 8803, "purpose": "Workspace integration"}
+        ],
+        "file_count": 4,
+        "recommendation": "Consolidate into kuwera/ package"
+      },
+      
+      "model_management": {
+        "description": "Download dan manajemen model",
+        "files": [
+          {"name": "download_models.py", "size": 8780, "purpose": "Main model downloader"},
+          {"name": "download_models_simple.py", "size": 3395, "purpose": "Simplified model downloader"},
+          {"name": "download_models_smart.py", "size": 4232, "purpose": "Smart model downloader"},
+          {"name": "download_all_models.py", "size": 7699, "purpose": "Batch model downloader"},
+          {"name": "download_simple.py", "size": 3513, "purpose": "Simple downloader variant"},
+          {"name": "download_auto.py", "size": 2658, "purpose": "Auto downloader"},
+          {"name": "download_progressive.py", "size": 5013, "purpose": "Progressive downloader"},
+          {"name": "download_priorities.py", "size": 4164, "purpose": "Priority-based downloader"},
+          {"name": "download_bartowski_models.py", "size": 4288, "purpose": "Bartowski model downloader"},
+          {"name": "download_hf_new_cli.py", "size": 2008, "purpose": "HuggingFace CLI downloader"},
+          {"name": "check_download_progress.py", "size": 2631, "purpose": "Download progress checker"},
+          {"name": "integrate_models.py", "size": 4855, "purpose": "Model integration utility"},
+          {"name": "integrate_bartowski_models.py", "size": 5673, "purpose": "Bartowski model integration"},
+          {"name": "integrate_all_new_models.py", "size": 5831, "purpose": "New model integration"},
+          {"name": "create_model_registry.py", "size": 4237, "purpose": "Registry creator"},
+          {"name": "check_models.py", "size": 1823, "purpose": "Model checker"},
+          {"name": "update_registry_coder.py", "size": 1724, "purpose": "Registry updater"},
+          {"name": "fix_ctransformers_issue.py", "size": 4926, "purpose": "ctransformers fix"}
+        ],
+        "file_count": 18,
+        "recommendation": "CRITICAL: Consolidate 18 download/model files into 2-3 unified modules"
+      },
+      
+      "demo_testing": {
+        "description": "Demo dan testing scripts",
+        "files": [
+          {"name": "demo_7day_evolusi.py", "size": 13812, "purpose": "7-day evolution demo"},
+          {"name": "demo_agent.py", "size": 2040, "purpose": "Agent demo"},
+          {"name": "demo_alignment.py", "size": 971, "purpose": "Alignment demo"},
+          {"name": "demo_loop.py", "size": 2702, "purpose": "Loop demo"},
+          {"name": "demo_nusantara.py", "size": 1035, "purpose": "Nusantara demo"},
+          {"name": "demo_nusantara_complete.py", "size": 1628, "purpose": "Complete Nusantara demo"},
+          {"name": "demo_nusantara_fixed.py", "size": 2427, "purpose": "Fixed Nusantara demo"},
+          {"name": "demo_real_evolution.py", "size": 10281, "purpose": "Real evolution demo"},
+          {"name": "test_api.py", "size": 1802, "purpose": "API testing"},
+          {"name": "test_chat_page.py", "size": 1419, "purpose": "Chat page testing"},
+          {"name": "test_dashboard.py", "size": 3779, "purpose": "Dashboard testing"},
+          {"name": "test_direct.py", "size": 556, "purpose": "Direct testing"},
+          {"name": "test_qwen_indonesian.py", "size": 3719, "purpose": "Qwen Indonesian testing"},
+          {"name": "test_smart_chat.py", "size": 1513, "purpose": "Smart chat testing"}
+        ],
+        "file_count": 14,
+        "recommendation": "Move demos/ to examples/ folder, tests/ to tests/ folder"
+      },
+      
+      "interaction": {
+        "description": "User interaction scripts",
+        "files": [
+          {"name": "interact.py", "size": 5935, "purpose": "Main interaction script"},
+          {"name": "auto_interact.py", "size": 4622, "purpose": "Auto interaction"},
+          {"name": "auto_interact_human.py", "size": 12075, "purpose": "Human-like auto interaction"},
+          {"name": "bulk_interact.py", "size": 3948, "purpose": "Bulk interaction"}
+        ],
+        "file_count": 4,
+        "recommendation": "Consolidate into interact/ module"
+      },
+      
+      "maintenance_scheduling": {
+        "description": "Maintenance dan scheduling",
+        "files": [
+          {"name": "maintenance.py", "size": 23731, "purpose": "Main maintenance scheduler"},
+          {"name": "start_scheduler.py", "size": 1076, "purpose": "Basic scheduler"},
+          {"name": "start_scheduler_simple.py", "size": 2209, "purpose": "Simple scheduler"},
+          {"name": "auto_startup.py", "size": 8867, "purpose": "Auto startup script"},
+          {"name": "watch_evolution.py", "size": 4782, "purpose": "Evolution watcher"},
+          {"name": "check_evolution.py", "size": 6449, "purpose": "Evolution checker"},
+          {"name": "check_health.py", "size": 3593, "purpose": "Health checker"},
+          {"name": "run_self_evolving.py", "size": 3935, "purpose": "Self-evolving runner"},
+          {"name": "run_pipeline.py", "size": 3409, "purpose": "Pipeline runner"},
+          {"name": "speedup_config.py", "size": 1938, "purpose": "Speed configuration"}
+        ],
+        "file_count": 10,
+        "recommendation": "Consolidate schedulers, organize in maintenance/"
+      },
+      
+      "data_analysis": {
+        "description": "Data processing dan analysis",
+        "files": [
+          {"name": "analyze_indonesia.py", "size": 4204, "purpose": "Indonesia data analysis"},
+          {"name": "analyze_kalimantan.py", "size": 4124, "purpose": "Kalimantan analysis"},
+          {"name": "quick_analyze.py", "size": 1880, "purpose": "Quick analysis"},
+          {"name": "indonesia_sabang_merauke.py", "size": 13296, "purpose": "Sabang-Merauke analysis"},
+          {"name": "kalimantan_bps_simulation.py", "size": 12462, "purpose": "BPS simulation"},
+          {"name": "data_knowledge_foundation.py", "size": 6449, "purpose": "Knowledge foundation"},
+          {"name": "file_processor.py", "size": 9928, "purpose": "File processing utility"},
+          {"name": "pdf_extractor.py", "size": 851, "purpose": "PDF extraction"},
+          {"name": "docx_extractor.py", "size": 832, "purpose": "DOCX extraction"},
+          {"name": "mega_simulation.py", "size": 13192, "purpose": "Mega simulation"},
+          {"name": "mega_fast.py", "size": 4407, "purpose": "Fast simulation"}
+        ],
+        "file_count": 11,
+        "recommendation": "Move to analysis/ or data_processing/ folder"
+      },
+      
+      "fix_scripts": {
+        "description": "Scripts untuk fix issues (potentially temporary)",
+        "files": [
+          {"name": "fix_search.py", "size": 1748, "purpose": "Search fix v1"},
+          {"name": "fix_search2.py", "size": 1515, "purpose": "Search fix v2"},
+          {"name": "fix_search3.py", "size": 1659, "purpose": "Search fix v3"},
+          {"name": "fix_search4.py", "size": 2487, "purpose": "Search fix v4"},
+          {"name": "fix_persona.py", "size": 1638, "purpose": "Persona fix v1"},
+          {"name": "fix_persona2.py", "size": 1310, "purpose": "Persona fix v2"},
+          {"name": "fix_persona_all.py", "size": 3108, "purpose": "Persona fix all-in-one"},
+          {"name": "fix_llm_serving_nusantara.py", "size": 4652, "purpose": "LLM serving fix"},
+          {"name": "fix_ctransformers_issue.py", "size": 4926, "purpose": "ctransformers fix"},
+          {"name": "fix_encoding.py", "size": 1006, "purpose": "Encoding fix"},
+          {"name": "fix_kuera_syntax.py", "size": 1132, "purpose": "Syntax fix"},
+          {"name": "fix_uploaded_files.py", "size": 556, "purpose": "Uploaded files fix"},
+          {"name": "KUERA_INTEGRITY_CLEANUP.py", "size": 14169, "purpose": "Integrity cleanup"}
+        ],
+        "file_count": 13,
+        "recommendation": "ARCHIVE: These fix scripts should be archived after verification"
+      },
+      
+      "utility_misc": {
+        "description": "Utility dan miscellaneous",
+        "files": [
+          {"name": "verify_env.py", "size": 2581, "purpose": "Environment verification"},
+          {"name": "setup_ollama.py", "size": 1453, "purpose": "Ollama setup"},
+          {"name": "migrate_to_cloud.py", "size": 12189, "purpose": "Cloud migration"},
+          {"name": "copy_to_wsl.py", "size": 4302, "purpose": "WSL copy utility"},
+          {"name": "audit_toolkit_complete.py", "size": 17940, "purpose": "Audit toolkit"},
+          {"name": "template_master.py", "size": 10885, "purpose": "Template master"},
+          {"name": "template_audit_kinerja.py", "size": 14583, "purpose": "Kinerja audit template"},
+          {"name": "template_audit_spi.py", "size": 13693, "purpose": "SPI audit template"},
+          {"name": "mcp_client_qt.py", "size": 0, "purpose": "MCP Qt client (empty)"}
+        ],
+        "file_count": 9,
+        "recommendation": "Organize into utils/ folder"
+      }
+    }
+  },
+  
+  "infrastructure_analysis": {
+    "folders": {
+      "app": {
+        "python_files": 9,
+        "description": "Web application (FastAPI/Streamlit)",
+        "files": [
+          {"name": "api.py", "size": 1454},
+          {"name": "app.py", "size": 1274},
+          {"name": "dashboard.py", "size": 22414, "note": "Main Streamlit dashboard"},
+          {"name": "dashboard_fixed.py", "size": 3666, "note": "Fixed version - REDUNDANT"},
+          {"name": "dashboard_v2.py", "size": 9381, "note": "Version 2"},
+          {"name": "production_api.py", "size": 15289, "note": "Production FastAPI"},
+          {"name": "real_api.py", "size": 9069, "note": "Real API implementation"},
+          {"name": "real_api_v2.py", "size": 6261, "note": "Real API v2"}
+        ],
+        "recommendation": "Consolidate API files: merge production_api.py + real_api*.py, merge dashboard*.py"
+      },
+      
+      "admin_panel": {
+        "python_files": 2,
+        "description": "Admin panel web interface",
+        "files": [
+          {"name": "start_admin.py", "size": 1313},
+          {"name": "server.py", "size": 11911}
+        ],
+        "other_files": ["README.md", "admin-panel.css", "admin-panel.js", "avatar-3d.js", "index.html"],
+        "recommendation": "Consider integrating with main app/ folder"
+      },
+      
+      "ai_production": {
+        "python_files": 733,
+        "description": "Production environment - CONTAINS MOSTLY LIBRARY FILES",
+        "note": "733 files detected but most are from installed packages (site-packages structure)",
+        "recommendation": "This folder appears to contain virtual environment or installed packages. Consider moving actual production code to src/ and use proper virtualenv."
+      },
+      
+      "infrastructure": {
+        "python_files": 1,
+        "description": "Infrastructure utilities",
+        "files": [
+          {"name": "scalable_compute.py", "note": "Scalable computing infrastructure"}
+        ],
+        "recommendation": "Expand for deployment configs"
+      },
+      
+      "personal_ai": {
+        "python_files": 15,
+        "description": "Personal AI module",
+        "files": [
+          {"name": "personal_assistant.py", "note": "Core assistant"},
+          {"name": "personal_assistant_aligned.py", "note": "Aligned version - REDUNDANT"},
+          {"name": "personal_assistant_final.py", "note": "Final version - REDUNDANT"},
+          {"name": "personal_assistant_fixed.py", "note": "Fixed version - REDUNDANT"},
+          {"name": "agent_assistant.py", "note": "Agent variant"},
+          {"name": "agent_assistant_nusantara.py", "note": "Nusantara variant"},
+          {"name": "behavior_monitor.py", "note": "Behavior monitoring"},
+          {"name": "behavior_monitor_fixed.py", "note": "Fixed version - REDUNDANT"},
+          {"name": "safety_guard.py", "note": "Safety guard"},
+          {"name": "safety_guard_nusantara.py", "note": "Nusantara variant"},
+          {"name": "bias_mitigator.py", "note": "Bias mitigation"},
+          {"name": "privacy_guard.py", "note": "Privacy protection"},
+          {"name": "start_monitor.py", "note": "Monitor starter"},
+          {"name": "start_monitor_fixed.py", "note": "Fixed version - REDUNDANT"}
+        ],
+        "recommendation": "Consolidate variants: merge personal_assistant*.py, merge behavior_monitor*.py, merge safety_guard*.py, merge start_monitor*.py"
+      },
+      
+      "self_evolving": {
+        "python_files": 10,
+        "description": "Self-evolving AI module",
+        "files": [
+          {"name": "app.py", "note": "Main application"},
+          {"name": "data_collector.py", "note": "Data collection"},
+          {"name": "evaluator.py", "note": "Model evaluation"},
+          {"name": "model_enricher.py", "note": "Model enrichment"},
+          {"name": "model_enricher_fixed.py", "note": "Fixed version - REDUNDANT"},
+          {"name": "real_predictor.py", "note": "Real-time prediction"},
+          {"name": "retrainer.py", "note": "Model retraining"},
+          {"name": "trusted_rag.py", "note": "Trusted RAG implementation"},
+          {"name": "web_enricher.py", "note": "Web data enrichment"}
+        ],
+        "recommendation": "Merge model_enricher*.py, consolidate into proper package structure"
+      },
+      
+      "memorized_diary": {
+        "python_files": 0,
+        "description": "Diary module",
+        "note": "Folder exists but contains no Python files",
+        "recommendation": "Check if module is still needed or remove empty folder"
+      },
+      
+      "memory_consolidation": {
+        "python_files": 3,
+        "description": "Memory consolidation module",
+        "files": [
+          {"name": "memory_consolidation.py", "note": "Core consolidation"},
+          {"name": "compact_prompt.py", "note": "Prompt compaction"},
+          {"name": "diary_prompt.py", "note": "Diary prompts"}
+        ],
+        "recommendation": "Well organized, keep as is"
+      },
+      
+      "training": {
+        "python_files": 4,
+        "description": "Training pipeline",
+        "files": [
+          {"name": "training_pipeline.py", "note": "Main pipeline"},
+          {"name": "train_sft.py", "note": "SFT training"},
+          {"name": "data_generators.py", "note": "Data generation"},
+          {"name": "data_generators_fixed.py", "note": "Fixed version - REDUNDANT"}
+        ],
+        "recommendation": "Merge data_generators*.py"
+      }
+    }
+  },
+  
+  "configuration_environment": {
+    "docker": {
+      "dockerfile": {
+        "exists": true,
+        "size": 1008,
+        "type": "Multi-stage production build",
+        "base_image": "python:3.10-slim"
+      },
+      "docker_compose": {
+        "exists": true,
+        "size": 2057,
+        "services": [
+          "api (FastAPI)",
+          "dashboard (Streamlit)",
+          "mlflow",
+          "redis",
+          "prometheus",
+          "grafana"
+        ]
+      }
+    },
+    "requirements": {
+      "requirements.txt": {
+        "exists": true,
+        "size": 881,
+        "packages": 24
+      },
+      "requirements_infra.txt": {
+        "exists": true,
+        "size": 502,
+        "packages": "Infrastructure specific"
+      }
+    },
+    "environment_files": {
+      "found": false,
+      "note": "No .env files found in root - may be gitignored"
+    },
+    "config_files": {
+      "found": [
+        "docker-compose.yml",
+        "Dockerfile",
+        "requirements.txt",
+        "requirements_infra.txt"
+      ],
+      "json_configs": [
+        "test_output.json (222KB)",
+        "PROJECT_ANALYSIS_REPORT.json (23KB)",
+        "duplicate_analysis_report.json (10KB)",
+        "KUERA_COMPONENTS.json (6KB)"
+      ]
+    }
+  },
+  
+  "log_analysis": {
+    "total_logs": 23,
+    "total_size_mb": 2090.22,
+    "folders": {
+      "feedback": {
+        "size_mb": 2076.37,
+        "files": [
+          {"name": "self_improve.db", "size_mb": 2076.36, "note": "SQLite database - PRIMARY STORAGE"},
+          {"name": "scheduler.log", "size_mb": 0.01}
+        ],
+        "recommendation": "Archive old database snapshots, implement log rotation"
+      },
+      "startup": {
+        "size_mb": 13.8,
+        "recommendation": "Safe to archive files older than 30 days"
+      },
+      "personal": {
+        "size_mb": 0.02,
+        "recommendation": "Keep, minimal size"
+      },
+      "kuwera": {
+        "size_mb": 0.01,
+        "recommendation": "Keep, minimal size"
+      }
+    },
+    "recommendations": [
+      "Implement automated log rotation for feedback/ folder",
+      "Archive self_improve.db snapshots monthly",
+      "Consider moving large DB to data/ folder instead of logs/",
+      "Set up log retention policy: 30 days for startup logs, 90 days for feedback"
+    ]
+  },
+  
+  "duplicate_analysis": {
+    "summary": "Found multiple file groups with similar names indicating redundancy",
+    "duplicates": [
+      {
+        "group": "demo_nusantara",
+        "files": ["demo_nusantara.py", "demo_nusantara_complete.py", "demo_nusantara_fixed.py"],
+        "count": 3,
+        "action": "Keep demo_nusantara.py only, archive others"
+      },
+      {
+        "group": "download",
+        "files": ["download_auto.py", "download_simple.py"],
+        "count": 2,
+        "action": "Consolidate into download_utils.py"
+      },
+      {
+        "group": "download_models",
+        "files": ["download_models.py", "download_models_simple.py", "download_models_smart.py"],
+        "count": 3,
+        "action": "Consolidate into single download_manager.py"
+      },
+      {
+        "group": "fix_persona",
+        "files": ["fix_persona.py", "fix_persona2.py", "fix_persona_all.py"],
+        "count": 3,
+        "action": "Archive all fix scripts after verification"
+      },
+      {
+        "group": "fix_search",
+        "files": ["fix_search.py", "fix_search2.py", "fix_search3.py", "fix_search4.py"],
+        "count": 4,
+        "action": "Archive all fix scripts after verification"
+      },
+      {
+        "group": "start_scheduler",
+        "files": ["start_scheduler.py", "start_scheduler_simple.py"],
+        "count": 2,
+        "action": "Consolidate into scheduler.py"
+      }
+    ],
+    "additional_duplicates_in_folders": [
+      {
+        "location": "app/",
+        "files": ["dashboard.py", "dashboard_fixed.py", "dashboard_v2.py"],
+        "action": "Consolidate into single dashboard.py"
+      },
+      {
+        "location": "app/",
+        "files": ["production_api.py", "real_api.py", "real_api_v2.py"],
+        "action": "Consolidate into single api.py"
+      },
+      {
+        "location": "personal_ai/",
+        "files": ["personal_assistant.py", "personal_assistant_aligned.py", "personal_assistant_final.py", "personal_assistant_fixed.py"],
+        "action": "Consolidate into single personal_assistant.py"
+      },
+      {
+        "location": "personal_ai/",
+        "files": ["behavior_monitor.py", "behavior_monitor_fixed.py"],
+        "action": "Consolidate into behavior_monitor.py"
+      },
+      {
+        "location": "personal_ai/",
+        "files": ["safety_guard.py", "safety_guard_nusantara.py"],
+        "action": "Merge functionality, use config for variants"
+      },
+      {
+        "location": "self_evolving/",
+        "files": ["model_enricher.py", "model_enricher_fixed.py"],
+        "action": "Consolidate into model_enricher.py"
+      },
+      {
+        "location": "training/",
+        "files": ["data_generators.py", "data_generators_fixed.py"],
+        "action": "Consolidate into data_generators.py"
+      }
+    ]
+  },
+  
+  "critical_recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "Code Organization",
+      "issue": "18 model download/management files in root",
+      "action": "Consolidate into 2-3 unified modules in src/models/",
+      "files_affected": 18,
+      "effort": "Medium"
+    },
+    {
+      "priority": "HIGH",
+      "category": "Code Organization",
+      "issue": "13 fix scripts that should be archived",
+      "action": "Create archive/fixes/ folder and move verified fixes",
+      "files_affected": 13,
+      "effort": "Low"
+    },
+    {
+      "priority": "HIGH",
+      "category": "Redundancy",
+      "issue": "Multiple dashboard and API versions in app/",
+      "action": "Consolidate app/dashboard*.py and app/real_api*.py",
+      "files_affected": 5,
+      "effort": "Medium"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "Code Organization",
+      "issue": "Personal AI has 4 versions of personal_assistant",
+      "action": "Consolidate into single file with configuration",
+      "files_affected": 4,
+      "effort": "Low"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "Infrastructure",
+      "issue": "ai_production/ contains 733 files (mostly library files)",
+      "action": "Separate production code from dependencies, use virtualenv",
+      "files_affected": 733,
+      "effort": "High"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "Logging",
+      "issue": "2GB log folder with large SQLite DB",
+      "action": "Implement log rotation, move DB to data/ folder",
+      "files_affected": 1,
+      "effort": "Low"
+    },
+    {
+      "priority": "LOW",
+      "category": "Project Structure",
+      "issue": "Empty memorized_diary/ folder",
+      "action": "Either populate or remove if unused",
+      "files_affected": 0,
+      "effort": "Low"
+    },
+    {
+      "priority": "LOW",
+      "category": "Configuration",
+      "issue": "No .env file template in repository",
+      "action": "Create .env.example template",
+      "files_affected": 0,
+      "effort": "Low"
+    }
+  ],
+  
+  "proposed_directory_structure": {
+    "description": "Recommended reorganization for better maintainability",
+    "structure": {
+      "src/": {
+        "description": "Main source code",
+        "children": {
+          "core/": ["kuera_integrated_system.py", "kuera_multi_model_manager.py", "kuera_evolution_engine.py"],
+          "api/": ["production_api.py (consolidated)", "middleware/", "routes/"],
+          "models/": ["download_manager.py (consolidated)", "model_registry.py", "integrations/"],
+          "integrations/": {
+            "worldbank/": ["kuera_worldbank_*.py"],
+            "international/": ["kuera_international_*.py"]
+          },
+          "kuwera/": ["kuwera_*.py modules"],
+          "memory/": ["memory_consolidation/ files", "memorized_diary/ (if used)"],
+          "personal_ai/": ["consolidated personal_assistant.py"],
+          "self_evolving/": ["self_evolving/ files (consolidated)"]
+        }
+      },
+      "app/": {
+        "description": "Web applications",
+        "children": {
+          "dashboard.py": "Consolidated Streamlit dashboard",
+          "api.py": "Consolidated FastAPI application"
+        }
+      },
+      "admin_panel/": "Keep as is or merge into app/admin/",
+      "scripts/": {
+        "description": "Utility scripts",
+        "children": {
+          "maintenance/": ["maintenance.py", "scheduler.py (consolidated)"],
+          "deployment/": ["verify_env.py", "migrate_to_cloud.py"],
+          "analysis/": ["analyze_*.py", "*_simulation.py"]
+        }
+      },
+      "tests/": {
+        "description": "Test files",
+        "children": ["test_*.py files moved from root"]
+      },
+      "examples/": {
+        "description": "Demo and example scripts",
+        "children": ["demo_*.py files moved from root"]
+      },
+      "archive/": {
+        "description": "Archived files",
+        "children": {
+          "fixes/": ["fix_*.py scripts"],
+          "old_versions/": ["redundant versions"]
+        }
+      },
+      "infrastructure/": {
+        "description": "Deployment infrastructure",
+        "children": ["docker-compose.yml", "Dockerfile", "k8s/", "terraform/"]
+      },
+      "logs/": "Keep but implement rotation",
+      "data/": "Keep current structure",
+      "training/": "Keep, consolidate duplicates",
+      "docs/": "Create for documentation"
+    }
+  },
+  
+  "statistics": {
+    "total_python_files_project": {
+      "root": 99,
+      "app": 9,
+      "admin_panel": 2,
+      "ai_production": "~50 (actual project files, rest are libraries)",
+      "infrastructure": 1,
+      "personal_ai": 15,
+      "self_evolving": 10,
+      "memory_consolidation": 3,
+      "training": 4,
+      "estimated_total_actual": 160
+    },
+    "redundant_files_count": 35,
+    "fix_scripts_count": 13,
+    "demo_files_count": 8,
+    "test_files_count": 6,
+    "model_download_files_count": 18
+  }
+}

@@ -1,0 +1,195 @@
+================================================================================
+                    DOWNLOAD SEMUA MODEL - INSTRUKSI
+================================================================================
+
+Karena download otomatis mengalami kendala teknis,
+berikut cara manual yang lebih reliable:
+
+================================================================================
+CARA 1: DOWNLOAD VIA BROWSER (PALING MUDAH)
+================================================================================
+
+Langkah-langkah:
+1. Buka browser (Chrome/Firefox/Edge)
+2. Kunjungi URL berikut satu per satu:
+
+MODEL #1: Qwen2.5-3B (0.8 GB) - PRIORITAS TINGGI
+URL: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/tree/main
+File: qwen2.5-3b-instruct-q4_k_m.gguf
+Save ke: C:\AI-Project\models\llm\
+
+MODEL #2: SeaLLM-7B (1.9 GB) - PRIORITAS TINGGI
+URL: https://huggingface.co/SeaLLMs/SeaLLM-7B-v2-GGUF/tree/main
+File: seallm-7b-v2-q4_k_m.gguf
+Save ke: C:\AI-Project\models\llm\
+
+MODEL #3: Merak-7B (1.9 GB) - BUATAN INDONESIA
+URL: https://huggingface.co/Ichsan2895/Merak-7B-v4-GGUF/tree/main
+File: merak-7b-v4-q4_k_m.gguf
+Save ke: C:\AI-Project\models\llm\
+
+MODEL #4: Llama-3.2-3B (0.8 GB)
+URL: https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/tree/main
+File: Llama-3.2-3B-Instruct-Q4_K_M.gguf
+Save ke: C:\AI-Project\models\llm\
+
+MODEL #5: Gemma-2-2B (0.6 GB)
+URL: https://huggingface.co/bartowski/gemma-2-2b-it-GGUF/tree/main
+File: gemma-2-2b-it-Q4_K_M.gguf
+Save ke: C:\AI-Project\models\llm\
+
+MODEL #6: Phi-3.5-mini (0.9 GB)
+URL: https://huggingface.co/microsoft/Phi-3.5-mini-instruct-GGUF/tree/main
+File: Phi-3.5-mini-instruct-Q4_K_M.gguf
+Save ke: C:\AI-Project\models\llm\
+
+MODEL #7: Command-R (1.0 GB)
+URL: https://huggingface.co/bartowski/c4ai-command-r-v01-GGUF/tree/main
+File: c4ai-command-r-v01-Q4_K_M.gguf
+Save ke: C:\AI-Project\models\llm\
+
+MODEL #8: StableLM-2-1.6B (0.5 GB)
+URL: https://huggingface.co/TheBloke/stablelm-2-1_6b-chat-GGUF/tree/main
+File: stablelm-2-1_6b-chat.Q4_K_M.gguf
+Save ke: C:\AI-Project\models\llm\
+
+Total: 8 files, ~8.4 GB
+
+================================================================================
+CARA 2: DOWNLOAD VIA HUGGINGFACE CLI (COMMAND LINE)
+================================================================================
+
+Buka Command Prompt atau PowerShell, jalankan perintah berikut satu per satu:
+
+# Install huggingface-cli (jika belum)
+pip install huggingface-hub[cli]
+
+# Download Model 1
+huggingface-cli download Qwen/Qwen2.5-3B-Instruct-GGUF qwen2.5-3b-instruct-q4_k_m.gguf --local-dir models/llm
+
+# Download Model 2
+huggingface-cli download SeaLLMs/SeaLLM-7B-v2-GGUF seallm-7b-v2-q4_k_m.gguf --local-dir models/llm
+
+# Download Model 3
+huggingface-cli download Ichsan2895/Merak-7B-v4-GGUF merak-7b-v4-q4_k_m.gguf --local-dir models/llm
+
+# Download Model 4
+huggingface-cli download bartowski/Llama-3.2-3B-Instruct-GGUF Llama-3.2-3B-Instruct-Q4_K_M.gguf --local-dir models/llm
+
+# Download Model 5
+huggingface-cli download bartowski/gemma-2-2b-it-GGUF gemma-2-2b-it-Q4_K_M.gguf --local-dir models/llm
+
+# Download Model 6
+huggingface-cli download microsoft/Phi-3.5-mini-instruct-GGUF Phi-3.5-mini-instruct-Q4_K_M.gguf --local-dir models/llm
+
+# Download Model 7
+huggingface-cli download bartowski/c4ai-command-r-v01-GGUF c4ai-command-r-v01-Q4_K_M.gguf --local-dir models/llm
+
+# Download Model 8
+huggingface-cli download TheBloke/stablelm-2-1_6b-chat-GGUF stablelm-2-1_6b-chat.Q4_K_M.gguf --local-dir models/llm
+
+================================================================================
+CARA 3: DOWNLOAD VIA PYTHON SCRIPT (ONE-BY-ONE)
+================================================================================
+
+Buka terminal dan jalankan Python, kemudian ketik perintah berikut satu per satu:
+
+from huggingface_hub import hf_hub_download
+
+# Model 1
+hf_hub_download(repo_id='Qwen/Qwen2.5-3B-Instruct-GGUF', filename='qwen2.5-3b-instruct-q4_k_m.gguf', local_dir='models/llm')
+
+# Model 2
+hf_hub_download(repo_id='SeaLLMs/SeaLLM-7B-v2-GGUF', filename='seallm-7b-v2-q4_k_m.gguf', local_dir='models/llm')
+
+# Model 3
+hf_hub_download(repo_id='Ichsan2895/Merak-7B-v4-GGUF', filename='merak-7b-v4-q4_k_m.gguf', local_dir='models/llm')
+
+# (lanjutkan untuk model 4-8)
+
+================================================================================
+REKOMENDASI URUTAN DOWNLOAD
+================================================================================
+
+Jika disk space terbatas, download dalam urutan prioritas:
+
+PRIORITAS 1 (Wajib untuk Bahasa Indonesia):
+  1. Qwen2.5-3B (0.8 GB)
+  2. SeaLLM-7B (1.9 GB)
+  3. Merak-7B (1.9 GB)
+  Total: 4.6 GB
+
+PRIORITAS 2 (Multilingual):
+  4. Llama-3.2-3B (0.8 GB)
+  5. Gemma-2-2B (0.6 GB)
+  Total: 1.4 GB
+
+PRIORITAS 3 (Specialized):
+  6. Phi-3.5-mini (0.9 GB)
+  7. Command-R (1.0 GB)
+  8. StableLM-2-1.6B (0.5 GB)
+  Total: 2.4 GB
+
+================================================================================
+VERIFIKASI SETELAH DOWNLOAD
+================================================================================
+
+Setelah download selesai, verifikasi dengan:
+
+1. Cek file yang ada:
+   dir models\llm\*.gguf
+
+2. Cek ukuran total:
+   python check_download_progress.py
+
+3. Update registry:
+   python -c "
+   import json
+   from pathlib import Path
+   registry = json.load(open('models/llm/llm_registry.json'))
+   for f in Path('models/llm').glob('*.gguf'):
+       size = f.stat().st_size / (1024**3)
+       print(f'{f.name}: {size:.2f} GB')
+   "
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Jika download terputus:
+  - HuggingFace otomatis resume download
+  - Jalankan ulang perintah yang sama
+  - Download akan melanjutkan dari posisi terakhir
+
+Jika koneksi lambat:
+  - Gunakan koneksi WiFi/Ethernet (bukan mobile)
+  - Download di malam hari (traffic lebih rendah)
+  - Gunakan VPN jika HuggingFace lambat
+
+Jika HuggingFace tidak bisa diakses:
+  - Gunakan VPN
+  - Atau gunakan mirror/alternative source
+
+================================================================================
+ESTIMASI WAKTU
+================================================================================
+
+Dengan koneksi:
+  - 10 Mbps: ~2-3 jam
+  - 20 Mbps: ~1-2 jam
+  - 50 Mbps: ~30-45 menit
+  - 100 Mbps: ~15-30 menit
+
+================================================================================
+KONTAK
+================================================================================
+
+Jika ada masalah dengan download:
+  1. Cek dokumentasi: DOWNLOAD_MANUAL.md
+  2. Cek status: python check_download_progress.py
+  3. Hubungi admin untuk bantuan manual
+
+================================================================================
+                        KUWERA AI - INDONESIA
+                    Selamat mendownload model!
+================================================================================

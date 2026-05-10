@@ -1,0 +1,347 @@
+[
+  {
+    "timestamp": "2026-04-09T13:02:50.487037",
+    "results": {
+      "models": [
+        {
+          "source": "C:\\AI-Project\\models\\best_model_lightgbm.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\best_model_lightgbm.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.477782",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\best_model_logistic_regression.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\best_model_logistic_regression.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.478336",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_100050.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_100050.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.478784",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_113959.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_113959.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.479174",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_115503.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_115503.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.479559",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_121344.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_121344.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.480225",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_135212.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_135212.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.480763",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_150537.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_150537.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.481292",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_115503_gb.joblib",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_115503_gb.joblib",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.482372",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\vectorizer_gb.joblib",
+          "target": "D:\\AI-Backup-2026\\models\\vectorizer_gb.joblib",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.483158",
+          "size_bytes": 0
+        }
+      ],
+      "registry": [
+        {
+          "source": "C:\\AI-Project\\models\\model_registry.json",
+          "target": "D:\\AI-Backup-2026\\models\\model_registry.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.483858",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_registry_fixed.json",
+          "target": "D:\\AI-Backup-2026\\models\\model_registry_fixed.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.484466",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_metadata.json",
+          "target": "D:\\AI-Backup-2026\\models\\model_metadata.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.485108",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\hf_registry.json",
+          "target": "D:\\AI-Backup-2026\\models\\hf_registry.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:02:50.485730",
+          "size_bytes": 0
+        }
+      ],
+      "archive": [],
+      "verification": {
+        "source_count": 8,
+        "backup_count": 8,
+        "synced_count": 8,
+        "missing_files": [],
+        "timestamp": "2026-04-09T13:02:50.486182"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T13:08:10.902554",
+    "results": {
+      "models": [
+        {
+          "source": "C:\\AI-Project\\models\\best_model_lightgbm.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\best_model_lightgbm.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.891492",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\best_model_logistic_regression.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\best_model_logistic_regression.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.892421",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_100050.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_100050.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.893456",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_113959.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_113959.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.894103",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_115503.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_115503.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.894727",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_121344.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_121344.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.895303",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_135212.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_135212.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.895776",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_150537.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_150537.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.896226",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_115503_gb.joblib",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_115503_gb.joblib",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.897384",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\vectorizer_gb.joblib",
+          "target": "D:\\AI-Backup-2026\\models\\vectorizer_gb.joblib",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.898226",
+          "size_bytes": 0
+        }
+      ],
+      "registry": [
+        {
+          "source": "C:\\AI-Project\\models\\model_registry.json",
+          "target": "D:\\AI-Backup-2026\\models\\model_registry.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.899035",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_registry_fixed.json",
+          "target": "D:\\AI-Backup-2026\\models\\model_registry_fixed.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.899553",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_metadata.json",
+          "target": "D:\\AI-Backup-2026\\models\\model_metadata.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.900042",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\hf_registry.json",
+          "target": "D:\\AI-Backup-2026\\models\\hf_registry.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:08:10.900559",
+          "size_bytes": 0
+        }
+      ],
+      "archive": [],
+      "verification": {
+        "source_count": 8,
+        "backup_count": 8,
+        "synced_count": 8,
+        "missing_files": [],
+        "timestamp": "2026-04-09T13:08:10.901020"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T13:54:29.295091",
+    "results": {
+      "models": [
+        {
+          "source": "C:\\AI-Project\\models\\best_model_lightgbm.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\best_model_lightgbm.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.287321",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\best_model_logistic_regression.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\best_model_logistic_regression.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.287828",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_100050.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_100050.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.288143",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_113959.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_113959.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.288431",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_115503.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_115503.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.288709",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_121344.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_121344.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.288971",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_135212.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_135212.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.289240",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_150537.pkl",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_150537.pkl",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.289504",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_20260402_115503_gb.joblib",
+          "target": "D:\\AI-Backup-2026\\models\\model_20260402_115503_gb.joblib",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.290376",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\vectorizer_gb.joblib",
+          "target": "D:\\AI-Backup-2026\\models\\vectorizer_gb.joblib",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.290888",
+          "size_bytes": 0
+        }
+      ],
+      "registry": [
+        {
+          "source": "C:\\AI-Project\\models\\model_registry.json",
+          "target": "D:\\AI-Backup-2026\\models\\model_registry.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.291423",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_registry_fixed.json",
+          "target": "D:\\AI-Backup-2026\\models\\model_registry_fixed.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.291937",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\model_metadata.json",
+          "target": "D:\\AI-Backup-2026\\models\\model_metadata.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.292352",
+          "size_bytes": 0
+        },
+        {
+          "source": "C:\\AI-Project\\models\\hf_registry.json",
+          "target": "D:\\AI-Backup-2026\\models\\hf_registry.json",
+          "status": "skipped",
+          "timestamp": "2026-04-09T13:54:29.292766",
+          "size_bytes": 0
+        }
+      ],
+      "archive": [],
+      "verification": {
+        "source_count": 8,
+        "backup_count": 8,
+        "synced_count": 8,
+        "missing_files": [],
+        "timestamp": "2026-04-09T13:54:29.293185"
+      }
+    }
+  }
+]

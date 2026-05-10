@@ -1,0 +1,12 @@
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+# ML optional (install VS Build Tools for compile)
+# scikit-learn==1.5.2
+# lightgbm==4.5.0
+
+joblib==1.4.2
+pandas==2.2.3
+APScheduler==3.10.4
+pyyaml==6.0.2
+websockets==15.0.1
+numpy==2.1.1

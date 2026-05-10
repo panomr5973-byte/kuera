@@ -1,0 +1,222 @@
+{
+  "summary": {
+    "total_files": 132000,
+    "analysis_date": "2026-04-12T18:58:34+07:00",
+    "project_path": "D:\\workspace\\AI-Project"
+  },
+  "duplicate_names": {
+    "total_groups": 5,
+    "files": [
+      {
+        "filename": "__init__.py",
+        "count": 8,
+        "total_size_kb": 1.30,
+        "locations": [
+          "D:\\workspace\\AI-Project\\self_evolving\\__init__.py",
+          "D:\\workspace\\AI-Project\\scripts\\__init__.py",
+          "D:\\workspace\\AI-Project\\src\\evaluation\\__init__.py",
+          "D:\\workspace\\AI-Project\\src\\data\\__init__.py",
+          "D:\\workspace\\AI-Project\\src\\models\\__init__.py",
+          "D:\\workspace\\AI-Project\\src\\deployment\\__init__.py",
+          "D:\\workspace\\AI-Project\\personal_ai\\__init__.py",
+          "D:\\workspace\\AI-Project\\config\\__init__.py"
+        ],
+        "note": "Ini adalah file inisialisasi Python yang wajar untuk package - BUKAN duplikat yang perlu dihapus"
+      },
+      {
+        "filename": "app.py",
+        "count": 2,
+        "total_size_kb": 13.56,
+        "locations": [
+          "D:\\workspace\\AI-Project\\self_evolving\\app.py (12.31 KB)",
+          "D:\\workspace\\AI-Project\\app\\app.py (1.24 KB)"
+        ],
+        "note": "Kemungkinan aplikasi berbeda - perlu review manual",
+        "recommendation": "Periksa apakah ini duplikat atau aplikasi yang berbeda"
+      },
+      {
+        "filename": "compact_prompt.py",
+        "count": 2,
+        "total_size_kb": 13.95,
+        "locations": [
+          "D:\\workspace\\AI-Project\\workspace\\memory_consolidation\\prompts\\compact_prompt.py (6.98 KB)",
+          "D:\\workspace\\AI-Project\\memory_consolidation\\prompts\\compact_prompt.py (6.98 KB)"
+        ],
+        "note": "IDENTIK - duplikat tepat",
+        "recommendation": "Hapus satu, pertahankan yang di memory_consolidation/prompts/"
+      },
+      {
+        "filename": "diary_prompt.py",
+        "count": 2,
+        "total_size_kb": 7.18,
+        "locations": [
+          "D:\\workspace\\AI-Project\\memory_consolidation\\prompts\\diary_prompt.py (3.59 KB)",
+          "D:\\workspace\\AI-Project\\workspace\\memory_consolidation\\prompts\\diary_prompt.py (3.59 KB)"
+        ],
+        "note": "IDENTIK - duplikat tepat",
+        "recommendation": "Hapus satu, pertahankan yang di memory_consolidation/prompts/"
+      },
+      {
+        "filename": "memory_consolidation.py",
+        "count": 2,
+        "total_size_kb": 185.21,
+        "locations": [
+          "D:\\workspace\\AI-Project\\workspace\\memory_consolidation\\memory_consolidation.py (92.60 KB)",
+          "D:\\workspace\\AI-Project\\memory_consolidation\\memory_consolidation.py (92.60 KB)"
+        ],
+        "note": "IDENTIK - duplikat tepat besar",
+        "recommendation": "Hapus satu, pertahankan yang di memory_consolidation/"
+      }
+    ]
+  },
+  "versioned_files": {
+    "total_count": 6,
+    "files": [
+      {
+        "filename": "kuwera_web_server_v2.py",
+        "path": "D:\\workspace\\AI-Project\\kuwera_web_server_v2.py",
+        "size_kb": 9.57,
+        "version_pattern": "_v2",
+        "recommendation": "Rename ke kuwera_web_server.py jika sudah final"
+      },
+      {
+        "filename": "dashboard_v2.py",
+        "path": "D:\\workspace\\AI-Project\\app\\dashboard_v2.py",
+        "size_kb": 9.16,
+        "version_pattern": "_v2",
+        "recommendation": "Rename ke dashboard.py jika sudah final"
+      },
+      {
+        "filename": "real_api_v2.py",
+        "path": "D:\\workspace\\AI-Project\\app\\real_api_v2.py",
+        "size_kb": 6.11,
+        "version_pattern": "_v2",
+        "recommendation": "Rename ke real_api.py jika sudah final"
+      }
+    ]
+  },
+  "backup_files": {
+    "total_count": 3,
+    "files": [
+      {
+        "filename": "audit_toolkit_complete.py",
+        "path": "D:\\workspace\\AI-Project\\audit_toolkit_complete.py",
+        "size_kb": 17.52,
+        "pattern": "_complete",
+        "recommendation": "Rename ke audit_toolkit.py jika sudah final"
+      },
+      {
+        "filename": "demo_nusantara_complete.py",
+        "path": "D:\\workspace\\AI-Project\\demo_nusantara_complete.py",
+        "size_kb": 1.59,
+        "pattern": "_complete",
+        "recommendation": "Rename ke demo_nusantara.py jika sudah final"
+      },
+      {
+        "filename": "personal_assistant_final.py",
+        "path": "D:\\workspace\\AI-Project\\personal_ai\\personal_assistant_final.py",
+        "size_kb": 2.55,
+        "pattern": "_final",
+        "recommendation": "Rename ke personal_assistant.py jika sudah final"
+      }
+    ]
+  },
+  "pycache_folders": {
+    "total_count_all": 6400,
+    "total_size_all_mb": 559.32,
+    "project_folders": {
+      "count": 11,
+      "total_size_mb": 0.53,
+      "folders": [
+        { "path": "D:\\workspace\\AI-Project\\__pycache__", "size_mb": 0.30 },
+        { "path": "D:\\workspace\\AI-Project\\self_evolving\\__pycache__", "size_mb": 0.10 },
+        { "path": "D:\\workspace\\AI-Project\\src\\data\\__pycache__", "size_mb": 0.04 },
+        { "path": "D:\\workspace\\AI-Project\\scripts\\__pycache__", "size_mb": 0.02 },
+        { "path": "D:\\workspace\\AI-Project\\monitoring\\__pycache__", "size_mb": 0.02 },
+        { "path": "D:\\workspace\\AI-Project\\src\\models\\__pycache__", "size_mb": 0.01 },
+        { "path": "D:\\workspace\\AI-Project\\workspace\\memory_consolidation\\prompts\\__pycache__", "size_mb": 0.01 },
+        { "path": "D:\\workspace\\AI-Project\\deployment\\__pycache__", "size_mb": 0.01 },
+        { "path": "D:\\workspace\\AI-Project\\config\\__pycache__", "size_mb": 0.01 },
+        { "path": "D:\\workspace\\AI-Project\\personal_ai\\__pycache__", "size_mb": 0.01 },
+        { "path": "D:\\workspace\\AI-Project\\memory_consolidation\\prompts\\__pycache__", "size_mb": 0.01 }
+      ]
+    },
+    "dependency_folders": {
+      "count": 6389,
+      "total_size_mb": 558.79,
+      "largest_folders": [
+        { "path": "ai_env\\Lib\\site-packages\\plotly\\graph_objs\\__pycache__", "size_mb": 6.31 },
+        { "path": "ai_env\\Lib\\site-packages\\numba\\tests\\__pycache__", "size_mb": 5.99 },
+        { "path": "ai_env\\Lib\\site-packages\\databricks\\sdk\\service\\__pycache__", "size_mb": 5.88 },
+        { "path": "ai_env\\Lib\\site-packages\\torch\\_inductor\\__pycache__", "size_mb": 4.28 },
+        { "path": "ai_env\\Lib\\site-packages\\matplotlib\\__pycache__", "size_mb": 4.03 },
+        { "path": "ai_env\\Lib\\site-packages\\numpy\\_core\\tests\\__pycache__", "size_mb": 3.80 },
+        { "path": "ai_env\\Lib\\site-packages\\pygments\\lexers\\__pycache__", "size_mb": 3.62 },
+        { "path": "ai_env\\Lib\\site-packages\\scipy\\stats\\__pycache__", "size_mb": 3.26 },
+        { "path": "ai_env\\Lib\\site-packages\\altair\\vegalite\\v6\\schema\\__pycache__", "size_mb": 3.04 },
+        { "path": "ai_env\\Lib\\site-packages\\pyarrow\\tests\\__pycache__", "size_mb": 3.01 }
+      ]
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "action": "Hapus duplikat identik",
+      "description": "Hapus 3 file duplikat identik di folder workspace/ yang merupakan duplikat dari folder utama",
+      "files_to_remove": [
+        "D:\\workspace\\AI-Project\\workspace\\memory_consolidation\\prompts\\compact_prompt.py",
+        "D:\\workspace\\AI-Project\\workspace\\memory_consolidation\\prompts\\diary_prompt.py",
+        "D:\\workspace\\AI-Project\\workspace\\memory_consolidation\\memory_consolidation.py"
+      ],
+      "potential_space_saved_mb": 0.20
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Bersihkan __pycache__ project",
+      "description": "Hapus 11 folder __pycache__ di project (bukan di dependencies)",
+      "command": "Get-ChildItem -Path 'D:\\workspace\\AI-Project' -Recurse -Directory -Filter '__pycache__' | Where-Object { $_.FullName -notmatch 'ai_env|ai_production|venv' } | Remove-Item -Recurse -Force",
+      "potential_space_saved_mb": 0.53
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Bersihkan __pycache__ dependencies",
+      "description": "Hapus 6389 folder __pycache__ di virtual environments (ai_env, venv)",
+      "command": "Get-ChildItem -Path 'D:\\workspace\\AI-Project' -Recurse -Directory -Filter '__pycache__' | Where-Object { $_.FullName -match 'ai_env|ai_production|venv' } | Remove-Item -Recurse -Force",
+      "potential_space_saved_mb": 558.79,
+      "note": "Ini akan diregenerasi saat Python dijalankan, tapi menghemat 558MB storage"
+    },
+    {
+      "priority": "LOW",
+      "action": "Review file versioning",
+      "description": "Pertimbangkan untuk menghapus suffix _v2, _complete, _final dari nama file yang sudah stabil",
+      "files": [
+        "kuwera_web_server_v2.py → kuwera_web_server.py",
+        "dashboard_v2.py → dashboard.py",
+        "real_api_v2.py → real_api.py",
+        "audit_toolkit_complete.py → audit_toolkit.py",
+        "demo_nusantara_complete.py → demo_nusantara.py",
+        "personal_assistant_final.py → personal_assistant.py"
+      ]
+    },
+    {
+      "priority": "LOW",
+      "action": "Review app.py duplikat",
+      "description": "Periksa apakah dua file app.py di self_evolving/ dan app/ adalah duplikat atau aplikasi berbeda",
+      "files": [
+        "D:\\workspace\\AI-Project\\self_evolving\\app.py",
+        "D:\\workspace\\AI-Project\\app\\app.py"
+      ]
+    },
+    {
+      "priority": "INFO",
+      "action": "__init__.py adalah normal",
+      "description": "File __init__.py yang muncul 8x adalah file inisialisasi Python yang wajar untuk package - TIDAK PERLU DIHAPUS"
+    }
+  ],
+  "commands": {
+    "clean_project_pycache": "Get-ChildItem -Path 'D:\\workspace\\AI-Project' -Recurse -Directory -Filter '__pycache__' | Where-Object { $_.FullName -notmatch 'ai_env|ai_production|venv' } | Remove-Item -Recurse -Force",
+    "clean_all_pycache": "Get-ChildItem -Path 'D:\\workspace\\AI-Project' -Recurse -Directory -Filter '__pycache__' | Remove-Item -Recurse -Force",
+    "remove_duplicate_workspace_files": "Remove-Item 'D:\\workspace\\AI-Project\\workspace\\memory_consolidation\\prompts\\compact_prompt.py', 'D:\\workspace\\AI-Project\\workspace\\memory_consolidation\\prompts\\diary_prompt.py', 'D:\\workspace\\AI-Project\\workspace\\memory_consolidation\\memory_consolidation.py' -Force",
+    "find_all_versioned_files": "Get-ChildItem -Path 'D:\\workspace\\AI-Project' -Recurse -File | Where-Object { $_.Name -match '_v\\d+.*\\.py$|_final.*\\.py$|_complete.*\\.py$|_backup.*\\.py$' } | Select-Object FullName"
+  }
+}

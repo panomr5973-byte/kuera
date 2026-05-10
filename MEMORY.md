@@ -1,0 +1,95 @@
+# Long-Term Memory — KUERA AI Workspace
+
+> Curated wisdom, not raw logs. Updated: 2026-05-10
+
+---
+
+## About This Workspace
+
+This is `D:\workspace\ai_core\AI-Project`, home to KUERA AI — a local multi-model AI system built by panomr (panomr5973), an auditor at Government Audit Agency. The project has gone through 7 phases of evolution in ~5 weeks (2 Apr – 5 May 2026).
+
+---
+
+## The 7 Phases (Compressed)
+
+1. **Self-Evolving Experiments** — Auto-training, feedback loops, ML pipeline (scikit-learn).
+2. **Enterprise Stack** — Personal AI, safety guards, monitoring, evaluation modules.
+3. **Audit Toolkit** — Excel processor, anomaly detection, PDF export for Government Audit Agency workflows.
+4. **WorldBank + Local LLM** — Economic data integration + ctransformers GGUF inference.
+5. **Model Frenzy** — Downloaded 12 models (29.45 GB). Created 18 redundant download scripts.
+6. **Persona & Cleanup** — Gave AI a character ("Protective Chuunibyou"). Archived 20 old files.
+7. **Unified Desktop** — Single control panel (port 7777) to manage all services. WebSocket gateway (port 18789).
+
+---
+
+## Key Architectural Decisions
+
+- **Local-first**: All LLMs run locally via ctransformers (CPU, no GPU).
+- **GGUF format**: Q4_K_M quantization for efficiency.
+- **Indonesian focus**: Qwen2.5 series as primary models.
+- **Flask-based UI**: Embedded HTML strings in Python — quick but hard to maintain.
+- **SQLite for everything**: Logs, memory, evolution state, worldbank data — all SQLite.
+
+---
+
+## Critical Patterns to Avoid
+
+### The Fix Spiral
+When a bug appears, **edit the existing file**. Do not create `fix_*.py`, `*_v2.py`, or duplicate variants. This project already has 13 fix scripts and multiple versioned files that are technical debt.
+
+### The Download Obsession
+One download manager is enough. The project accumulated 8 download strategies for the same task. Consolidate into `src/models/download_manager.py` if needed.
+
+### The Chat Proliferation
+Every chat iteration should refine existing code, not spawn new files. There were 9 chat interfaces before consolidation.
+
+---
+
+## What Works Now
+
+| Component | File | Status |
+|-----------|------|--------|
+| Unified Control Panel | `kuera_unified_desktop.py` | ✅ Active (port 7777) |
+| WebSocket Gateway | `gateway_server.py` | ✅ Active (port 18789) |
+| WorldBank Data | `data/worldbank_indonesia.db` | ✅ 212 records |
+| International Data | `data/international_data.db` | ✅ 10 currencies + crypto |
+| Memory System | `memory/` | ✅ Retroactive fill complete |
+| Git | `.git/` | ✅ Initialized 2026-05-10 |
+
+---
+
+## What Needs Attention
+
+1. **Port conflict**: `kuera_admin` and `kuera_web_v2` both use port 5000.
+2. **Memory gap filled**: 23-day hiatus (12 Apr – 5 May) now documented.
+3. **Log rotation**: Large logs compressed. `data/kuera_database.db` is 2.36 GB — monitor growth.
+4. **HEARTBEAT.md empty**: No periodic tasks configured.
+5. **`.sixth/skills` empty**: Skill system never used.
+
+---
+
+## User Context (panomr)
+
+- Works at Government Audit Agency (Indonesian government audit agency).
+- Username: panomr5973. Timezone: GMT+7 (Jakarta/WIB).
+- **Red line**: Never share sensitive assignment data or audit results publicly.
+- Tool stack: MS Office, LibreOffice, Google Workspace, Canva, Python, Playwright.
+- Currently working on: Forsa BUMDes automation (WSL Ubuntu + Playwright).
+- Preferred communication: Conversational Indonesian with professional directness.
+
+---
+
+## Ritme Kerja yang Lebih Baik
+
+Based on observation:
+- **10-day sprint** (2-11 Apr) → 99 files, chaos, burnout.
+- **23-day break** → reflection, then 3 focused files.
+- **Better rhythm**: 3 days active, 1 day review, 1 day rest. Repeat.
+
+---
+
+## Last Words
+
+This project is a study in builder's trap: too many ideas, too little consolidation. The Unified Desktop (Fase 7) is not elegant architecture — it's survival. The real growth will come from disciplined cleanup, not new features.
+
+*"Don't build more. Build better."*

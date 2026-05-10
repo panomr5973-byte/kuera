@@ -1,0 +1,39 @@
+{
+  "production_model": "model_20260402_115503 (GB)",
+  "production_f1": 0.673,
+  "total_models": 8,
+  "retrain_count": 3,
+  "registry": [
+    {
+      "id": "20260402_100050",
+      "model": "RF",
+      "f1": 0.643
+    },
+    {
+      "id": "20260402_113959",
+      "model": "RF",
+      "f1": 0.527
+    },
+    {
+      "id": "20260402_115503",
+      "model": "GB",
+      "f1": 0.673
+    },
+    {
+      "id": "20260402_121344",
+      "model": "GB",
+      "f1": 0.638
+    },
+    {
+      "id": "20260402_135212",
+      "model": "GB",
+      "f1": 0.628
+    },
+    {
+      "id": "20260402_150537",
+      "model": "GB",
+      "f1": 0.643
+    }
+  ],
+  "best_models": ["best_model_lightgbm.pkl", "best_model_logistic_regression.pkl"]
+}

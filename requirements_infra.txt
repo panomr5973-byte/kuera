@@ -1,0 +1,23 @@
+# Windows-compatible KUERA Infra deps (pip/conda)
+# Core
+accelerate>=0.21.0
+wandb  # Optional logging
+
+# Ray (base, no [default] for Windows)
+ray[data]==2.10.0  # Latest stable Windows wheel
+redis
+
+# Ethical/DB
+fairlearn
+opacus
+psycopg2-binary==2.9.9  # Windows
+
+# Prod
+docker-compose  # If Docker installed
+watchdog  # File monitoring
+psutil  # Resource/energy
+
+# Install:
+# pip install -r requirements_infra.txt
+# or conda install -c conda-forge ray accelerate psycopg2 wandb
+

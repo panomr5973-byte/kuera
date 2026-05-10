@@ -1,0 +1,223 @@
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "<lambda>" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:root:\u26a0\ufe0f Dummy model used - run python scripts/generate_dummy_models.py
+INFO:root:\U0001f680 AI Production API started - Realtime ready!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "<lambda>" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:root:\u26a0\ufe0f Dummy model used - run python scripts/generate_dummy_models.py
+INFO:root:\U0001f680 AI Production API started - Realtime ready!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "<lambda>" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:root:\u26a0\ufe0f Dummy model used - run python scripts/generate_dummy_models.py
+INFO:root:\U0001f680 AI Production API started - Realtime ready!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "<lambda>" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:root:\u26a0\ufe0f Dummy model used - run python scripts/generate_dummy_models.py
+INFO:root:\U0001f680 AI Production API started - Realtime ready!
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "<lambda>" to job store "default"
+INFO:apscheduler.scheduler:Added job "<lambda>" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:root:\u26a0\ufe0f Dummy model used - run python scripts/generate_dummy_models.py
+INFO:root:\U0001f680 AI Production API started - Realtime ready!
+WARNING:root:\u26a0\ufe0f Dummy model used - run python scripts/generate_dummy_models.py
+INFO:root:\U0001f680 AI Production API started - Realtime ready!
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 13:58:26 +07)" (scheduled at 2026-04-07 13:58:26.022587+07:00)
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 13:58:26 +07)" (scheduled at 2026-04-07 13:58:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 13:58:26.026165 - Auto-evolution
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 13:58:26.026242 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:03:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:03:26 +07)" executed successfully
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "<lambda>" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:08:26 +07)" (scheduled at 2026-04-07 14:03:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:03:26.035091 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:08:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:08:26 +07)" (scheduled at 2026-04-07 14:03:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:03:26.035346 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:08:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:13:26 +07)" (scheduled at 2026-04-07 14:08:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:08:26.034714 - Auto-evolution
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:13:26 +07)" (scheduled at 2026-04-07 14:08:26.022608+07:00)
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:13:26 +07)" executed successfully
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:08:26.034835 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:13:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:18:26 +07)" (scheduled at 2026-04-07 14:13:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:13:26.029523 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:18:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:18:26 +07)" (scheduled at 2026-04-07 14:13:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:13:26.029778 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:18:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:23:26 +07)" (scheduled at 2026-04-07 14:18:26.022608+07:00)
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:23:26 +07)" (scheduled at 2026-04-07 14:18:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:18:26.026327 - Auto-evolution
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:18:26.026378 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:23:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:23:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:28:26 +07)" (scheduled at 2026-04-07 14:23:26.022587+07:00)
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:28:26 +07)" (scheduled at 2026-04-07 14:23:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:23:26.033519 - Auto-evolution
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:23:26.033554 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:28:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:28:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:33:26 +07)" (scheduled at 2026-04-07 14:28:26.022608+07:00)
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:33:26 +07)" (scheduled at 2026-04-07 14:28:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:28:26.026921 - Auto-evolution
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:28:26.027038 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:33:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:33:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:38:26 +07)" (scheduled at 2026-04-07 14:33:26.022587+07:00)
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:38:26 +07)" (scheduled at 2026-04-07 14:33:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:33:26.030848 - Auto-evolution
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:33:26.030881 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:38:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:38:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:43:26 +07)" (scheduled at 2026-04-07 14:38:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:38:26.026864 - Auto-evolution
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:38:26.027099 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:43:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:43:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:48:26 +07)" (scheduled at 2026-04-07 14:43:26.022608+07:00)
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:48:26 +07)" (scheduled at 2026-04-07 14:43:26.022587+07:00)
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:48:26 +07)" executed successfully
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:43:26.035109 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:48:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:53:26 +07)" (scheduled at 2026-04-07 14:48:26.022587+07:00)
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:53:26 +07)" (scheduled at 2026-04-07 14:48:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:48:26.032270 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:53:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:53:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:58:26 +07)" (scheduled at 2026-04-07 14:53:26.022587+07:00)
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:58:26 +07)" (scheduled at 2026-04-07 14:53:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:53:26.023562 - Auto-evolution
+ at: 2026-04-07 14:58:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 14:58:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:03:26 +07)" (scheduled at 2026-04-07 14:58:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 14:58:26.035767 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:03:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:03:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:08:26 +07)" (scheduled at 2026-04-07 15:03:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:03:26.035540 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:08:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:08:26 +07)" (scheduled at 2026-04-07 15:03:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:03:26.035906 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:08:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:13:26 +07)" (scheduled at 2026-04-07 15:08:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:08:26.027472 - Auto-evolution
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:08:26.027457 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:13:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:13:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:18:26 +07)" (scheduled at 2026-04-07 15:13:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:13:26.034983 - Auto-evolution
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:18:26 +07)" (scheduled at 2026-04-07 15:13:26.022608+07:00)
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:18:26 +07)" executed successfully
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:13:26.035202 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:18:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:23:26 +07)" (scheduled at 2026-04-07 15:18:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:18:26.039005 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:23:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:23:26 +07)" (scheduled at 2026-04-07 15:18:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:18:26.039778 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:23:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:28:26 +07)" (scheduled at 2026-04-07 15:23:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:23:26.036518 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:28:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:28:26 +07)" (scheduled at 2026-04-07 15:23:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:23:26.037619 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:28:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:33:26 +07)" (scheduled at 2026-04-07 15:28:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:28:26.037907 - Auto-evolution
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:33:26 +07)" (scheduled at 2026-04-07 15:28:26.022608+07:00)
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:33:26 +07)" executed successfully
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:28:26.038264 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:33:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:38:26 +07)" (scheduled at 2026-04-07 15:33:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:33:26.035897 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:38:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:38:26 +07)" (scheduled at 2026-04-07 15:33:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:33:26.036327 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:38:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:43:26 +07)" (scheduled at 2026-04-07 15:38:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:38:26.026974 - Auto-evolution
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:43:26 +07)" (scheduled at 2026-04-07 15:38:26.022608+07:00)
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:43:26 +07)" executed successfully
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:38:26.027171 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:43:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:48:26 +07)" (scheduled at 2026-04-07 15:43:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:43:26.035432 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:48:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:48:26 +07)" (scheduled at 2026-04-07 15:43:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:43:26.035874 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:48:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:53:26 +07)" (scheduled at 2026-04-07 15:48:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:48:26.023209 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:53:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:53:26 +07)" (scheduled at 2026-04-07 15:48:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:48:26.023840 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:53:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:58:26 +07)" (scheduled at 2026-04-07 15:53:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:53:26.033672 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:58:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:58:26 +07)" (scheduled at 2026-04-07 15:53:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:53:26.034054 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 15:58:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:03:26 +07)" (scheduled at 2026-04-07 15:58:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:58:26.024898 - Auto-evolution
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:03:26 +07)" (scheduled at 2026-04-07 15:58:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 15:58:26.025055 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:03:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:03:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:08:26 +07)" (scheduled at 2026-04-07 16:03:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:03:26.030294 - Auto-evolution
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:08:26 +07)" (scheduled at 2026-04-07 16:03:26.022608+07:00)
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:08:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:08:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:13:26 +07)" (scheduled at 2026-04-07 16:08:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:08:26.033434 - Auto-evolution
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:13:26 +07)" (scheduled at 2026-04-07 16:08:26.022608+07:00)
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:13:26 +07)" executed successfully
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:08:26.033610 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:13:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:18:26 +07)" (scheduled at 2026-04-07 16:13:26.022587+07:00)
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:18:26 +07)" (scheduled at 2026-04-07 16:13:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:13:26.023608 - Auto-evolution
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:13:26.023657 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:18:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:18:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:23:26 +07)" (scheduled at 2026-04-07 16:18:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:18:26.032749 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:23:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:23:26 +07)" (scheduled at 2026-04-07 16:18:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:18:26.033362 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:23:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:28:26 +07)" (scheduled at 2026-04-07 16:23:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:23:26.028133 - Auto-evolution
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:28:26 +07)" (scheduled at 2026-04-07 16:23:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:23:26.028234 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:28:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:28:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:33:26 +07)" (scheduled at 2026-04-07 16:28:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:28:26.023812 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:33:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:33:26 +07)" (scheduled at 2026-04-07 16:28:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:28:26.024167 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:33:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:38:26 +07)" (scheduled at 2026-04-07 16:33:26.022608+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:33:26.032512 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:38:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:38:26 +07)" (scheduled at 2026-04-07 16:33:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:33:26.032754 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:38:26 +07)" executed successfully
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:43:26 +07)" (scheduled at 2026-04-07 16:38:26.022587+07:00)
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:38:26.038385 - Auto-evolution
+INFO:apscheduler.executors.default:Running job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:43:26 +07)" (scheduled at 2026-04-07 16:38:26.022608+07:00)
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:43:26 +07)" executed successfully
+INFO:root:[SCHEDULER] Simulated retrain #2026-04-07 16:38:26.038485 - Auto-evolution
+INFO:apscheduler.executors.default:Job "<lambda> (trigger: interval[0:05:00], next run at: 2026-04-07 16:43:26 +07)" executed successfully
+WARNING:root:\u26a0\ufe0f ML deps missing - rule-based only

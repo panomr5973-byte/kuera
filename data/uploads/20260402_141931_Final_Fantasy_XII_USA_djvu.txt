@@ -1,0 +1,3453 @@
+SQUARE ENIX. 
+
+
+WARNING: READ BEFORE USING YOUR PLAYSTATION®2 COMPUTER 
+ENTERTAINMENT SYSTEM. 
+
+Avery small percentage of individuals may experience epileptic seizures 
+when exposed to certain light patterns or flashing lights. Exposure to certain 
+patterns or backgrounds on a television screen or while playing video 
+games, including games played on the PlayStation 2 console, may induce 
+an epileptic seizure in these individuals. Certain conditions may induce 
+previously undetected epileptic symptoms even in persons who have no 
+history of prior seizures or epilepsy. If you, or anyone in your family, has an 
+epileptic condition, consult your physician prior to playing. If you experience 
+any of the following symptoms while playing a video game — dizziness, 
+altered vision, eye or muscle twitches, loss of awareness, disorientation, 
+any involuntary movement, or convulsions — IMMEDIATELY discontinue use 
+and consult your physician before resuming play. 
+
+
+WARNING TO OWNERS OF PROJECTION TELEVISIONS: 
+Do not connect your PlayStation 2 console to a projection TV without first 
+consulting the user manual for your projection TV, unless it is of the LCD 
+type. Otherwise, it may permanently damage your TV screen. 
+
+
+USE OF UNAUTHORIZED PRODUCT: 
+
+The use of software or peripherals not authorized by Sony Computer 
+Entertainment America may damage your console and/or invalidate your 
+warranty. Only official or licensed peripherals should be used in the 
+controller ports or memory card slots. 
+
+
+HANDLING YOUR PLAYSTATION 2 FORMAT DISC: 
+
+¢ This disc is intended for use only with PlayStation 2 consoles 
+
+with the NTSC U/C designation. 
+
+Do not bend it, crush it or submerge it in liquids. 
+
+Do not leave it in direct sunlight or near a radiator or other source of heat. ¢ 
+Be sure to take an occasional rest break during extended play. 
+
+Keep this compact disc clean. Always hold the disc by the edges and 
+
+keep it in its protective case when not in use. Clean the disc with a lint- 
+
+free, soft, dry cloth, wiping in straight lines from center to outer edge. 
+
+Never use solvents or abrasive cleaners. 
+
+
+TABLE OF CONTENTS 
+
+
+4 
+
+
+6 
+
+
+GETTING STARTED 
+
+
+4 General Controls 
+BASIC CONTROLS 
+5 Battle Controls 
+
+
+STARTING A GAME 
+6 — Adjusting Settings 
+Saving and Loading 
+Exiting a Game 
+Game Over 
+STORY 
+DRAMATIS PERSONAE 
+EXPLORING IVALICE 
+VIEWING MAPS 
+TRAVELING THE WORLD 
+THE PARTY MENU 
+LICENSES 
+OBTAINING LICENSES 
+23 Espers and Quickenings 
+23. Mist 
+GAMBITS 
+25. Gambit Configuration 
+BATTLE 
+TIPS 
+
+
+EXPLORING RABANASTRE 
+34  Rabanastre Shopping Guide 
+35 Your Clan 
+
+
+GETTING STARTED 
+
+
+open button 
+MEMORY CARD slot 2 
+MEMORY CARD slot 1 
+
+
+disc cover 
+
+on/standby/ 
+
+reset button 
+rer =r a 
+
+
+rome! | 3 receiver 
+
+
+USB connectors 
+
+
+controller port 1 
+controller port 2 
+Set up your PlayStation®2 computer entertainment system according to the instructions 
+supplied with your system. Check that the system is turned on (the on/standby indicator is 
+green). Press the OPEN button to open the disc cover. Place the FINAL FANTASY® XII disc 
+with the label side facing up in the disc holder, and then close the disc cover. Attach game 
+controllers and other peripherals as appropriate. Follow the on-screen instructions and refer to 
+this manual for information on using the software. 
+
+
+MEMORY CARD (8MB)(FOR PLAYSTATION®2) 
+
+
+To save game settings and progress, insert a memory card (8MB)(for PlayStation®2) into MEMORY 
+CARD slot 1 of your PlayStation®2 system. You can load saved game data from the same memory 
+card or any memory card (8MB)(for PlayStation®2) containing previously saved games. 
+
+
+GENERAL CONTROLS 
+© button 
+
+
+| * Confirm a selection 
+
+* Talk with a nearby NPC (you can only talk with NPCs who have a talk icon displayed above them) 
+
+* Inspect an object (an action icon will appear above your head when you approach a sign, door, 
+treasure chest, or other interactive object) 
+
+
+® button * Cancel 
++ Return to the previous menu screen 
+
+
+®butcon . Display the Party Menu 
+| * Display the conversation log (a @ will appear in the log window when this option is available) 
+| * Scroll quickly through lists in the Party Menu, etc. (when pressed in conjunction with the up/down 
+
+
+® button 
+
+
+| Run (when fully tilted) 
+
+
+right analog stick | * Move camera 
+
+
+[EEE buttons» Change pages. 
+
+
+button | * Toggle zoom 
+
+
+GER button | * Zoom in and out of the map and license board 
+
+
+® Button 
+
+
+| * Return camera to default position behind character (this can also ‘be done manually using the right 
+| analog stick) 
+
+
+2 burton ‘ | * Pause the game 
+
+
+|, button 
+
+
+|* Display a map of your current location 
+
+
+BASIC CONTROLS — 
+
+
+DU OCK"2 ANALOG CONTROLLER CONFIGURATIONS 
+L2 button —_—— R2 button 
+L1 button —————— R1 button 
+directional 
+buttons 
+A button 
+left analog stick - © button 
+(L3 button when pushed down) 
+SELECT button = x button 
+ANALOG mode button O button 
+START button 
+
+
+right analog stick - — 
+(R3 button when pushed down) 
+
+
+BATTLE CONTROLS 
+Please note that this game may be incompatible with controllers other than the DUALSHOCK®2?2 analog controller. 
+© button * Display the Battle Menu 
+
+
+* Inspect an object (an action icon will appear above your head when you approach a sign, door, 
+treasure chest, or other interactive object) 
+
+
+® button * Cancel 
+* Return to the previous menu screen 
+
+
+® button arf i: Display the Party Menu 
+
+® button . Display/close the Battle Menu 
+
+B/S) = / => buttons le Move the menu cursor 
+
+P/F butons 
+
+/—> buttons | |» Target a foe, ally, or NPC kal 
+
+
+shange party leader (can only be used when the Battle Menu is not open) 
+
+
+left analog stick * Walk (when slightly tilted) 
+* Run (when fully tilted) 
+
+
+right analog stick * Move camera 
+
+
+M /GGEB buttons * Change target group (use to toggle between allies and foes when issuing battle commands) 
+
+
+button * Lock on wo a target (while pressed down, the camera will center on the target the party leader 
+is currently engaging) 
+
+
+GES button Flee from battle (pre: 
+
+
+® button Return camera to default position behind party leader (this can also be done manually using 
+the right analog stick) 
+
+
+| * Pause the game 
+
+
+this and run to attempt to escape from battle) 
+
+
+* Display a map of your current location 
+
+
+During play, the controller always remains in analog mode, as indicated by the illuminated red LED. 
+The vibration function can be turned ON/OFF in the Config section of the Party Menu. 
+The controller will only function when inserted into controller port 1. 
+
+
+STARTING A GAME 
+
+
+After the game has been loaded in accordance with the 
+instructions given on page 4 of this manual, a demo 
+
+F| NA | Fh \ Th i i {ll movie will play, after which the FINAL FANTASY XII 
+
+Siw, oe title Screen will appear. Pressing the @ button during the 
+
+demo movie will also call up the title screen. Select “New 
+
+Game” if you wish to start FINAL FANTASY XII from 
+
+
+the beginning. Select “Load Game” if you wish to 
+continue playing from a previously saved game. 
+
+
+ADJUSTING SETTINGS 
+
+
+When starting a new game, you will be given the option to adjust the config settings. 
+
+
+¢ Controller Vibration 
+
+Toggle the DUALSHOCK®2 analog controller's vibration function ON/OFE 
+
+* Screen Shake 
+
+There are scenes during the game where the screen shakes. Use this setting to turn the effect 
+ON/OFE 
+
+¢ Subtitles 
+
+Turn cut-scene subtitles ON/OFF. 
+
+* Screen Size 
+
+Set the screen size to normal (4:3) or widescreen (16:9) aspect ratio. 
+
+¢ Flicker Filter 
+
+Turn the screen flicker filter ON/OFF. 
+
+¢ Sound 
+
+Change the game audio to monaural, stereo, or Dolby® Pro Logic II. 
+
+* Screen Position 
+
+Adjust the horizontal and vertical position of the display using the directional buttons. A guide 
+is also provided to help you adjust screen brightness. 
+
+* Restore Defaults 
+
+Restore all settings to their default values. 
+
+
+The above settings can also be adjusted at any time from the Config section of the Party Menu. When you have finished 
+adjusting the settings, select “Begin the Game” to start your adventure. 
+
+
+SOUND SETTINGS 
+
+
+Adjusting the sound settings to match your audio environment will further enhance your 
+gameplay experience. 
+
+
+* Monaural 
+
+
+Suitable for audio/video equipment without stereo input/output. 
+
+
+Suitable for audio/video equipment with 2-channel input/output. 
+
+* Dolby® Pro Logic II 
+
+This game is presented in Dolby® Pro Logic II. To experience FINAL FANTASY XII in 
+dynamic surround sound, connect your game console to a sound system with Dolby® Pro 
+
+
+Logic (for 4 channel sound) or Dolby® Pro Logic II (for 5 channel sound) decoding. 
+
+
+Please refer to your sound system's instruction manual for further details. 
+Dolby, Pro Logic, and the double-D symbol are trademarks of Dolby Laboratories. 
+
+
+SAVING AND LOADING 
+
+
+* Saving 
+
+At least 100KB of space is required on a memory card (8MB)(for PlayStation®2) in order to 
+save your game. Refer to page 15 on how to save your game while playing. 
+
+* Loading 
+
+To continue playing from a previously saved game, select Load Game at the title screen and 
+choose the MEMORY CARD slot that contains your data. After selecting the slot, your save 
+file(s) will appear on the screen. Choose the one you wish to load and press the @ button. 
+Insert a memory card (8MB)(for PlayStation®2) into either MEMORY CARD slot to save or load data. 
+
+
+EXITING A GAME 
+
+
+To end a game, press the START button to pause. While paused, pressing the @ button will 
+return you to the title screen. Please note that exiting the game in this manner will not save 
+your data. Make sure to save your progress before quitting. 
+
+
+GAME OVER 
+
+
+When all of your characters have been KO’d or otherwise incapacitated, the game will end and 
+return to the title screen. Select Load Game to resume play from your most recent save point. 
+
+
+A WORLD CALLED IVALICE... 
+
+
+AN AGE WHEN MAGICK WAS COMMONPLACE 
+AND AIRSHIPS PLIED THE SKIES... 
+
+
+OUR TALE BEGINS. 
+
+
+As war looms on the horizon, the mighty Archadian Empire 
+begins a campaign to subjugate its neighbors. The small 
+kingdom of Dalmasca shares their fate. 
+
+Two years after its fall, in the capital city of Rabanastre, the 
+people line the streets to wait for the appointment of the new 
+consul from Archadia. 
+
+To Vaan, a young man living on the streets of Rabanastre, the 
+Empire is a hated enemy who took the life of his brother, the 
+only family he had left. Vaan hatches a plot to break into the 
+palace and take back the spoils of conquest from Dalmasca’s 
+occupiers. 
+
+He gets more than he bargained for when he meets Princess 
+Ashe, the sole surviving heir to the Dalmascan throne, thought 
+dead since the war. 
+
+Our story follows Ashe, Vaan and his friend Penelo, the sky 
+pirate Balthier, and his partner Fran. Accompanying them is 
+Basch, a captain of the Dalmascan army who turned traitor and 
+slew his king. 
+
+Join them on an adventure spanning Ivalice that traces the 
+
+
+mysteries behind the Archadian Empire's invasion. 
+
+
+VAAN 
+HUME, 17 YEARS OLD 
+
+
+A boy who sees freedom in the skies. 
+
+
+Living in the Rabanastre slums, Vaan maintains an air of hope even under the oppressive rule 
+of the Empire. But he longs for more: a life without borders or authority. He dreams of 
+becoming a sky pirate, free to go where he will. 
+
+
+ASHE 
+
+
+HUME, 19 YEARS OLD 
+A princess who had lost everything. 
+
+
+The only child of King Raminas and sole heir to the Dalmascan throne, Ashe is believed dead 
+following the invasion. She meets Vaan and the others under the most unlikely of 
+circumstances. 
+
+Ashe knows all too well she lacks the power to right the wrongs committed against her and 
+her kingdom, but she will not allow herself to admit defeat. 
+
+
+BASCH 
+
+
+HUME, 36 YEARS OLD 
+A loyal knight branded as traitor. 
+
+
+A captain in the Order of the Knights of Dalmasca, Basch achieved renown as a gallant and 
+brave hero credited with countless victories on the battlefield. He is a man of justice who 
+cannot abide inequity. 
+
+Unlike the other captains, who are chosen from the aristocracy, Basch is of common blood 
+and enjoys the love of the people, until he inexplicably murders the King on the eve of a treaty- 
+signing with Archadia. He is led away in chains. 
+
+What could drive so loyal a man to slay his oathsworn liege? 
+
+
+PENELO 
+
+
+HUME, 17 YEARS OLD 
+
+
+Vaan’s friend. 
+
+
+Like Vaan, Penelo calls Rabanastre’s Lowtown home. She watches over Vaan, trying to keep 
+him from getting into too much trouble. 
+
+Though she lost her family in the war with the Empire, Penelo is ever cheerful, making her 
+way by doing odd jobs in and around the city. 
+
+She enjoys the lighter side of life, but Penelo is not altogether unfamiliar with battle. While 
+she remains untested in a true fight, her brothers, who belonged to the Order, taught her the 
+fundamentals of combat. 
+
+Penelo believes that in perseverance, there is hope. 
+
+
+BALTHIER 
+
+
+HUME, 22 YEARS OLD 
+A dashing sky pirate. 
+
+
+He would describe himself as a noble thief, stealing only from those who deserve it. He goes 
+where he pleases, swearing fealty to no one. 
+
+While roaming the skies of Ivalice with Fran, his viera partner, he still makes time to charm 
+the ladies with his silver tongue and put wrongs to right—grinning all the while. 
+
+
+FRAN 
+VIERA, AGE UNKNOWN 
+
+
+A master of weapons. 
+
+
+A viera warrior, Fran is as much at ease with a sword as she is her bare hands. Her proficiency 
+with a blade is matched only by her skill with a Tee. as she also handles the maintenance of 
+Balthier's airship, the Strahl. . 
+
+The lifespan of the viera is far greater than that of humes, and many secrets lie hidden in 
+her long history. Yet, the divide of race does nothing to diminish the bond of trust between her 
+and Balthier. ” 
+
+
+= a 
+
+
+ATAOI 
+
+
+ll 
+
+
+EXPLORING IVALICE 
+
+
+Ivalice spans three main continents: Valendia, Ordalia, and Kerwon. Here is some advice to 
+help you on your travels: 
+
+
+Use the left analog stick to move your character. Tilt the stick slightly to walk, and fully to run. 
+
+
+Use the right analog stick to rotate the camera around the party leader. Pressing the ® button 
+will reset the camera directly behind the party leader. You can also lock and center the camera 
+on the party leader’s current target by holding down the a— button. 
+
+
+Adjusting the camera during battle allows you to confirm the positions of your other party members, 
+
+
+as well as scan the surrounding area for foes. Using the camera to your advantage will assist you in 
+
+
+heated battles with multiple targets. 
+
+
+When moving about an area, sometimes an exclamation 
+mark (!) will appear over your character’s head. This is 
+called an “action icon.” When this icon appears, it is an 
+indicator that something important such as a door, switch, 
+or treasure is nearby. When you approach the object, the 
+action icon will change. Press the @ or @ button to 
+interact with the object. 
+
+
+You can only speak with NPCs who have a talk icon above 
+their heads. To begin a conversation, approach an NPC 
+and press either the @ or ® button. 
+
+
+When a @ appears in the log window, you can press the @ 
+button to review previous pages of text. Use the @ and @ 
+buttons or the up/down directional buttons to change 
+
+
+pages. 
+
+
+VIEWING MAPS 
+
+
+There are three types of maps: the Minimap, the Location Map, and the World Map. 
+
+
+MINIMAP 
+
+This small map appears in the upper right-hand corner of 
+the screen and gives a simplified view of the immediate 
+area surrounding your character. 
+
+* Reading the Minimap 
+
+
+Your current position. The red arrow points in the direction you 
+are facing. The green cone indicates the direction of the camera. 
+
+
+BLUE DOTS RED DOTS GREEN DOTS 
+Party members Foes NPCs you can speak with 
+
+
+LOCATION MAP 
+
+Whether traveling through an area or engaging in battle, pressing the SELECT button will call 
+up the Location Map. The Location Map shows each zone within an area, as well as 
+connections between zones, important locations such as shops, and occasionally your 
+destination. 
+
+
+Location Maps can be purchased from Cartographers’ Guild vendors or found inside ornate urns. 
+
+
+¢ Reading the Location Map 
+
+
+CURRENT POSITION: The flashing [@>] indicates your current position. Zones that you have traveled through will appear 
+light gray, while zones you have yet to explore will be a darker gray. If you have not found or purchased a Location Map, only 
+places that you have walked through will be displayed. 
+
+
+AREA INFORMATION: Various icons on the map convey information about the selected area. Use the directional buttons to 
+select different zones, and press the @ button to bring up a list of important locations within that zone. When an item in the 
+list is selected, the corresponding icon on the Location Map will flash. 
+
+
+ZOOM: Press the MBM or button to zoom in and out. 
+
+
+The lines between zones on Location Maps represent the connections from one zone to another. These 
+connections appear as dotted blue lines as you move through an area. 
+
+
+* World Map 
+
+Selecting “World Map” from the Party Menu will open a map of Ivalice. From this map you can 
+confirm the locations of areas you have already visited or for which you have obtained maps. Select 
+an area using the directional buttons and press the @ button to view its Location Map. 
+
+
+TRAVELING THE WORLD 
+
+
+There are several ways to make your way around Ivalice: 
+
+
+AFOOT 
+
+
+Compared to other types of transportation, this one will require the most time. However, if 
+your goal is gathering information or collecting treasure, walking through an area will reap the 
+most rewards, especially if it is your first time there. 
+
+
+CHOCOBOS 
+
+
+In several villages and towns across Ivalice you will find 
+chocobo stables where, for a small fee, you can hire a 
+chocobo for riding. Controlling a chocobo is similar to 
+traveling afoot, though there are a few differences. A 
+chocobo’s speed is significantly higher than that of a 
+character afoot, and you will not be attacked by monsters 
+while riding. However, you will only be allowed to ride a 
+chocobo for a limited amount of time. When that time 
+runs out, you will automatically dismount. After dismounting, nearby monsters may attack, so 
+it is recommended that you keep an eye on the clock in the lower right of the screen when 
+riding through dangerous areas. 
+
+Also, you can dismount at any time by pressing the © button. Note that once you have 
+dismounted, you will not be able to remount, regardless of how much riding time remained 
+prior to dismounting. 
+
+
+¢ Sprinting 
+Pressing @ while riding a chocobo will give you an added boost of speed for a limited time. 
+You can sprint up to three times. 
+
+
+In addition to hiring from the stables, there are other methods of obtaining a chocobo. However you 
+
+
+come by one, you would do well to give these charming yellow birds a try as it is rumored that there 
+are places only accessible to chocobos. 
+
+
+AIRSHIPS 
+As the story progresses, you will have the opportunity to make use of the airships that connect 
+various cities and towns across Ivalice. Not only are airships among the fastest methods of 
+
+transportation, they also offer many other services as well, such as onboard shopping. 
+
+
+Located in towns, fields, and dungeons across Ivalice are 
+large blue crystals known as “save crystals.” Pressing the @ 
+button when near one will fully restore all party members’ 
+HP and MP, remove harmful status ailments and revive 
+any characters who have been KO'd. You will also be given 
+the opportunity to save your game. By selecting “Save” you 
+will be taken to the save screen. After selecting the 
+appropriate MEMORY CARD slot, select the save file to which you wish to write your data. 
+
+
+It is highly recommended you take care when overwriting save data. There will be instances where you 
+will not be able to leave an area until completing a certain task. If you are not sure that your party can 
+accomplish that task at their current levels or with the equipment they possess, it may be wise to save 
+
+
+to a new file before entering the area rather than overwriting previous data. 
+
+
+During your travels you will often come across large orange 
+crystals known as “gate crystals.” If you possess a “teleport 
+stone” you can use it to instantly teleport to any other gate 
+crystal you have touched in the past. Each teleportation will 
+consume one teleport stone. 
+
+As with save crystals, gate crystals can also be used for 
+saving your game and healing your party. 
+
+
+In addition to the methods listed above, there are also other modes of transportation unique to certain 
+
+
+areas. Locating these will assist you on your journey 
+
+
+15 
+
+
+oe 
+=) 
+
+
+THE PARTY MENU 
+
+
+Pressing the ® button while adventuring or in battle will 
+call up the Party Menu. Many different tasks can be 
+performed within this menu, such as viewing your 
+characters’ stats, equipping weapons and armor, and 
+adjusting game settings. 
+
+
+Use this command to add and remoye members from your 
+current party. After selecting a character, use the @ button 
+or the left/right directional buttons to add or remove him 
+from the party. Characters whose pictures are highlighted 
+and offset to the left are members of the active party. A 
+party can include up to three active members. The 
+remaining reserve members can be called to action at any 
+
+
+time using the Party command. 
+
+Note that while attempting to adjust party composition during battle, members who are 
+targeted or performing an action cannot be removed from the party until they are no longer 
+targeted or the corresponding action is complete. 
+
+
+As you proceed through the game, there will be times when other characters temporarily join 
+your party. While these “guests” are considered party members, they will act according to their 
+own will. Guest members do not gain experience, cannot be given orders, cannot be removed 
+from the party, and cannot have their equipment adjusted. 
+
+
+Use this option to view the current stats and status effects 
+of your characters. Press the or 8 buttons to cycle 
+through characters. 
+
+
+LEVEL | The character's current level. 
+
+
+HP | The character's current/maximum hit points. If a character’s HP reaches zero, the player is KO'd 
+| and unable to participate in battle. Max HP increases as a character gains levels or obtains certain 
+licenses. 
+
+
+The character's current/maximum Mist points. Mist points are required to cast spells. Max MP 
+increases as a character gains levels. 
+
+
+The number of license points a character currently has to spend on acquiring new licenses. 
+Defeat foes to earn LP. 
+
+
+The character's current number of experience points and the number of points needed to reach 
+the next level. Defeat foes to earn EXP. 
+
+
+EXP/NEXT 
+
+
+‘ 3 { 
+Attack Power | The character's attack power. The higher the number, the more physical damage the character is 
+
+
+capable of dealing to an enemy. Attack power is based mainly on a character's weapon. 
+
+
+Defense The character's defense rating. The higher the number, the less damage the character will take 
+from physical attacks. Defense is based mainly on a character's armor. 
+
+
+Magick Resist The character's resistance to magick. The higher the number, the less damage the character will 
+take from magick-based attacks. Magick resist is based mainly on a character's helm. 
+
+
+‘The character's ability to evade physical attacks. The higher the number, the higher the 
+probability an enemy’s attack will miss or the character will successfully parry or block. Evade is 
+ed mainly on a character's shield. 
+
+
+“Magick Evade | "The character's ability to evade magick. The higher the number, the higher the probability an 
+enemy's magick will not be effective on the character. Magick evade is based mainly on a 
+| character's shield. 
+
+
+Strength Determines the power of most physical attacks. Strength increases as a character gains levels or 
+obtains certain licenses. 
+
+
+Magick Power Determines the potency of various magicks. Magick power inéreases asa character gains levels or 
+obtains certain licenses. Magick power also affects the attack power of some weapons. 
+
+
+Vitality Determines the character's resistance to various status ailments as well as the time required for 
+recovery. Vitality increases as a character gains levels. 
+
+
+Speed | Determines the amount of time required to perform various actions. Speed also affeets the attack 
+
+
+| power of some weapons. 
+
+
+There are some weapons, armor, and accessories that affect the above attributes when equipped. 
+
+
+Character development in FINAL FANTASY XII is based largely on the acquisition of “licenses.” 
+Licenses are required to equip weapons and armor, learn magicks and technicks, and enhance a 
+character's abilities. For a detailed description of the license system, please refer to page 20. 
+
+
+EQUIP 
+Use this command to change the equipment of your party members. 
+
+You can manually remove or equip each character's weapon, off-hand item, helm, armor, and 
+accessory, or choose “optimize” to automatically equip a character with the strongest 
+equipment available. 
+
+To equip items manually, first select “Equip” from the menu. Next, select the type of item 
+you wish to equip. When selecting weapons, you can cycle through weapon categories using 
+the left/right directional buttons or the 58/t=m buttons. 
+
+When a piece of equipment in the item list is highlighted, the item’s effect on a character's 
+attributes is displayed. A number in red indicates that the equipment will lower an attribute, 
+while a number in blue indicates an increase. 
+
+Equipment listed in gray is either currently equipped by another character or cannot be 
+equipped due to a lack of the proper license. View the chart on the far right of the screen to 
+determine whether or not a character has acquired the license necessary to equip a certain item. 
+
+
+Reading the Equip Screen 
+
+Character whose equipment you have chosen to change 
+Character’s current equipment 
+
+Change in attributes caused by equipping the selected item 
+List of items in your party’s inventory 
+
+Chart indicating which characters can equip the selected item 
+
+
+URwWNne 
+
+
+Weapon Equip one-handed, two-handed, and ranged weapons in this slot 
+
+
+Off-hand | Equip shields (when a one-handed weapon is equipped) or ammunition (when a ranged weapon 
+
+
+is equipped) in this slot 
+
+
+Helm Equip headgear to increase magick resist in this slot 
+
+
+Armor Equip armor to increase defense in this slot 
+
+
+Accessory | Equip accessories with various effects in this slot 
+
+
+Weapons and armor are divided into a number of different categories, each having unique stats and 
+attributes. Use LP to acquire licenses that best suit a character's strengths and weaknesses. 
+
+
+* Action List 
+
+When selecting a character in the Party Menu, pressing the @ button calls up that character's 
+action list. The action list displays the magicks, technicks, Espers, and quickenings the 
+character has obtained. Magicks, etc., listed in gray have yet to be learned. Press the @ or @ 
+button to advance through the list. Use the directional buttons to select and display a short 
+summary of each action. 
+
+
+LICENSES 
+Use this command to spend license points and obtain new licenses. Character development in 
+FINAL FANTASY XII is based largely on the acquisition of “licenses.” Licenses are required to 
+
+
+equip weapons and armor, learn magicks and technicks, and enhance a character's abilities. 
+
+
+License points (LP) are earned along with experience points when you defeat an enemy. Refer to page 
+
+
+22 on how to use LP to obtain licenses. 
+
+
+GAMBITS 
+
+Use this command to configure a character’s gambits. Gambits are customizable commands 
+that determine how a character will fight during battle. For more information on customizing 
+and configuring gambits, please refer to page 24. 
+
+
+WORLD MAP 
+
+
+Use this command to view the World Map, as well as any Location Maps you possess. 
+
+
+INVENTORY 
+
+
+Use this command to view the items you have obtained. 
+
+
+CLAN PRIMER 
+
+Use this option to view the Clan Primer, a comprehensive adventuring guide used by adventurers 
+across Ivalice. Useful information such as hunt records, traveler's tips, and more can be found 
+within its pages. You will obtain the Clan Primer after completing a certain task. Once you have 
+received it, it is recommended that you check it often for hints on a variety of subjects. 
+
+
+CONFIG 
+
+
+Use this command to adjust various battle and game settings. 
+
+
+When lists such as the weapons list contain too many items to display on one screen, you can use the @ 
+button in conjunction with the up/down directional buttons to quickly advance through the pages. 
+
+
+LICENSES 
+
+
+Character development in FINAL FANTASY XII is based largely on the acquisition of 
+
+
+“licenses.” Licenses are required to equip weapons and armor, learn magicks and technicks, and 
+
+
+enhance a character's abilities. 
+
+
+miaE BASICS 
+
+
+In addition to enabling a character to equip various items or cast potent magicks, there are also 
+licenses to boost maximum HP or increase a character's number of gambits. Licenses can be 
+obtained on the “license board” by using “license points” (LP) earned when defeating foes. 
+Each character has a license board; however, the layout of the board is the same for all 
+characters. 
+
+Simply obtaining a license for a magick or technick does not automatically allow a character 
+to use that ability. Before it can be used, the corresponding magick or technick must be 
+purchased or found. Once you have acquired a magick or technick, any of your characters with 
+the proper license will be able to use it. 
+
+Licenses for ability enhancements do not require any items and are effective immediately after 
+being obtained. 
+
+
+You are free to choose which licenses each character acquires. There are several categories of 
+licenses, and using LP to obtain them will gradually open up new licenses on the same area of 
+the board. These newly unlocked licenses will often be more powerful than previous ones and 
+thus require more LP to acquire. To ensure smooth adventuring, you should focus character 
+license acquisition on the areas in which you wish them to excel. 
+
+
+The license board is loosely divided 
+into six different areas: 
+
+1 Magicks 
+
+2 Accessories 
+
+3 Augments 
+
+4 Technicks 
+
+5 Armor 
+
+6 Weapons 
+
+If you wish to make a character skilled 
+in magick, it would be wise to allot 
+most points to licenses in category 1. 
+On the other hand, if you prefer a 
+character who excels in physical 
+attacks, it would be better to focus on 
+obtaining licenses in category 6. 
+
+
+NN SSSSSSEeEeEeEeEeEee—u0<0Q0u0Quu5QQqqQqqQqQnQn  —————_—_————————————ee 
+
+
+THE LICENSE BOARD 
+The license board can be displayed by selecting “Licenses” 
+
+
+from the Party Menu and choosing a character. 
+1 Character name/available LP 
+
+2 License description 
+
+3 Licenses already obtained 
+
+4 Available licenses 
+
+5 Locked licenses 
+
+
+¢ License Board 
+
+The layout of the board is the same for all characters. 
+
+* Available LP 
+
+The current amount of LP the character has to spend on new licenses. 
+
+
+* License Description 
+A description of the currently selected license. 
+
+
+* Licenses Already Obtained 
+
+Licenses already obtained by a character are displayed in color. 
+
+* Available Licenses 
+
+Licenses that have yet to be obtained by a character are displayed in light gray. The number in 
+the lower left-hand corner of an available license is the amount of LP required to obtain it. 
+
+¢ Locked Licenses 
+
+
+Detailed information regarding locked licenses remains hidden until an adjacent license has 
+been obtained. 
+
+
+You can press the or MB buttons at any time to cycle through the license boards of each character. 
+
+
+OBTAINING LICENSES 
+
+
+1. Open the board of the character for whom you wish to obtain licenses. Use the and 
+buttons to cycle through your party members. 
+
+
+2. On the board you can see which licenses the selected 
+character has obtained so far. Use the directional buttons 
+to select a license. A * mark in the license panel 
+description indicates that it has already been obtained. 
+Gray text indicates magicks, technicks, armor, weapons, 
+etc. that have yet to be acquired. 
+
+
+3. Only those licenses adjacent to previously obtained licenses can be viewed and obtained. The 
+number in the bottom left hand corner of each indicates the amount of LP required to obtain 
+it. Select one of these licenses to view a detailed description. 
+
+
+4. Locked licenses cannot be obtained, regardless of how many LP a character may have. 
+Selecting one will display the LP cost and the category of the license. 
+
+
+5. Obtaining a new license will unlock those adjacent to it. 
+The more licenses unlocked in one direction, the more 
+powerful the licenses will become. To learn potent magicks 
+or equip powerful weapons, you typically must learn lesser 
+licenses first. 
+
+
+The licenses you choose for your characters will directly affect their performance on the battlefield. 
+Raising balanced characters is one path you may wish to take; however, raising six characters with 
+
+
+individual strengths may make your adventuring easier. For example, why not create a paladin-type 
+
+
+character who excels in swordsmanship as well as healing magic? Or how about a black mage, excelling 
+at damage dealing, or a white mage specializing in mending your party's wounds? The possibilities are 
+endless. Oftentimes, a balanced party of unique individuals can be much more effective than a party 
+
+
+of average ones. 
+
+
+ESPERS AND QUICKENINGS 
+
+
+— a 
+
+
+In addition to normal licenses, the board also hides licenses for Espers and special attacks 
+known as “quickenings.” 
+
+Licenses for summoning Espers only appear on the license board after your party has 
+defeated one. As with normal licenses, Esper licenses require LP to obtain; however, be aware 
+that each Esper can only be obtained and summoned by a single character. 
+
+Quickenings are special attacks unique to each character in your party. Quickening licenses 
+are hidden about the board and only appear when a nearby license has been obtained. The 
+locations of all the quickening licenses are the same on all license boards, however, when a 
+character learns a quickening, that license will be removed from all other characters’ boards. 
+
+
+MIST 
+
+
+When a character obtains an Esper or quickening license, the option “Mist” will be added to 
+the Battle Menu. By using “Mist Charges,” the character will be able to summon Espers or 
+perform quickenings, special attacks capable of dealing considerable damage to your foes. 
+
+
+¢ Mist Charges 
+
+When a new Esper or quickening is obtained, a new MP gauge will be combined with the 
+original one. This new gauge will possess the same maximum MP limit as the original. A 
+character may obtain up to three of these gauges, called “Mist Charges.” Mist Charges are 
+required when summoning an Esper or performing quickenings, with the number of Mist 
+Charges required depending on the selected Esper or quickening’s rank. Using a Mist Charge 
+spends all the MP within a gauge. 
+
+
+* Mist Chains 
+
+When a quickening is performed, the screen switches to 
+quickening mode. While these attacks can be performed 
+alone, chaining several together presents an opportunity to 
+deal massive damage to a target. 
+
+At the bottom of the quickening mode screen, a timer 
+and a list of available quickenings is displayed. By pressing 
+the proper button combinations within the allotted time, 
+you will be able to perform multiple attacks. The quicker you are able to input the combinations, 
+the more time you will have left to perform the next. When the timer runs out, your Mist chain 
+will end. 
+
+Pressing the button while in the quickening mode screen shuffles the quickening list. At 
+times, a “charge” option will appear. Selecting this refills a Mist Charge, allowing continued use 
+of quickenings. 
+
+
+GAMBITS 
+
+
+Gambits are customizable commands that can direct characters to automatically perform 
+certain tasks during battle or while adventuring. 
+
+
+THE BASICS 
+
+Gambits consist of two different components, one being the “target” which represents the 
+character/foe an action will be carried out on, and the other being the “action” to be performed ' 
+on the selected target. Both must be assigned a condition before the gambit can be activated. 
+
+Assignable targets consist of party members and foes, as well as various specialized cases, for 
+example “Ally: MP < 40%,” which targets allies with less than 40% of their maximum MP. 
+These targets must be either purchased at a gambit shop or found in treasure chests. Once you 
+have obtained a target, your whole party will be able to use it. 
+
+Assignable actions consist of commands such as Attack, Magicks, Technicks, and Items. 
+With the exception of Attack, your party must have obtained a magick, item, etc. before you 
+will be allowed to assign it as an action. An action will appear in each character's gambit action 
+list the moment it is obtained. However, it will remain unusable (in gray) until the character 
+has obtained the corresponding license. 
+
+You can increase a character's number of gambit slots by obtaining new ones from the 
+license board. 
+
+
+There is no one way to configure your gambits. You should always build gambits that best suit the 
+current situation. You can also turn ON/OFF each character’s gambits at any time. Sometimes it is 
+wiser to turn off all gambits during a heated battle to prevent unnecessary actions that may be 
+
+detrimental to your chances of victory. 
+
+
+( 
+—>~—>~—~-~>Z>ZZ= = a - Scene aeons 
+
+
+GAMBIT CONFIGURATION 
+Select “Gambits” from the Party Menu and select a character to open the gambit configuration 
+screen. 
+
+
+¢ Reading the Gambit Configuration Screen 
+1 Selected character 
+
+2 ON/OFF switch 
+
+3 Target 
+
+4 Action 
+
+5 Gambit slot 
+
+
+* ON/OFF Switch 
+Switches all gambits ON/OFE When switched ON, the character will automatically perform 
+the assigned actions when the target conditions are met. 
+
+
+Even when gambits are switched ON, predefined actions can be overridden by manual commands 
+from the Battle Menu. Gambits can also be switched ON/OFF directly from the Battle Menu. 
+
+
+* Target 
+Assigns a target such as a party member or a foe. Gambit targets must be purchased or found. 
+
+
+* Action 
+Assigns an action to be performed on a selected target. If a character has not obtained the 
+corresponding license, the action will be displayed in gray. 
+
+
+¢ Gambit Slot 
+
+A gray slot indicates a gambit that has been switched OFF, or has not been assigned a target 
+and action. A blue slot indicates an action that involves an ally, while a red slot indicates an 
+action that involves a foe. 
+
+
+1. First, select a target from the categorized list that 
+appears on the left. 
+
+
+2. There are many categories to choose from, some 
+catering to fairly specific situations. These consist of party- 
+specific (e.g. Ally: Penelo), HP/MP-specific (e.g. Ally: MP 
+< 70%), and status-specific (e.g. Ally: status = Slow) 
+targets, in addition to many others. Adjusting targets to 
+match the strengths and weaknesses of allies and foes will greatly benefit you on the battlefield. 
+
+
+3. After assigning a target, your next task will be to select the action to be performed on the 
+target. Actions consist of commands like Attack and license-based abilities such as magicks and 
+technicks. You can also assign the use of items in your inventory. 
+
+
+4. Chosen magicks and technicks will be performed according to the targets you have assigned. 
+The same is true for items. However, such actions will only be initiated if you have the 
+necessary MP or appropriate item in your inventory. 
+
+
+5. By highlighting a gambit and pressing the @ button 
+once, you can adjust its position in the list with the up or 
+down directional buttons. Press @ again to confirm its new 
+position. A gambit’s position in the list determines its 
+priority. 
+
+6. Gambits will activate in the order of their listed priority. 
+As long as the conditions for a higher priority gambit are 
+met, any gambits of lower priority will not be activated. If 
+priority rankings are not set properly, certain gambits may 
+never activate. If you run into problems with gambits, try adjusting their priority. 
+
+
+7. You can turn a gambit ON/OFF by selecting it and pressing the @ button twice. When 
+OFF, the gambit will be displayed in dark gray. Turn off individual gambits when you feel their 
+effects may be detrimental to a battle’s progress. Turn off all gambits when you wish to proceed 
+without engaging in any battles at all. 
+
+Remember that gambit actions can be overridden at any time by issuing a command from 
+the Battle Menu. 
+
+
+SAMPLE GAMBITS 
+
+
+Gambits can be used to speed up or improve the efficiency of battles, as well as give you an advantage 
+in heated situations. Below are a few examples of gambits that may help you in your adventures: 
+
+
+Along with targets for individual characters or enemies, 
+there are also specialized targets for certain situations. 
+Using the target best suited to your current situation will 
+ensure maximum effectiveness. 
+
+The gambit above will cause the character to cast Cure 
+on any party member whose HP has fallen below 70% of its 
+maximum. The character will not carry out this command unless the conditions are met, 
+allowing you to concentrate on other aspects of the battle without worrying about everyone's HP. 
+
+In addition to HP-related targets, there are also MP-related and status-related ones, as well 
+as targets that exploit foes’ weaknesses (e.g. Foe: earth-vulnerable). 
+
+
+| GREENE Co. 17)" 1000 Needles mmm) 
+
+In addition to Attack and Magicks, Technicks and Items 
+can also be set as actions. By combining proper actions and 
+targets, you can build gambits that will make the best use 
+of your items and MP, or deal the most damage to your 
+foes. The example above will initiate the ranged technick, 
+“1000 Needles,” when the character is confronted by a 
+
+
+flying enemy (an enemy that cannot be attacked with melee weapons). Preparing gambits for 
+several situations can help increase the overall pace of the game while maximizing an individual 
+character's potential. 
+
+
+The order of gambits in the gambit list also represents their priority. A character will never 
+execute a gambit lower in the list as long as the conditions for a higher one are met. Likewise, 
+if conditions for a gambit high on the list are not met, the next gambit down is given priority. 
+The example above has the character attacking the same target as the party leader, and then 
+casting Cure on an ally with less than 40% HP. However, as long as the leader has a target, the 
+character will never cast the spell. In this case, the character will only cast Cure when the 
+leader's target has been defeated. To ensure that the character casts Cure during a battle, you 
+would have to move the Cure gambit above the Attack gambit. 
+
+
+BATTLE 
+
+
+FINAL FANTASY XII is proud to introduce the revolutionary Active Dimension Battle (ADB) 
+system, combining the ease of turn-based RPGs with the excitement of real-time action. 
+
+
+THE BASICS 
+* Active Dimension Battle 
+The ADB system removes the transition between exploration and battle. No longer are battles 
+fought in a closed environment. Now, whole areas are your battlefields. Terrain, party member 
+location, and obstacles all influence how a battle is fought. Also, because you can see foes 
+before engaging them, you have the opportunity to avoid unwanted conflicts. 
+
+Each type of monster has its own territory and behavioral patterns. Some foes will attack 
+your party the moment they spot you, others will leave you alone unless provoked, while still 
+others fight among themselves or prey on weaker monsters. 
+
+
+* Battle Commands & Gambits 
+When a battle begins, simply selecting the Attack command once for each character will order 
+them to engage the specified target and continue fighting until the target has been defeated. It 
+is not necessary to reselect the command after every hit. If you have gambits activated, your 
+characters will automatically carry out those commands. 
+
+Remember that even if gambits are activated, those orders can be overridden at any time by 
+issuing a command from the Battle Menu. Also, all of an ally’s gambits can be switched 
+ON/OFF from the same menu. 
+
+
+* Battle Modes 
+There are two battle modes available in FINAL FANTASY XII: Wait and Active. In Wait 
+mode, the action is paused whenever the Battle Menu is open, allowing you to organize your 
+strategies without having to worry about an enemy’s relentless attacks. In Active mode, the 
+action continues regardless of whether or not the Battle Menu is open. This mode is 
+recommended for skilled players who seek thrilling, fast-paced confrontations. 
+
+The battle mode can be changed at any time from the Config screen found within the Party 
+Menu. 
+
+
+Paying attention not only to a monster's attributes, but also to the terrain on which you fight, will 
+help ensure victory when fighting powerful foes. The battlefield is always changing, and it is wise to 
+adjust your gambits and strategy to meet the demands of the situation. 
+
+
+READING THE BATTLE SCREEN 
+
+
+1 Help message 
+
+2 Combat log/target info 
+
+3 Target line 
+
+4 HP gauge 
+
+5 Target guide 
+
+6 Battle Menu 
+
+7 Charge time gauge 
+
+8 Gambit status 
+
+9 Current/max HP Current MP 
+
+
+¢ Help Message 
+Information about the currently selected command. 
+
+
+¢ Combat Log/Target Info 
+Information about actions performed by allies and foes. When a foe is targeted, various 
+information such as the target's name is displayed. 
+
+
+¢ Target Line 
+A line connecting a target with an ally or foe who is currently performing an action on that 
+target. The color of the line varies with target and action type. 
+
+
+* HP Gauge 
+A simplified HP gauge showing a target’s current hit points. The color of the gauge varies with 
+the type of target. 
+
+
+¢ Target Guide 
+
+An arrow extending from the party leader indicating whether or not a target is within range. A 
+yellow arrow indicates the character is within range to perform the selected action. A red arrow 
+means that the character is too far from the target. 
+
+
+° Battle Menu 
+
+A list of battle commands called up by pressing the @ button. Select a command with the 
+up/down directional buttons. Toggle between allies with the left/right directional buttons. An 
+ally’s gambits can also be turned ON/OFF from this window. 
+
+¢ Charge Time Gauge 
+
+A gauge indicating how much time remains before a character will perform an action. 
+
+
+¢ Gambit Status 
+A stylized “G” is displayed when a character's gambits are turned ON. 
+
+
+¢ Current/Max HP Current MP 
+
+Current HP is displayed on the left, maximum on the right. Next to these numbers, the 
+character's current (but not maximum) MP is also shown. Open the Party Menu to view the 
+character's maximum MP. 
+
+
+Foes with a red HP gauge are aggressive and will attack your 
+party if they spot you. If possible, it is wise to check a target 
+before engaging in battle. If you use the technick “Libra” or 
+have an accessory with the Libra effect equipped, you will be 
+able to view target information such as HP and level in the 
+upper left-hand corner of the screen. 
+
+Enemies with a green HP gauge will not attack your party 
+unless you attack first. However, the gauges of certain enemies have been known to change 
+from green to red, even without violent provocation. 
+
+
+Pressing the & or @ button will call up the Battle Menu. Here you can choose commands such 
+as Attack or Magicks & Technicks to perform on selected targets. Use the left/right directional 
+buttons to toggle between party members. 
+
+Characters who have their gambits turned ON will automatically carry out the actions assigned 
+to them by their gambits without waiting for a battle command. 
+
+
+After selecting an action, a window will appear in the 
+lower left-hand corner of the screen listing all nearby 
+targets. At this point, a red ring will appear around the 
+target currently selected from the list. When performing an 
+action on party members, such as casting Cure, a blue ring 
+will appear around the selected target. When a target has 
+been selected, pressing the & button will initiate the 
+action. 
+
+
+When allies or enemies initiate actions, colored lines will 
+appear, connecting them to their targets. These are known 
+as “target lines.” Red target lines indicate enemy actions 
+against allies. Blue lines indicate allies’ actions against 
+enemies. Green lines indicate healing actions such as 
+casting Cure or using potions. 
+
+
+After selecting an action, the “charge time gauge” displayed to the left of a character's name will 
+begin to fill. When the gauge is completely filled, the character will execute the action. Once 
+Attack has been selected, a character will continue to automatically attack the target with his 
+
+
+equipped weapon until the target has been defeated. There is no need to re-input the Attack 
+command when the charge time gauge resets. If gambits are turned ON, a character will 
+continue to execute the set commands as long as the gambit conditions are met. 
+
+
+6. Other Actions During Battle 
+
+Gambits can be overridden at any time by inputting commands from the Battle Menu. All of 
+an ally’s gambits can also be switched OFF from the same menu. However, please note that if 
+the party leader is positioned too far away from other allies, tasks such as leader changes or 
+battle command input may not be executable. 
+
+
+PARTY COMPOSITION 
+
+| You can instantaneously change your party leader at any time by pressing the up/down directional 
+buttons when the Battle Menu is not open. In the event your party leader is KO’d, gameplay will stop 
+and you will be required to select a new leader before proceeding. If you have more than three 
+characters available, you can call up reserve members using the Party command in the Party Menu. 
+
+
+* Fleeing 
+
+If you wish to cancel all commands and flee from battle or simply avoid confrontation with 
+aggressive targets, pressing and holding down the tg button will cancel all current ally actions 
+and prevent the execution of any further actions (including gambits) until the button is released. 
+
+
+Most foes only move and act within a limited area, their “territory.” A foe will often chase you if you 
+choose to flee battle; however, many give up when they reach a certain distance from their original 
+
+
+positions. 
+Please note that while it is easier to avoid attacks while fleeing, you will still be vulnerable to them. 
+Also, be careful when running, as you may stumble across other aggressive monsters in your path. 
+
+
+7. End of Battle 
+
+When all nearby targets have been defeated, the battle will conclude and the EXP/LP amount 
+earned will appear above the fallen enemy. On occasion, enemies will drop items. Move your 
+character over the item icon to pick it up and place it into your inventory. 
+
+
+* Battle Chains 
+
+Defeating the same type of foe in succession results in a “battle chain.” The current chain 
+count is briefly displayed in the lower right-hand corner of the screen immediately after you 
+defeat a foe, and continues to rise until you defeat a different type of foe, enter a town, or 
+touch a save or gate crystal. The higher the battle chain, the better chance your party will have 
+of obtaining items after defeating a foe. In addition, there are several levels of battle chain, with 
+higher levels improving drop rates, and increasing the chances of finding rare items, as well as 
+adding beneficial effects, such as Cure, to the items when you pick them up. 
+
+
+LPS 
+
+
+Below are a few pieces of advice to help you along on your adventure: 
+
+
+USE LIBRA! 
+Obtainable on the license board, Libra is a technick that allows you to not only see the name 
+of a foe when targeting it, but also its HP/max HP, level, and weaknesses. It also reveals the 
+location of hidden traps. There are several different types of traps in dungeons and fields 
+around Ivalice, most of which have detrimental effects. Libra is quite useful when trying to 
+avoid these obstacles. 
+
+In addition to the technick, there are also accessories that give players the Libra status effect 
+when equipped. 
+
+
+CHECK NAME COLOR! 
+
+When none of your party members have Libra activated, you can still make an estimate of a 
+target’s strength by viewing the color of its name in the information window. 
+
+Blue An easy target 
+
+
+Yellow A tough target, but not impossible to defeat 
+Red An incredibly tough target, far beyond your party’s current level 
+SELL YOUR LOOT! 
+
+
+Most monsters do not carry gil, so to earn money you must often sell items that you find 
+during your travels. The majority of the loot that you find on foes cannot be used by your 
+party, so after confirming that you do not require an item, sell it to one of the many 
+shopkeepers peddling their wares across Ivalice. 
+
+Sometimes, after selling loot to a shop, new bazaar goods will become available for purchase. 
+The contents of most bazaar goods remain a mystery until they are obtained, so there is some 
+tisk involved when buying. However, it is rumored that there are some rare objects that can 
+only be obtained from the bazaar... 
+
+
+CONSIDER EQUIPMENT BONUSES! 
+
+Many weapon and armor categories confer unique bonuses. For example, each category of 
+weapon has a different attack range and some categories allow for a higher percentage of 
+multiple attacks or higher parry rate. Armor, on the other hand, often offers various stat boosts 
+and added effects. For example, certain equipment from the Mystic Armor category boosts 
+magick-related attributes such as magick power or maximum MP. It is always wise to consider 
+the strengths of a character when deciding which equipment and weapon licenses to obtain. 
+
+
+LEARN ACTION RANGES! 
+
+As mentioned earlier, a weapon's attack range is determined by its category. While melee 
+weapons such as daggers and swords have limited range, ranged weapons such as crossbows and 
+guns can deal damage to distant or flying enemies. Only ranged weapons, magicks, and select 
+technicks can be used to defeat these foes. Note that magicks and technicks also have varying 
+ranges of effectiveness. 
+
+You can determine whether or not your party leader is close enough to a target to perform 
+the desired action by checking the color of the target guide (arrow) stretching in front of him. 
+If the arrow is yellow, the target is within range; if it is red, it is not. All other party members, 
+regardless of active gambits, will automatically move within range of their targets. 
+
+
+KEEP AN EYE ON YOUR STATUS! 
+Foes often possess attacks that cause harmful status effects. If left untreated, these effects could 
+hamper a character's performance, or even knock one out of a battle. 
+
+
+AILMENT | DESCRIPTION TREATMENT 
+
+
+t — 4 — 
+Oil | Increases damage dealt by Fire magicks * Handkerchief 
+
+
+Disease Prevents recovery of HP * Vaccine 
+
+
+Poison Deadly toxin gradually deals damage over time * Antidote 
+
+
+| Gradually drains HP Regen 
+
+
+| Prevents all movement or action | * Chronos Tear 
+
+
+| Prevents movement | © Remedy* 
+
+
+T 
+
+
+ee) Es 
+| Prevents action * Remedy* 
+
+
+Se a.. * 
+
+
+Stone/Petri fy 
+
+
+Turns a character to stone when the count reaches 0 | * Gold Needle 
+
+
+a eS) Ss ee > gas bana 
+Automatically KO’s a character when the count reaches 0 * Remedy* 
+| 
+
+
+2 . = _ 
+Prevents movement or action | * Alarm Clock 
+
+
+The character cannot tell friend from foe and cannot take commands | * Smelling Salts 
+PESOTE Os 0H rats A = ee a 
+Lowers weapon accuracy | « Eye Drops 
+
+
+| Prevents magick use ’ ~~ |* Echo Herbs 
+
+
+Increases the amount of time needed to execute actions * Haste 
+
+
+*The healing properties of remedies can be improved by obtaining special licenses. 
+**In addition to items, there are also magicks that remove some of the above status effects. 
+
+
+EXPLORING RABANASTRE 
+
+
+The following is information about Rabanastre, the town in which you begin your adventure. 
+
+
+The locations below can all be found on your Location Map by pressing the SELECT button. 
+
+
+RABANASTRE SHOPPING GUIDE 
+
+The Sandsea 
+
+Located in Rabanastre’s bustling East End, the Sandsea has quenched parched throats and filled 
+empty bellies for generations, earning itself a place in the heart of many a weary traveler. 
+Adventurers from throughout Dalmasca journey here to view the notice board, where bills for 
+the hunting of monsters, called “marks,” are posted. 
+
+
+Panamis’s Protectives 
+
+From thick metal armor that protects its wearers from the most powerful blows, to enchanted 
+robes woven with mystical linens said to enhance a wearer’s bond with the arcane, Panamis’s 
+Protectives guarantees the best selection of armor in the region. Stop by and check out their 
+magick-resistant helms, gilt breastplates, and sturdy shields. 
+
+
+Amal’s Weaponry 
+
+Stocking a wide variety of weapons for novice and master alike, Amal’s Weaponry has a little 
+something for everyone. To new adventurers, Amal recommends his selection of simple swords 
+and daggers. To those who wish to keep their distance from the heat of battle, he suggests one 
+of his fine ranged weapons. He even carries a few unique rods and staves for those who prefer 
+something off the beaten path. 
+
+
+Migelo’s Sundries 
+
+A successful adventurer is one who is prepared for anything, and prepared you will be after 
+browsing through the extensive list of Migelo’s wares. So whether you are a seasoned traveler or 
+a fledgling newly flown, stop by Migelo’s Sundries before setting off into the wild. 
+
+
+Batahn’s Technicks 
+
+Do you find yourself constantly running out of MP in the middle of battles? Are you tired of 
+bland, ordinary magicks? Then Batahn may have what you're looking for! Technicks are quick 
+and easy to use, require no MP, and are, most of all, unique. Once you have saved up enough 
+license points, stop by Batahn’s and see if he can accommodate your needs. 
+
+
+Yugri’s Magicks 
+
+MP gradually accumulate inside one’s body through absorption of faint traces of Mist 
+occurring naturally in the air. Don't let it go to waste! Powerful curative magicks to heal your 
+companion’s wounds, time magick capable of manipulating the flow of battle, deadly arcane 
+magic to deal untold damage to your enemies — Yugri’s stocks only the finest in tomes. 
+
+
+Yamoora’s Gambits 
+
+
+Would you like to improve the efficiency of your party members’ actions during battle? Then 
+hurry over to Yamoora’s Gambits and pick up a few specialized targets. Be sure to stop by when 
+your travels bring you back to Rabanastre, as they are always updating their selection of 
+reasonably priced merchandise. 
+
+
+YOUR CLAN 
+
+During your adventures, you will obtain a special item called a Clan Primer. This handy guide 
+grants admission to the Clan Hall of Clan Centurio, allowing you access to prime information 
+on hunts all across Ivalice. 
+
+
+What are Hunts? 
+
+In many towns and villages, you will happen upon large notice boards displaying “bills” 
+requesting the capture, extermination, or exorcising of certain terrible beasts. After contacting 
+the petitioners who post these bills, off you go on the hunt! If successful, they will often reward 
+you with gil, weapons, armor, or other loot. 
+
+
+Clan Centurio 
+
+It is said that over one hundred clans exist across Ivalice. One of those operating out of 
+Rabanastre is Clan Centurio, led by the eccentric moogle, Montblanc. You can visit the Clan 
+Hall to learn of rare hunts available only to clan members, as well as obtain information on 
+your clan rank and hunts you have accepted. 
+
+
+Clan Rank 
+
+Your rank within Clan Centurio rises as you defeat foes on your adyentures and successfully 
+complete hunts. When you achieve a new rank, you will be presented with a gift from the clan 
+leader and be granted access to new items in the exclusive clan shop located in the Muthru 
+Bazaar. 
+
+
+Clan Primer 
+
+The Clan Primer is a comprehensive record of your travels in Ivalice. It contains information 
+on your accomplishments within the clan, as well as important information on hunts that you 
+have accepted. It also contains a bestiary of foes you have defeated, and various adventuring 
+hints. 
+
+
+CREDITS 
+
+
+Directors 
+Hiroshi Minagawa 
+Hiroyuki Ito (Game Design) 
+
+
+MAIN SYSTEM & EVENT PROGRAMMER DIRECTOR 
+(NORTH AMERICAN VERSION) 
+Takashi Katano 
+
+
+LEAD REALTIME RENDERING PROGRAMMER 
+Yoshinori Tsuchida 
+
+
+PROGRAMMING SUPERVISOR 
+Taku Murata 
+
+
+MAIN CHARACTER DESIGN & BACKGROUND DESIGN SUPERVISOR 
+Akihiko Yoshida 
+
+
+ART DIRECTION 
+Hideo Minaba 
+Isamu Kamikokuryo 
+
+
+VISUAL DESIGN & CHARACTER TEXTURE SUPERVISOR 
+Hiroshi Minagawa 
+
+
+Visual EFrects DiRECcTOR 
+Jiro Mifune 
+
+
+BACKGROUND VISUAL EFFects 
+Yoshinori Ogura 
+
+
+LEAD MOTION DESIGNER 
+Takeo Suzuki 
+
+
+EVENT MOTION DESIGNER 
+Hiroaki Saotome 
+
+
+HI-POLYGON FaciaL Mopets & TEXTURES 
+Takahiro Matsuhira 
+
+
+HI-POLYGON Factat MOTION 
+Takeshi Sadohara 
+
+
+BATTLE System DESIGN 
+Kazutoyo Maehiro 
+
+
+Event Direction 
+Jun Akiyama 
+
+
+SCENARIO 
+Daisuke Watanabe 
+Miwa Shoda 
+
+
+Lead IN-GAME EVENT DesiGNeR 
+Takeshi Iwabuchi 
+Masahiro Kataoka 
+
+
+LEAD Map SYSTEM DESIGNER 
+Kazuhiro Kataoka 
+
+
+LEAD MENU SysTEM DESIGNER 
+Yuichi Murasawa 
+
+
+SOUND ErFects Direcror 
+Tomohiro Yajima 
+
+
+Movie DIRECTION 
+Eiji Fujii 
+
+IMAGE ILLUSTRATION 
+Yoshitaka Amano 
+
+
+Music PRODUCTION & COMPOSITION 
+Hitoshi Sakimoto 
+
+
+Story & CONCEPT 
+Yasumi Matsuno 
+
+
+CAST 
+
+
+VAAN 
+Bobby Edner 
+
+
+PENELO 
+Cat Taber 
+
+
+BALTHIER 
+Gideon Emery 
+
+
+FRAN 
+Nicole Fan 
+
+
+ASHE 
+Kari Wahlgren 
+
+
+BAscu 
+Keith Ferguson 
+
+
+VAYNE 
+Elijah Alexander 
+Johnny McKeown 
+
+
+GABRANTH 
+Michael Rodgers 
+
+
+cip 
+John Lee 
+
+
+Au-Cip 
+David Rasner 
+
+
+Reppas 
+Phil LaMarr 
+
+
+ONDORE 
+Tom Kane 
+
+
+VOSSLER 
+Nolan North 
+
+
+RASLER 
+Andrew Philpot 
+
+
+REks 
+Yuri Lowenthal 
+
+
+EMPEROR GRAMIS 
+Roger L. Jackson 
+
+
+Guis 
+Mark Wing-Davey 
+
+
+BERGAN 
+Gary Martin 
+
+
+Dace 
+Julia Fletcher 
+
+
+‘ZARGABAATH 
+Simon Templeman 
+Jore 
+
+Michelle Arthur 
+
+
+MyRN 
+April Stewart 
+
+
+MOTION ACTORS 
+
+
+VAAN 
+Kouhei Takeda 
+
+
+PENELO 
+Yuna Mikuni 
+
+
+BALTHIER 
+Sean Ryan 
+
+
+GAME DESIGN 
+IN-GAME EVENT DESIGN 
+Mizue Tanaka 
+
+Yusuke Matsuda 
+
+Minori Miura 
+
+
+(Cur SCENE EvENTs 
+Hidehito Tanba 
+Yuichi Nakamura 
+Yaeko Sato 
+
+Ryoko Kato 
+
+Sayako Ohzono 
+Yusuke Kodama 
+Shota Shimoda 
+Masaru Taniguchi 
+Rie Suzuki 
+
+
+FRAN 
+Hiroko Harada 
+
+
+ASHE 
+Mei Yoshikawa 
+
+
+Bascu 
+Makoto Onaga 
+
+
+DIALOGUE 
+Kyoko Kitahara 
+
+
+BATTLE SYSTEM 
+Hiroshi Tomomatsu 
+Genki Yamashita 
+Kazuyuki Miura 
+
+
+Mar System 
+Motoharu Tanaka 
+Takaaki Hirose 
+Naomi Fukui 
+
+
+SYSTEM PROGRAMMING 
+
+
+BATTLE 
+Takashi Isowaki 
+Noritsugu Mochizuki 
+
+
+REALTIME CAMERA 
+Satoshi Ogata 
+
+
+CG Toot Surrorr 
+Atsushi Ebisawa 
+
+
+DEVELOPMENT TOOLS 
+Satoshi Ogata 
+Noritsugu Mochizuki 
+
+
+DATABASE TECHNICAL SUPPORT 
+Kenichi Matsudo 
+
+
+REALTIME RENDERING 
+PROGRAMMING 
+
+
+MOTION DESIGN 
+
+
+PLAYER CHARACTER EvENT MOTION 
+
+
+Mar RENDERING 
+Akihiro Yamaguchi 
+
+
+CHARACTER MOTION 
+
+
+Naoki Hamaguchi 
+
+
+CHARACTER MODEL 
+Daiki Hoshina 
+
+
+VISUAL EFFECTS 
+Yoshinori Tsuchida 
+Daiki Hoshina 
+Naoki Hamaguchi 
+
+
+MENU 
+Shinichi Fujisawa 
+Noriyasu Arata 
+
+
+Mitsuru Nagai 
+
+
+ART DESIGN 
+
+
+Tonny WaiMan Koo 
+Akiyoshi Masuda 
+Takashi Honjo 
+Shiho Tamura 
+
+Airi Yoshioka 
+Ryoma Ito 
+Dissacert Ikeda 
+Kiyoshi Arai 
+
+
+Chikako Nakano 
+Nao Ikeda 
+Akiyoshi Kontani 
+Yoshihiro Hirota 
+Ayumi Namae 
+Nobuya Aoki 
+Kazunari Kajio 
+
+
+STORYBOARD 
+
+
+Shinsaku Kozuma 
+Kunihiko Noguchi 
+
+
+3D MAP & 
+
+
+Manabu Daishima 
+Yukiko Sasaki 
+Kazushi Urata 
+Takato Ito 
+
+Shinichi Mochizuki 
+Hirokazu Takano 
+Takeshi Sanda 
+Hideaki Morita 
+Daisuke Komatsu 
+Kana Yamazaki 
+Norifumi Nagaoka 
+Tsuyoshi Okahisa 
+Hiroyuki Sano 
+
+Jun Sakurai 
+‘Tatsuhiro Okamoto 
+Hiroki Mitsushima 
+Shin Ienaka 
+
+Rei Fukuzawa 
+Tsutomu Inagaki 
+
+
+REALTIME 
+
+
+Eiichiro Nakatsu 
+Shinya Senzaki 
+Makoto Yagishita 
+Yuji Mitsuishi 
+‘Toru Shiozaki 
+Nozomu Nishiiri 
+Kazumichi Kimura 
+Yoshinari Hirata 
+Minako Tsuchiya 
+
+
+BACKGROUND DESIGN 
+
+
+Motohiro Murakami 
+Takayuki Yoshikawa 
+Rinnosuke Kawai 
+Yasunori Yanagawa 
+Tohru Ohshita 
+Daichi Nakagawa 
+Yoshiyuki Shikano 
+Masato Shida 
+
+Kohji Takino 
+Tsuyoshi Wada 
+Nobuyuki Suzuki 
+Shinpei Murakami 
+Takeshi Kawamorita 
+Kohki Ishinuma 
+Saeko Terada 
+Yasuyuki Kawamata 
+Mayumi Furuzawa 
+Takeo Sasaki 
+Subaru Ganbe 
+
+
+MODEL DESIGNERS 
+
+
+Noriaki Kayanuma 
+Shohei Muta 
+Takeshi Miyazawa 
+Masahiko Mitsunami 
+Rika Ojima 
+Keiichirou Takahashi 
+Mitsuharu Fushie 
+Chiho Kawase 
+Noriyuki Komoda 
+
+
+TEXTURING 
+
+
+LEAD TEXTURE DESIGNERS 
+
+
+Masaaki Kazeno 
+Kohji Machida 
+Ryotaro Hashimoto 
+Haruya Ishii 
+
+Keiji Inoue 
+
+Takuo Ueda 
+Nobuyoshi Mihara 
+
+
+Texture DESIGNERS 
+i Hachiro 
+Nanase 
+
+Nao Amano 
+
+Rie Koyama 
+
+Yutaka Kasama 
+Tatsuru Nakaza 
+Masato Muramatsu 
+Tomomi Fujino 
+
+
+BATTLE MOTION 
+Tsunataro Yoshida 
+Takahiro Sugita 
+Yasuyuki Sogame 
+Reiko Kitaichi 
+Yukie Wakamoto 
+
+
+BATTLE MOTION 
+Satoru Uchida 
+Ryo Hirao 
+Daigo Nakamura 
+Osamu Honma 
+Tomohiro Naka 
+Tadashi Soeda 
+Jun Kusaka 
+Mika Anzai 
+Yoichiro Hori 
+Ryuichi Onuma 
+
+
+MENU DESIGN 
+
+
+VisuAL DESIGN 
+& Layour 
+Satomi Hongo 
+Takeshi Tateishi 
+Yuka Miyamoto 
+Koichi Ebe 
+
+
+VISUAL EFFECTS 
+
+
+Noriko Ikeda 
+Fumiko Hoshino 
+Yuko Hatae 
+
+
+CG MOVIES 
+
+
+CHARACTER MODEL 
+SUPERVISORS 
+
+Akira Iwata 
+Kimitoshi Tsumura 
+
+
+CHARACTER TECHNICAL 
+SUPERVISORS 
+
+Akihiro Tsuchiya 
+Tetsuichiro Kitagawa 
+Mitsuharu Fukai 
+
+
+Set & Prop 
+SUPERVISORS 
+Hiroshi Kamohara 
+Kazuyuki Ikumori 
+
+
+ANIMATION 
+SUPERVISORS 
+Koichiro Shiratori 
+Hirotaka Sawada 
+
+
+MOTION CAPTURE 
+SUPERVISOR 
+Junichi Hayashi 
+
+
+VFX SUPERVISORS 
+Hideki Mizoguchi 
+Koji Tanaka 
+
+
+LIGHTING SUPERVISOR 
+Kaori Sato 
+
+
+COMPOSITE SUPERVISOR 
+Yasuharu Yoshizawa 
+
+
+Yasuhide Hino 
+Micko Saka 
+
+Yu Segoe 
+
+Masaki Imamura 
+Kazuhiro Kimura 
+Ryoma Araki 
+Yukihide Kimura 
+Hisashi Ohshio 
+Yoshiaki lizuka 
+Takeshi Oda 
+Toshiaki Watanabe 
+Satomi Tsuchida 
+Hiroko Miura 
+
+
+EVENT MOTION & 
+MOTION CarTuRE 
+Kaoru Minemoto 
+Sei Ikeda 
+
+Mitsuki Sato 
+
+
+FACIAL MOTION 
+Hanae Karasawa 
+Tomoyuki Arai 
+
+
+CHARACTER 
+EFrects 
+
+Taiji Tsuchiya 
+Nobuki Ando 
+
+
+DESIGN 
+
+
+Mayumi Kubota 
+Makoto Ohta 
+Naoto Endo 
+
+
+Epitor 
+Keiichi Kojima 
+
+
+SEQUENCE LEADS 
+Hiroyuki Honda 
+Hiroshi Fujiwara 
+Takeshi Tateishi 
+Kazuhito Shimada 
+
+
+CROWD SIMULATION 
+Leaps 
+
+Fred TY. Hui 
+Kenichi Isaka 
+
+
+CHARACTER MODEL DESIGNERS 
+Mamoru Tagata 
+
+Tadahiro Inoue 
+
+Ken Yuasa 
+
+Naomi Horigome 
+
+Takashi Nakano 
+
+Takeshi Maruyama 
+
+Toshihide Funato 
+
+Yuji Yamazaki 
+
+
+CHARACTER TECHNICAL 
+DESIGNERS 
+
+Mio Tagiri 
+
+Yoshihito Ikuta 
+Masahiro Hamada 
+Yujiro Tada 
+
+Jun Usui 
+
+
+Set & Prop DESIGNERS 
+Hiroto Ide 
+
+Takayuki Hayashi 
+Masumi Hakamada 
+Fiji Kitada 
+Takafumi Nishimura 
+Sanae Nakanishi 
+Seth Thompson 
+Takuya Suzuki 
+
+Taku Watanabe 
+Tomohiko Osugi 
+Keiji Sakamoto 
+
+
+ANIMATION DESIGNERS 
+Yoko Abe 
+
+Masayo Tateishi 
+
+Satoshi Naito 
+
+Kazuhiko Kosono 
+Masahiro Nishimura 
+Hikaru Murakami 
+Atsushi Osako 
+
+Tomomi Moriyasu 
+
+
+MOTION CAPTURE DESIGNERS 
+Tomoya Suzuki 
+Hiroko Masuda 
+Hiroki Minami 
+Keiko Imamura 
+
+
+SOUND 
+
+
+ADDITIONAL COMPOSITION 
+Hayato Matsuo 
+Masaharu Iwata 
+
+
+SYNTHESIZERS 
+Keiji Kawamori 
+
+
+PROGRAMMER 
+Minoru Akao 
+
+
+TOOL PROGRAMMER 
+Satoshi Akamatsu 
+
+
+Movie SOUND Eprrors 
+Shojiro Nakaoka 
+Makoto Ise 
+
+
+SOUND Epirors 
+Kenichi Mikoshiba 
+Natsuko Sugiyama 
+Kazuhiro Hosoe 
+Rieko Shimura 
+
+
+DIALoGuE EDITOR 
+Natsuko Sugiyama 
+
+
+Composer 
+Hitoshi Sakimoto 
+
+
+ORCHESTRAL ARRANGEMENT 
+Hayato Matsuo 
+
+
+PRODUCER 
+Yuji Saito 
+
+
+VEX DESIGNERS 
+Shuntaro Furukawa 
+Ayako Kuroda 
+Yasuko Asakura 
+Ren Kikuchi 
+Soichi Shirakabe 
+Kaoru Chikaoka 
+Makoto Waragai 
+
+
+CG ENGINEERS 
+Kotaro Beppu 
+Keisuke Miyazaki 
+Taku Wakisaka 
+Hirofumi Kawai 
+Genichi Kawada 
+Hiroki Miyazaki 
+Hirotaka Sato 
+Masashi Nakata 
+Manabu Ishizaki 
+
+
+VisUAL WORKS COORDINATORS 
+Hazuki Fujimoto 
+
+Ryosuke Inagaki 
+
+Saika Aoki 
+
+Momo Nakabayashi 
+
+Norimichi Kurosawa 
+
+Atsuko Hashimoto 
+
+Hisako Sakurai 
+
+
+Movit PRODUCERS 
+Hiroshi Kuwabara 
+Satoshi Tsukamoto 
+
+
+PROJECT MANAGER 
+Masayuki Tanaka 
+
+
+Project COORDINATOR 
+Masashi Kitagawa 
+
+
+PROJECT ASSISTANT 
+Kazuki Hamamoto 
+
+
+MIXING STUDIO 
+408 THX suite 
+(THX pm3 certified) 
+at Sony PCL Inc. 
+
+
+MIXING ENGINEER 
+Kazutaka Someya 
+
+
+ASSISTANT ENGINEERS 
+Yuka Kitazawa 
+
+Asako Odajima 
+Katsuhisa Sadayasu 
+
+
+Post PRODUCTION MANAGER 
+Chiaki Ikejima 
+
+
+OPENING & ENDING THEMES 
+
+
+Director 
+Masaru 
+
+
+RECORDING ENGINEER 
+Toshiyuki Yoshida 
+
+
+MUSICIAN COORDINATOR 
+Toshiaki Ota 
+
+
+PIANO 
+Masato Matsuda 
+
+
+PERCUSSION 
+Midori Takada 
+
+
+PERCUSSION 
+Tomoko Kusakari 
+
+
+PERCUSSION 
+Marie Oishi 
+
+
+TRUMPET 
+Kazuya Honma Group 
+
+
+TROMBONE 
+Osamu Matsumoto Group 
+
+
+HARP 
+Hiroyuki Minami Group 
+
+
+Tuba 
+Kiyoshi Sato 
+
+
+FLUTE 
+Takashi Asahi 
+
+
+FLUTE 
+Yoshio Kizu 
+
+
+OBOE 
+Satoshi Shoji 
+
+
+OBOE 
+Keiko Narita 
+
+
+CLARINET 
+Tadashi Hoshino 
+
+
+CLARINET 
+Satoshi Kobayashi 
+
+
+BASSOON 
+Josuke Ohata . 
+
+
+STRINGS 
+Masatsugu Shinozaki Group 
+
+
+Harp 
+Tomoyuki Asakawa 
+
+
+CONDUCTOR 
+Koji Haishima 
+
+
+RECORDING STUDIO 
+Victor Studio 
+
+
+COORDINATION 
+IMAGINE Inc. 
+
+
+“KISS ME GOOD-BYE” 
+
+
+(FEATURED IN FINAL FANTASY XII) 
+
+
+COMPOSER/ PRODUCER 
+Nobuo Uematsu 
+
+
+VOCALS/PIANO/LyRICS 
+Angela Aki 
+
+
+ARRANGEMENT 
+Kenichiro Fukui 
+
+
+STRINGS 
+Gen-ittetsu Group 
+
+
+GUITAR 
+Mitsuhiro Ohta 
+
+
+Bass 
+Akira Yamamoto 
+
+
+Drums & PERCUSSION 
+Isao Arima 
+
+
+RECORDING & MIXING 
+ENGINEER 
+Kenji Nakai 
+
+
+RECORDING STUDIO 
+ONKIO HAUS / STUDIO 1043 
+
+
+SYMPHONIC POEM "HOPE” 
+
+
+Taro Hakase 
+Hitoshi Sakimoto 
+Yuji Toriyama 
+Katsumi Ohtani 
+
+
+Miho Kitagawa 
+Robby Wada 
+
+HATS UNLIMITED CO.LTD. 
+Bin Associates 
+
+
+SUPPORTING CAST 
+
+
+RAMINAS 
+Nick Jameson 
+
+
+ANASTASIS, DALAN 
+Dwight Schultz 
+
+
+MIGELO, GILGAMESH 
+John DiMaggio 
+
+
+Garit GREAT-CHIEF 
+Michael Chinyamurindi 
+
+
+VENAT 
+Anita Carey 
+
+
+GERUN KING 
+Bernice Stegers 
+
+
+BA'GAMNAN 
+Steve Blum 
+
+
+Kyres 
+
+
+Conner Demita 
+
+
+HAVHARO 
+Chris Edgerly 
+
+
+ADDITIONAL VOICES 
+John Demita 
+
+Scott Menville 
+Jonathan Nichols 
+Phil Proctor 
+
+Jill Talley 
+
+
+CG STUNT ACTORS 
+
+
+Mark "Cadogan" Tacampo 
+Jay "Noe" Noyes 
+
+
+Keiichi "Stephan" Tada 
+Yukie "Fox" Yamada 
+
+
+US RECORDING 
+
+
+RECORDING ENGINEERS 
+STUDIOPOLIS 
+
+Eric Lewis 
+
+Ernie Sheesley 
+
+
+Kirk Rogers 
+
+
+RECORDING STUDIO 
+STUDIOPOLIS 
+
+
+STUDIO MANAGER 
+Laura Lopez 
+
+
+ASSISTANT RECORDING 
+ENGINEER 
+Joe Moeller 
+
+
+DIALOGUE EDITORIAL 
+STUDIOPOLIS 
+
+
+PRODUCER 
+TECHNICAL SUPERVISOR Alexander O. Smith 
+Denny Densmore 
+
+LINE PRODUCER 
+
+
+DIALOGUE EDITOR Michael Hack 
+
+
+Terry Reiff 
+Voice DirEcTOR/CASTING 
+ADR Eprtors Director 
+Eric Lewis Jack Fletcher 
+Ernie Sheesley 
+MOTION CAPTURE 
+CASTING Actors’ PRODUCTION 
+Masayuki Sugahara MANAGEMENT 
+(BE MINE) INFRAMINCE CO.,LTD. 
+J.CLIP 
+KIDT CREW 
+
+
+SARAH PROJECT 
+WAKAKOMA Pro 
+YOUGO OFFICE 
+ZENITH INC. 
+
+
+CONTRACTORS 
+
+
+CG Movit CREATION LiNDA Ine. / Griot Inc. 
+
+
+& Support Hiroyuki H 
+CGCG Inc. Masashi S: 
+
+Ivan C Kanako Tani 
+Sareana Sun Jitsuhisa Shibata 
+
+
+‘Tsai Shui-Wen 
+Steven Tsai 
+
+
+Yuetsu Murakami 
+Mamoru Kushiro 
+
+
+Marty Wa Yasunobu Arahori 
+Tony Wang Takaharu Tobe 
+Ally Liu Nobuaki Ebihara 
+
+
+Yoshihiro Ozawa 
+Masashi Fujiura 
+
+
+Cheng So-Young 
+Huang Burning 
+
+
+Yang Po-chin Tomohiro Yonemichi 
+Yang Kuo-Wei 
+
+Fish Hong Slicon Studio 
+
+Fionn Yen Koji Matsumoto 
+Wa Li-Ya 
+
+
+Wang Yao-Cheng 
+
+
+Digital Frontier Inc. 
+Chan Pi-Ching 
+
+
+Chiang Chu-Tzu 2D FietD & GADGET 
+Hsiao Feng-Yi DESIGN Surrort 
+Coddy Hsieh KUSANAGI Co., LTD. 
+‘Tonny Fang Nobuhito Sue 
+
+Eric Wang Hideyasu Narita 
+
+Alen Fan; Ayu Kawamoto 
+
+
+Lu Tung-Yuan 
+ch 
+
+
+suMewae 
+Paggy Liou 
+PROJECT MANAGEMENT 
+
+
+LEAD PRODUCTION 
+CoorDINATOR 
+Hiroaki Kato 
+
+
+Yoji Nakaza 
+
+
+Music PRODUCTION 
+Basiscape CO.,LTD. 
+
+
+PRODUCTION ASSISTANTS 
+Yuko Fujii 
+Emiko Nishiyama 
+
+
+PRODUCTION COORDINATOR 
+Hiroyuki Ogawa 
+
+
+OE OT LT a ecpe  ca S 
+
+
+| LOCALIZATION 
+
+
+| GENERAL MANAGER 
+| Masashi Hiramatsu 
+
+
+| LOCALIZATION 
+
+| Directors 
+
+| Saroko Kondo 
+Tomoko Kondo 
+
+
+| 
+| LOCALIZATION 
+
+| CoorDINaAToRS 
+| Seiko Braswell 
+
+| Satoshi Toyoda 
+
+
+| PUBLICITY 
+
+
+Pusuicity PRODUCER 
+Yuka Naito 
+
+
+Pusuicity STAFF 
+Ayako Kawamoto 
+Emiko Sato 
+
+
+MANAGERS 
+Shin Yamamoto 
+Takayuki Komine 
+
+
+MANAGER 
+Ken Narita 
+
+
+LOCALIZATION SUPERVISOR 
+Kazuyoshi Tashiro 
+
+
+TRANSLATORS 
+Alexander O. Smith 
+Joseph Reeder 
+
+
+EDITOR 
+Morgan Morris Rushton 
+
+
+PUBLICITY ASSISTANT 
+Shiho Tsuyuki 
+Hiroyuki Toyama 
+
+
+GENERAL PRODUCER 
+Koji Taguchi 
+
+
+TECHNICAL RESEARCH 
+
+
+ENGINEERS 
+Shingo Niwano 
+Yasushi Shimizu 
+
+
+Takayuki Arai 
+
+
+COORDINATOR 
+Junko Kuroda 
+
+
+LINE COORDINATORS 
+
+
+STAFF 
+
+Takako Yamashita 
+Miyuki Miyazaki 
+Nobuyuki Kashihara 
+
+
+| LEGAL & INTELLECTUAL PROPERTY 
+
+
+GENERAL 
+MANAGER 
+Yasuhiko Hasegawa 
+
+
+RATINGS 
+| RAaTINGs Abvisors 
+| Reiko Kondo 
+| Sueko Kogai 
+
+
+STAFF 
+
+Takahiro Fujii 
+Hiroshi Harada 
+Ayako Hino 
+
+
+| QUALITY ASSURANCE 
+
+
+COORDINATOR 
+Kiminori Ohya 
+
+
+ASSISTANT COORDINATORS 
+Takafumi Matsui 
+Kentaro Hayashi 
+
+
+TECHNICAL ENGINEERS 
+Kazuya Okamoto 
+Hisato Iwatsuki 
+
+
+TECHNICAL ASSISTANT 
+Yusuke Sadamasa 
+
+
+TESTERS 
+
+Yoshito Nabeshima 
+Yusuke Kitamura 
+Kazuki Yasuda 
+Hidefumi Sakama 
+Kengo Murata 
+Mitsugu Kobayashi 
+Susumu Kurihara 
+Masaki Nakamura 
+
+
+_— EEE 
+
+
+Ryouta Minami 
+Shintaro Gunji 
+Noriyoshi Ohta 
+Kenji Nishikawa 
+Toru Saito 
+
+Ai Sato 
+
+Kentaro Noguchi 
+Jun Okazaki 
+
+Mei Ito 
+
+Kousuke Sone 
+Masaki Takatsu 
+Takafumi Itakura 
+Takaaki Hagiwara 
+Tomomi Chigira 
+Ellie Horiuchi 
+Yuki Mizuno 
+Mao Fujimura 
+Kunihiro Matsue 
+Yutaro Nagatomo 
+Daisuke Kobayashi 
+Yasuhiro Yamada 
+Kazumasa Oshida 
+.and All QA Staff 
+
+
+GENERAL MANAGER 
+Koji Yamashita 
+
+
+TECHNICAL DIRECTOR 
+Hideyuki Kato 
+
+
+MANAGER 
+Yukihiro Shibuya 
+
+
+SQUARE ENIX, INC. 
+
+
+QUALITY ASSURANCE INFORMATION CENTER 
+MANAGER SUPERVISORS 
+David "Ribs" Carrillo Carl Hidalgo 
+
+Sean Michael 
+ASSISTANT QA MANAGER 
+Mohammed A.C. Wright 
+
+
+SENIOR QA 
+COORDINATOR 
+Mathew Clift 
+
+
+INFORMATION CENTER 
+
+
+Herrera 
+
+
+Pusuic RELATIONS 
+Sonia Im 
+Charlie Sinhaseni 
+
+
+Frederick K. Hashi 
+
+
+QA Associares 
+Jason Sanders 
+Glenn Lee 
+
+
+PRODUCT MARKETING 
+Fernando Bustamante 
+Felice V. Wa 
+
+Philip Ser 
+
+Issei Shimizu 
+
+
+QA CoorDINATOR 
+Bryan D. Chen 
+
+
+ASSISTANT COORDINATORS 
+Johnny Fournier 
+Jeremy Goldsmith 
+
+
+QA TEAM 
+
+Erik Carpenter 
+Cris Y. Cheng, 
+Robert Dryburgh 
+Darryl D. Duncan 
+Lucas Goodman 
+Darren S. Harvey 
+
+
+PROJECT COORDINATION 
+Kumiko Hakushi 
+
+Naoko Yamamura-Rice 
+Emi Maurer 
+
+
+MARKETING COMMUNICATIONS 
+Patrick H. Cervantes 
+Jonathan Cooperson 
+
+
+Kevin Kim Tim Law 
+Eric Lea Wilbur Lin 
+Noel Lynch Parker Sapp 
+Nick Madonna 
+
+Scott Melzer SALES 
+
+
+Ron Kurtz 
+
+Alaine C. de Leon 
+Kanji Tashiro 
+‘Traci Jones 
+Shundea K. Brooks 
+
+
+Francisco Miranda 
+Chintan Patel 
+Joseph Pirante 
+Thomas Ri 
+Fredrick Sykes 
+Noah Woo 
+
+
+EXecuTive DIRECTOR, 
+SALES & MARKETING 
+Shinji Furami 
+
+
+QA TRANSLATORS 
+Arthur T. Kawamoto 
+Elijah Smolko 
+SENIOR VICE PRESIDENT 
+LOCALIZATION & Shinji Hashimoto 
+QA Director 
+Yutaka Sano VP, LEGAL AFFAIRS 
+& GENERAL COUNSEL 
+EXECUTIVE DIRECTOR OF Neal Black 
+COMMUNITY & SERVICE 
+Yasu Kurosawa PRESIDENT & COO 
+Daishiro Okada 
+SENIOR MANAGER 
+OF OPERATIONS 
+
+
+Franko F, Fonseca 
+
+
+INFORMATION CENTER 
+MANAGER 
+Walter Brame 
+
+
+SPECIAL THANKS 
+
+
+Mariko Suzuki (YOSHITAKA AMANO O 
+Yuki Someya (YOSHITAKA AMANO OFFICE) 
+
+Kumiko Sacki (Basiscape CO.,LTD.) 
+
+Shutaro Yokoyama 
+
+Daisuke Tsumanuma 
+
+Futoshi Katsuyama . 
+Nobuo Ito 
+
+Naoto Uenaka 
+
+Yusuke Matsui 
+
+Madoka Tanaka 
+
+Naoko Yoshiyama 
+
+Tetsuya Hiraoka ’ 
+Akira Kashiwagi 
+
+‘Takashi Idogawa 
+
+Kensuke Matsushita 
+
+Masako Miyoshi 
+
+Soushi Yoshida 
+
+Izumi Tsukushi 
+
+Hidemi Matsuzuka 
+
+Miyako Kibe 
+
+Kensuke Tanaka 
+
+Kyoko Saito 
+
+Kaori Shibayama 
+
+Kenichi "Gustav" Iwao 
+
+Hironobu Sakaguchi 
+
+
+ALL FINAL FANTASY XII STAFF 
+ALL SQUARE ENIX STAFF 
+
+
+.and ALL FANS OF FINAL FANTASY 
+
+
+T —_——* 
+Ooporeyy IHX 5-FORLE 
+
+
+EXECUTIVE PRODUCERS 
+
+
+Youichi Wada 
+Akitoshi Kawazu 
+
+
+The following warranty and support information applies only to customers in the United States and Canada, and only to 
+original consumer purchasers of products covered by this warranty. 
+
+
+LIMITED WARRANTY 
+
+
+Square Enix, Inc. (“SEI”) warrants to the original purchaser of the enclosed product (the “Product”) that the media containing 
+the Product (which includes any replacement media provided under this warranty) will be free from defects in materials and 
+workmanship for a period of ninety (90) days from the date of purchase (the “Warranty Period”). SEI’s entire liability and your 
+exclusive remedy under this limited warranty shall be, at SEI’s option, repair or replacement, without charge, of the whole or 
+affected portion of any Product that proves to be defective in material or workmanship during the Warranty Period. 
+
+
+EXCLUSIONS FROM WARRANTY 
+
+This warranty applies only to defects in factory materials and factory workmanship. Any condition caused by abuse, 
+unreasonable use, mistreatment, neglect, accident, improper operation, destruction or alteration, or repair or maintenance 
+attempted by anyone other than SEI is not a defect covered by this warranty. Parts and materials subject to wear and tear in 
+normal usage are not covered by this warranty. 
+
+
+IMPLIED WARRANTIES AND INCIDENTAL AND CONSEQUENTIAL DAMAGES 
+Under state or provincial law, you may be entitled to the benefit of certain implied warranties. ANY APPLICABLE IMPLIED 
+WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR 
+
+PURPOSE, WILL CONTINUE IN FORCE ONLY DURING THE WARRANTY PERIOD. Some states and provinces do 
+
+
+not allow limitations on how long an implied warranty lasts, so the above limitation may not apply to you. 
+
+
+NEITHER SEI NOR YOUR RETAIL DEALER HAS ANY RESPONSIBILITY FOR ANY INCIDENTAL OR 
+CONSEQUENTIAL DAMAGES RELATING TO YOUR USE OF THE PRODUCT, INCLUDING, WITHOUT 
+LIMITATION, ANY DAMAC FOR LOSS OF DATA OR LOSS OF PROFIT, OR FOR ANY INCIDENTAL 
+EXPENSES, LOSS OF TIME, OR INCONVENIENCE. As some states and provinces do not allow the exclusion or 
+
+
+limitation of incidental or consequential damage, the foregoing limitation or exclusion may not apply to you. 
+
+
+HOW TO OBTAIN WARRANTY SERVICE 
+
+To obtain warranty service, please send the defective Product, together with a copy of your original sales receipt, your return 
+address, name and telephone number, should contact be necessary, and a brief note describing the defect to SEI at the 
+following address: Square Enix, Inc., Customer Warranty, 999 Sepulveda Blvd 3rd Floor, El Segundo, CA, 90245. 
+
+THE DEFECTIVE PRODUCT MUST BE POSTMARKED WITHIN NINETY (90) DAYS FROM THE DATE OF 
+PURCHASE. PROOF OF PURCHASE IN THE FORM OF A DATED RECEIPT MUST BE INCLUDED TO OBTAIN 
+WARRANTY SERVICE. 
+
+The shipping costs for sending the defective Product to SEI is a sole responsibility of the Customer. SEI will not be liable for 
+any damage or loss that occurs during shipping. To minimize loss during shipping, you may opt to use a tracking method 
+when shipping. 
+
+
+If you have warranty questions, you can also contact our Customer Warranty department at (310) 846-0345 during its hours 
+of operation, Monday — Friday, 9:00 am — 6:00 pm, Pacific Standard Time. 
+
+
+CUSTOMER SUPPORT 
+For customer support and technical support questions, please call (310) 846-0345 during the following hours of operation: 
+Monday — Friday, 9:00 am — 6:00 pm, Pacific Standard Time. 
+
+
+FOR INFORMATION AND SERVICES BY SQUARE ENIX, INC., 
+GO TO WWW.SQUARE-ENIX.COM 
+
+
+NOTICE: The Product, this manual, and all other accompanying documentation, written or electronic, are protected by 
+United States copyright law, trademark law and international treaties. Unauthorized reproduction is subject to civil and 
+criminal penalties. All rights reserved. 
+
+
+SQUARE ENIX. 
+
+
+©2006 SQUARE ENIX CO., LTD. All Rights Reserved. CHARACTER DESIGN: Akihiko Yoshida. FINAL FANTASY, 
+SQUARE ENIX, and the SQUARE ENIX logo are registered trademarks or trademarks of Square Enix Co., Ltd. 
+
+

@@ -1,0 +1,84 @@
+{
+  "models": [
+    {
+      "model_id": "model_20260402_100050",
+      "model_type": "rf",
+      "model_path": "models\\model_20260402_100050.pkl",
+      "created_at": "2026-04-02T10:00:50.906749",
+      "metrics": {
+        "accuracy": 0.75,
+        "f1_score": 0.6428571428571428,
+        "n_samples": 20,
+        "n_features": 7
+      },
+      "n_samples": 20
+    },
+    {
+      "model_id": "model_20260402_113959",
+      "model_type": "rf",
+      "model_path": "models\\model_20260402_113959.pkl",
+      "created_at": "2026-04-02T11:39:59.518783",
+      "metrics": {
+        "accuracy": 0.6621004566210046,
+        "f1_score": 0.5274976165387124,
+        "n_samples": 1094,
+        "n_features": 6
+      },
+      "n_samples": 1094
+    },
+    {
+      "model_id": "model_20260402_115503",
+      "model_type": "gb",
+      "model_path": "models\\model_20260402_115503.pkl",
+      "created_at": "2026-04-02T11:55:25.979968",
+      "metrics": {
+        "accuracy": 0.673238082154142,
+        "f1_score": 0.6727736865152681,
+        "n_samples": 145580,
+        "n_features": 6
+      },
+      "n_samples": 145580
+    },
+    {
+      "model_id": "model_20260402_121344",
+      "model_type": "gb",
+      "model_path": "models\\model_20260402_121344.pkl",
+      "created_at": "2026-04-02T12:15:11.815578",
+      "metrics": {
+        "accuracy": 0.6613628961241058,
+        "f1_score": 0.638479558769467,
+        "n_samples": 414483,
+        "n_features": 6
+      },
+      "n_samples": 414483
+    },
+    {
+      "model_id": "model_20260402_135212",
+      "model_type": "gb",
+      "model_path": "models\\model_20260402_135212.pkl",
+      "created_at": "2026-04-02T13:56:17.264668",
+      "metrics": {
+        "accuracy": 0.6559246469436141,
+        "f1_score": 0.628338569831899,
+        "n_samples": 388036,
+        "n_features": 6
+      },
+      "n_samples": 388036
+    },
+    {
+      "model_id": "model_20260402_150537",
+      "model_type": "gb",
+      "model_path": "models\\model_20260402_150537.pkl",
+      "created_at": "2026-04-02T15:09:14.472722",
+      "metrics": {
+        "accuracy": 0.6623074093751277,
+        "f1_score": 0.6434273133089777,
+        "n_samples": 367033,
+        "n_features": 6
+      },
+      "n_samples": 367033
+    }
+  ],
+  "current_production": "model_20260402_115503",
+  "baseline_metrics": {}
+}
