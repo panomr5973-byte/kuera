@@ -74,3 +74,5 @@ desktop.ini
 !memory_consolidation.template.env
 *.key
 *.pem
+
+ollama-setup.exe
