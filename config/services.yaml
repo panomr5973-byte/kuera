@@ -1,0 +1,58 @@
+# KUERA AI — Service Definitions
+# Each service maps to a Python script and port.
+
+kuera_api:
+  name: "Kuera Production API"
+  script: "start_api.py"
+  port: 8000
+  auto_start: false
+  restart_on_crash: true
+  args: []
+
+kuera_real_api:
+  name: "Kuera Real API"
+  script: "app/real_api.py"
+  port: 8001
+  auto_start: false
+  restart_on_crash: true
+  args: ["-m", "uvicorn", "app.real_api:app", "--host", "0.0.0.0", "--port", "8001"]
+
+kuera_web_v2:
+  name: "Kuera Web Server v2"
+  script: "kuwera_web_server_v2.py"
+  port: 5000
+  auto_start: false
+  restart_on_crash: true
+  args: []
+
+kuera_dashboard:
+  name: "Kuera Streamlit Dashboard"
+  script: "start_dashboard.py"
+  port: 8501
+  auto_start: false
+  restart_on_crash: false
+  args: []
+
+kuera_admin:
+  name: "Kuera Admin Panel"
+  script: "admin_panel/start_admin.py"
+  port: 5001
+  auto_start: false
+  restart_on_crash: true
+  args: []
+
+kuera_evolution:
+  name: "Kuera Evolution Engine"
+  script: "kuera_evolution_engine.py"
+  port: null
+  auto_start: false
+  restart_on_crash: true
+  args: []
+
+kuera_claw:
+  name: "KueraClaw Multi-Model CLI"
+  script: "kuera_integrated_system.py"
+  port: null
+  auto_start: false
+  restart_on_crash: false
+  args: []

@@ -1,1 +1,1 @@
-# Model training module
+# KUERA AI — Model management

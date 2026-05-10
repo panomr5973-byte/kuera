@@ -1,0 +1,38 @@
+# KUERA AI — Configuration
+# Edit this file to change ports, paths, and behavior.
+
+app:
+  name: "KUERA Unified Desktop"
+  version: "3.1"
+  debug: false
+
+paths:
+  base_dir: "."
+  logs_dir: "logs/unified"
+  models_dir: "models/llm"
+  data_dir: "data"
+  memory_dir: "memory"
+
+ports:
+  control_panel: 7777
+  api_production: 8000
+  api_real: 8001
+  web_flask: 5000
+  admin_panel: 5001
+  dashboard_streamlit: 8501
+  gateway: 18789
+
+services:
+  auto_start: false
+  restart_on_crash: true
+  max_restarts: 5
+  health_check_interval: 3
+
+logging:
+  level: "INFO"
+  max_log_buffer: 500
+  log_history_lines: 250
+
+models:
+  registry_file: "models/llm/model_registry_active.json"
+  default_model: "Qwen2.5-1.5B-Instruct"
