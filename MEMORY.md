@@ -55,7 +55,10 @@ Every chat iteration should refine existing code, not spawn new files. There wer
 | **Anomaly Detection** | `audit_toolkit.py` | ✅ **NEW** — IQR + Z-Score + Benford |
 | **DB Maintenance** | `scripts/db_maintenance.py` | ✅ **NEW** — Vacuum + indexes |
 | **Real-time Charts** | `src/web/templates/control_panel.html` | ✅ **NEW** — Chart.js visualisasi audit |
+| **Logger Engine** | `src/core/logger_engine.py` | ✅ **NEW** — Auto-log ke memory/ |
+| **DB Maintenance** | `scripts/db_maintenance.py` | ✅ **NEW** — Vacuum + indexes |
 | Tests | `tests/` | ✅ 22 passed, 1 skipped |
+| Root .py files | root/ | ✅ Cleaned: 42 scripts archived |
 
 ---
 
