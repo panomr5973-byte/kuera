@@ -112,7 +112,7 @@ class ForsaBridge:
         # We create a wrapper that feeds input via echo + pipe
         wrapper_cmd = (
             f"cd {self.WSL_SCRIPT_DIR} && "
-            f"echo -e 'demo_user_01\\nforsabumdes\\n{mode}' | python3 {self.DEFAULT_SCRIPT}"
+            f"echo -e 'demo_user_01\\ndemo_pass_01\\n{mode}' | python3 {self.DEFAULT_SCRIPT}"
         )
 
         result = self._wsl_run(wrapper_cmd, timeout=timeout)

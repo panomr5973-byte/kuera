@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 # Populasi per Provinsi Kalimantan (Juta jiwa) - BPS 2023
 KALIMANTAN_PROVINCES = [
     ("Kalimantan Barat", 5.62, "pontianak", "agriculture_based"),
-    ("Example Province", 2.79, "palangkaraya", "rural_spread"),
+    ("Example Province", 2.79, "example_city", "rural_spread"),
     ("Kalimantan Selatan", 4.17, "banjarmasin", "river_civilization"),
     ("Kalimantan Timur", 3.93, "samarinda", "industrial_mining"),
     ("Kalimantan Utara", 0.73, "tanjung_selor", "border_frontier"),

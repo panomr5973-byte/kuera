@@ -102,7 +102,7 @@
 
 | Etnis | Jumlah | % | Wilayah Dominan |
 |-------|--------|---|-----------------|
-| **Dayak** | 159,941 | 32.0% | Kalbar, Kalteng, Kaltim |
+| **Dayak** | 159,941 | 32.0% | Kalbar, ExampleRegion, Kaltim |
 | **Jawa (Transmigran)** | 106,572 | 21.3% | Sebaran merata |
 | **Melayu** | 92,899 | 18.6% | Pantai, Kalbar-Kalsel |
 | **Banjar** | 75,467 | 15.1% | Kalsel |

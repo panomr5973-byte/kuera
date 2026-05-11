@@ -20,6 +20,7 @@ This is `D:\workspace\ai_core\AI-Project`, home to KUERA AI — a local multi-mo
 6. **Persona & Cleanup** — Gave AI a character ("Protective Chuunibyou"). Archived 20 old files.
 7. **Unified Desktop** — Single control panel (port 7777) to manage all services. WebSocket gateway (port 18789).
 8. **Audit Workflow Integration** — Unified audit dashboard (Keuangan + SPI + Kinerja), real anomaly detection (IQR/Z-Score/Benford), DB maintenance scripts.
+9. **Systematic Growth / Cleanup** — Archived 103 files. Root cleaned from 45 -> 14 .py files. Integrity score 100/100.
 
 ---
 
@@ -58,12 +59,12 @@ Every chat iteration should refine existing code, not spawn new files. There wer
 | **Logger Engine** | `src/core/logger_engine.py` | ✅ **NEW** — Auto-log ke memory/ |
 | **DB Maintenance** | `scripts/db_maintenance.py` | ✅ **NEW** — Vacuum + indexes |
 | **Manifest** | `KUERA_MANIFEST.json` | ✅ **NEW** — Source of truth for AI |
-| **Integrity Check** | `tools/integrity_check.py` | ✅ **NEW** — Self-auditing (90/100) |
-| Tests | `tests/` | ✅ 22 passed, 1 skipped |
+| **Integrity Check** | `tools/integrity_check.py` | ✅ Self-auditing (100/100) |
+| Tests | `tests/` | ✅ 38 passed, 1 skipped |
 | Root .py files | root/ | ✅ Cleaned: 61 scripts archived |
 | Git commits | `.git/` | ✅ 12 commits today (18 total) |
 | Docker | `Dockerfile` | ✅ v3.2.0 image ready |
-| Git tag | `v3.2.0` | ✅ Pushed to GitHub |
+| Git tag | `v3.2.1` | ✅ Pushed to GitHub |
 
 ---
 
@@ -82,8 +83,8 @@ Every chat iteration should refine existing code, not spawn new files. There wer
 - **HEARTBEAT.md**: Periodic health checks configured
 
 ### Test Coverage
-- Added `tests/test_audit_workflow.py` (8 tests)
-- Total: 18 passed, 1 skipped
+- Added `tests/test_audit_workflow.py`, `test_api.py`, `test_forsa_connector.py`
+- Total: 38 passed, 1 skipped
 
 ---
 
@@ -109,6 +110,7 @@ Every chat iteration should refine existing code, not spawn new files. There wer
 3. **Log rotation**: Large logs compressed. `data/kuera_database.db` is 2.36 GB — monitor growth.
 4. **HEARTBEAT.md empty**: No periodic tasks configured.
 5. **`.sixth/skills` empty**: Skill system never used.
+6. **API consolidation**: 4 API variants merged into single `src/web/api.py`. Done.
 6. **Terabox backup**: Scripts ready but requires manual cookie extraction from browser.
 
 ---
@@ -143,3 +145,15 @@ This project is a study in builder's trap: too many ideas, too little consolidat
 - `data/*.db` → ~200 KB
 
 *"Don't build more. Build better."*
+
+---
+
+## Cleanup Milestone (2026-05-11)
+
+After 5 weeks of building, the workspace reached critical mass:
+- **103 files archived** without breaking anything
+- **Root .py count**: 45 → 14 (threshold: 35)
+- **Integrity score**: 90 → 100/100
+- **Builder's trap avoided**: No new features, just consolidation
+- **Manifest**: Now governs the entire workspace
+- **Tag v3.2.1**: "Phase 8 Complete: Systematic Growth"

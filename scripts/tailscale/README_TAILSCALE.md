@@ -7,7 +7,7 @@ Tailnet: `panomr5973@gmail.com` | 3 machines connected
 | Machine | Tailscale IP | Platform | Role | Status |
 |---------|-------------|----------|------|--------|
 | **kuera-vps** | `100.111.193.44` | Ubuntu 22.04 (Vultr) | Exit Node, Reverse Proxy, Ollama | ✅ Active |
-| **bpkp-5cd423f27c** | `192.168.1.100` | Windows 11 25H2 | Workstation, KUERA Desktop | ✅ Active |
+| **WORKSTATION-LOCAL** | `192.168.1.100` | Windows 11 25H2 | Workstation, KUERA Desktop | ✅ Active |
 | **v2201** | `100.99.229.51` | Android 14 | Mobile | 💤 Offline (last seen 7m) |
 
 ---

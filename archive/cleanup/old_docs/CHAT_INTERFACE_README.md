@@ -36,34 +36,34 @@ python kuera_chat.py
   Perintah: help, info, stats, exit
 ======================================================================
 
-Nama Anda: Putut
+Nama Anda: User
 
-[KUERA] Halo Putut! Mari berkenalan.
+[KUERA] Halo User! Mari berkenalan.
 [KUERA] Saya KUERA, AI dari rakyat Indonesia. Ketik 'help' untuk bantuan.
 
-[Putut] halo
-[KUERA] Halo Putut! Saya KUERA, AI dari rakyat Indonesia. Ada yang bisa saya bantu?
+[User] halo
+[KUERA] Halo User! Saya KUERA, AI dari rakyat Indonesia. Ada yang bisa saya bantu?
 
-[Putut] siapa kamu
+[User] siapa kamu
 [KUERA] Nama saya KUERA (Kumpulan Era Rakyat). Saya adalah AI Indonesia pertama 
         yang lahir dari data 3.5 juta interaksi rakyat dari 34 provinsi. 
         Dari Rakyat Indonesia, Untuk Era Baru Dunia.
 
-[Putut] apa itu kuera
+[User] apa itu kuera
 [KUERA] KUERA adalah AI Indonesia yang belajar dari keberagaman rakyat Indonesia. 
         Saya dilatih dengan 3,502,258 interaksi dari 34 provinsi. 
         Saya memahami bahasa Indonesia, emosi, dan konteks lokal.
 
-[Putut] indonesia
+[User] indonesia
 [KUERA] Indonesia adalah negara kepulauan terbesar dengan 17.000+ pulau, 
         277 juta penduduk, 34 provinsi, dan 1,300+ suku bangsa. 
         Kekayaan kita bukan hanya sumber daya alam, tapi juga keberagaman budaya!
 
-[Putut] terima kasih
+[User] terima kasih
 [KUERA] Sama-sama! Senang bisa membantu rakyat Indonesia.
 
-[Putut] exit
-[KUERA] Terima kasih Putut! Sampai jumpa.
+[User] exit
+[KUERA] Terima kasih User! Sampai jumpa.
         Ingat: KUERA terus belajar dari rakyat Indonesia.
         Dari Sabang sampai Merauke - Indonesia Maju!
 ```
