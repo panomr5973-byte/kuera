@@ -57,8 +57,11 @@ Every chat iteration should refine existing code, not spawn new files. There wer
 | **Real-time Charts** | `src/web/templates/control_panel.html` | ✅ **NEW** — Chart.js visualisasi audit |
 | **Logger Engine** | `src/core/logger_engine.py` | ✅ **NEW** — Auto-log ke memory/ |
 | **DB Maintenance** | `scripts/db_maintenance.py` | ✅ **NEW** — Vacuum + indexes |
+| **Manifest** | `KUERA_MANIFEST.json` | ✅ **NEW** — Source of truth for AI |
+| **Integrity Check** | `tools/integrity_check.py` | ✅ **NEW** — Self-auditing (90/100) |
 | Tests | `tests/` | ✅ 22 passed, 1 skipped |
-| Root .py files | root/ | ✅ Cleaned: 42 scripts archived |
+| Root .py files | root/ | ✅ Cleaned: 57 scripts archived |
+| Git commits | `.git/` | ✅ 8 commits today (15 total) |
 
 ---
 
