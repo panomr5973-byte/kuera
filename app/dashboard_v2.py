@@ -85,7 +85,19 @@ def load_model_data():
             evolved.append(row)
     
     # Combine
-    baseline_df = pd.DataFrame(list(baseline.values())).T if baseline else pd.DataFrame()\n    if not baseline_df.empty:\n        baseline_df['model'] = list(baseline.keys())\n        baseline_df['type'] = 'Baseline'\n    evolved_df = pd.DataFrame(evolved)\n    if not evolved_df.empty:\n        evolved_df['type'] = 'Evolved'\n    combined_list = []\n    if not baseline_df.empty:\n        combined_list.append(baseline_df)\n    if not evolved_df.empty:\n        combined_list.append(evolved_df)\n    combined = pd.concat(combined_list, ignore_index=True) if combined_list else pd.DataFrame()
+    baseline_df = pd.DataFrame(list(baseline.values())).T if baseline else pd.DataFrame()
+    if not baseline_df.empty:
+        baseline_df['model'] = list(baseline.keys())
+        baseline_df['type'] = 'Baseline'
+    evolved_df = pd.DataFrame(evolved)
+    if not evolved_df.empty:
+        evolved_df['type'] = 'Evolved'
+    combined_list = []
+    if not baseline_df.empty:
+        combined_list.append(baseline_df)
+    if not evolved_df.empty:
+        combined_list.append(evolved_df)
+    combined = pd.concat(combined_list, ignore_index=True) if combined_list else pd.DataFrame()
     combined = combined.sort_values('f1_score', ascending=False)
     
     prod_model = registry.get('current_production', 'N/A') if 'registry' in locals() else 'N/A'

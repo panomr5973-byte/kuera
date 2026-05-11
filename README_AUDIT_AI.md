@@ -6,19 +6,32 @@ Toolkit analisis data untuk pendukung audit Government Audit Agency dengan Pytho
 
 | File | Deskripsi |
 |------|-----------|
-| `audit_toolkit_complete.py` | Audit Keuangan Lengkap (Excel + Anomaly + Filter + Viz + PDF) |
+| `audit_toolkit.py` | Audit Keuangan Lengkap (Excel + Anomaly + Filter + Viz + PDF) |
 | `template_audit_spi.py` | Audit SPI berbasis COSO Framework |
 | `template_audit_kinerja.py` | Audit Kinerja dengan Scoring & Ranking |
-| `template_master.py` | Menu utama integrasi semua audit |
+| `template_master.py` | Menu utama integrasi semua audit (CLI) |
+| `src/data/audit_workflow.py` | Unified orchestrator untuk semua jenis audit |
+| `src/web/dashboard.py` | Web UI dengan tab Audit Workflow |
 
 ## 🚀 Cara Menggunakan
 
-### Opsi 1: Menu Interaktif
+### Opsi 1: Web Dashboard (Recommended)
+Jalankan KUERA Control Panel:
+```bash
+python main.py
+```
+Buka `http://localhost:7777` → Tab **Audit Workflow**
+- Upload file Excel
+- Pilih jenis audit (Keuangan / SPI / Kinerja)
+- Klik "Jalankan Audit"
+- Lihat hasil analisis & download laporan
+
+### Opsi 2: Menu Interaktif (CLI)
 ```bash
 python template_master.py
 ```
 
-### Opsi 2: Langsung Jalankan
+### Opsi 3: Langsung Jalankan
 ```bash
 # Audit Keuangan
 python template_master.py keuangan
@@ -33,17 +46,34 @@ python template_master.py kinerja
 python template_master.py contoh
 ```
 
-### Opsi 3: Import di Script Python
+### Opsi 4: Import di Script Python
 ```python
-from audit_toolkit_complete import ExcelAuditProcessorV2, BUMDAnalyzer
+from audit_toolkit import ExcelAuditProcessorV2, BUMDAnalyzer
 
 proc = ExcelAuditProcessorV2()
 df = proc.read_excel_multiheader('data.xlsx', [0, 1])
 proc.detect_and_convert_numbers(df)
 proc.calculate_financial_ratios(df)
 
+# Anomaly detection (IQR + Z-Score + Benford's Law)
+anomalies = proc.detect_anomalies(df)
+
 analyzer = BUMDAnalyzer(df)
 low_roa = analyzer.filter_by_roa(max_roa=5)
+```
+
+### Opsi 5: API Endpoints
+```bash
+# List available templates
+curl http://localhost:7777/api/audit/templates
+
+# Upload file
+curl -X POST -F "file=@data.xlsx" http://localhost:7777/api/audit/upload
+
+# Run audit
+curl -X POST http://localhost:7777/api/audit/run \
+  -H "Content-Type: application/json" \
+  -d '{"jenis":"keuangan","filename":"data.xlsx"}'
 ```
 
 ## 📋 Format File Input

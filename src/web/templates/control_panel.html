@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KUERA Unified Control Panel v3.1</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
   :root {
     --bg: #0f172a; --card: #1e293b; --accent: #06b6d4;
@@ -180,6 +181,49 @@
     <div style="text-align:center;padding:2rem;color:var(--muted);">Loading models...</div>
   </div>
 
+  <!-- Audit Workflow -->
+  <div class="section-title">📋 Audit Workflow</div>
+  <div class="card" id="audit-container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+      <!-- Left: Upload & Run -->
+      <div>
+        <h3 style="margin-bottom:0.8rem;color:var(--accent);">Upload & Analisis</h3>
+        <div style="margin-bottom:1rem;">
+          <input type="file" id="audit-file-input" accept=".xlsx,.xls" style="display:none;" onchange="uploadAuditFile()">
+          <button class="btn btn-start" onclick="document.getElementById('audit-file-input').click()" style="width:100%;margin-bottom:0.5rem;">📤 Upload File Excel</button>
+          <div id="upload-status" style="font-size:0.8rem;color:var(--muted);"></div>
+        </div>
+        <div style="margin-bottom:1rem;">
+          <label style="font-size:0.8rem;color:var(--muted);display:block;margin-bottom:0.3rem;">Jenis Audit</label>
+          <select id="audit-type" style="width:100%;background:#0f172a;color:var(--text);border:1px solid #334155;padding:0.5rem;border-radius:6px;">
+            <option value="keuangan">🔢 Audit Keuangan (ROA, ROE, DER)</option>
+            <option value="spi">🛡️ Audit SPI (COSO Framework)</option>
+            <option value="kinerja">📊 Audit Kinerja (Scoring A/B/C/D/E)</option>
+          </select>
+        </div>
+        <div style="margin-bottom:1rem;">
+          <label style="font-size:0.8rem;color:var(--muted);display:block;margin-bottom:0.3rem;">File yang Tersedia</label>
+          <select id="audit-file-select" style="width:100%;background:#0f172a;color:var(--text);border:1px solid #334155;padding:0.5rem;border-radius:6px;">
+            <option value="">-- Pilih file --</option>
+          </select>
+        </div>
+        <button class="btn btn-start" onclick="runAudit()" id="btn-run-audit" style="width:100%;">▶️ Jalankan Audit</button>
+        <div id="audit-run-status" style="font-size:0.8rem;color:var(--muted);margin-top:0.5rem;"></div>
+      </div>
+      <!-- Right: Results -->
+      <div>
+        <h3 style="margin-bottom:0.8rem;color:var(--accent);">Hasil Analisis</h3>
+        <div id="audit-results" style="background:#0f172a;border:1px solid #334155;border-radius:8px;padding:1rem;min-height:120px;font-size:0.85rem;margin-bottom:1rem;">
+          <span style="color:var(--muted);">Hasil audit akan muncul di sini...</span>
+        </div>
+        <h3 style="margin-bottom:0.8rem;color:var(--accent);">📊 Visualisasi Real-Time</h3>
+        <div id="audit-charts" style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;">
+          <!-- Charts will be rendered here dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <div class="toast" id="toast"></div>
@@ -316,13 +360,244 @@ function updateUptime() {
   document.getElementById('uptime-badge').textContent = `Uptime: ${m}m ${s}s`;
 }
 
+// ─── CHART RENDERING ──────────────────────────────────────────────────
+let chartInstances = {};
+
+function destroyCharts() {
+  for (const key in chartInstances) {
+    if (chartInstances[key]) {
+      chartInstances[key].destroy();
+      delete chartInstances[key];
+    }
+  }
+  document.getElementById('audit-charts').innerHTML = '';
+}
+
+function renderCharts(charts) {
+  destroyCharts();
+  const container = document.getElementById('audit-charts');
+  if (!charts || Object.keys(charts).length === 0) {
+    container.innerHTML = '<span style="color:var(--muted);font-size:0.8rem;">Tidak ada chart untuk ditampilkan</span>';
+    return;
+  }
+  
+  let idx = 0;
+  for (const [key, config] of Object.entries(charts)) {
+    const canvasId = `chart-${key}`;
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = 'background:#0f172a;border:1px solid #334155;border-radius:8px;padding:0.8rem;';
+    wrapper.innerHTML = `<div style="font-size:0.75rem;color:var(--accent);margin-bottom:0.5rem;text-align:center;font-weight:600;">${config.title}</div><canvas id="${canvasId}" style="max-height:200px;"></canvas>`;
+    container.appendChild(wrapper);
+    
+    const ctx = document.getElementById(canvasId).getContext('2d');
+    const chartConfig = {
+      type: config.type,
+      data: config.data,
+      options: Object.assign({
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            labels: { color: '#94a3b8', font: { size: 10 } },
+            position: config.type === 'doughnut' ? 'right' : 'top'
+          }
+        },
+        scales: config.type === 'doughnut' || config.type === 'radar' ? {} : {
+          x: { ticks: { color: '#64748b', font: { size: 10 } }, grid: { color: '#1e293b' } },
+          y: { ticks: { color: '#64748b', font: { size: 10 } }, grid: { color: '#1e293b' } }
+        }
+      }, config.options || {})
+    };
+    
+    chartInstances[key] = new Chart(ctx, chartConfig);
+    idx++;
+  }
+}
+
+// ─── AUDIT WORKFLOW ───────────────────────────────────────────────────
+async function loadAuditFiles() {
+  const data = await api('/api/audit/files');
+  const select = document.getElementById('audit-file-select');
+  const files = data.files || [];
+  select.innerHTML = '<option value="">-- Pilih file --</option>' +
+    files.map(f => `<option value="${f}">${f}</option>`).join('');
+}
+
+async function uploadAuditFile() {
+  const input = document.getElementById('audit-file-input');
+  const status = document.getElementById('upload-status');
+  if (!input.files || input.files.length === 0) return;
+  
+  const file = input.files[0];
+  status.textContent = 'Uploading...';
+  status.style.color = 'var(--accent)';
+  
+  const formData = new FormData();
+  formData.append('file', file);
+  
+  try {
+    const resp = await fetch('/api/audit/upload', {method: 'POST', body: formData});
+    const data = await resp.json();
+    if (data.status === 'success') {
+      status.textContent = `✓ ${file.name} uploaded & analyzed (${data.analysis.rows || 0} rows)`;
+      status.style.color = 'var(--success)';
+      await loadAuditFiles();
+      document.getElementById('audit-file-select').value = file.name;
+      // Show quick analysis
+      displayQuickAnalysis(data.analysis);
+    } else {
+      status.textContent = `✗ ${data.message}`;
+      status.style.color = 'var(--danger)';
+    }
+  } catch(e) {
+    status.textContent = `✗ Upload failed: ${e.message}`;
+    status.style.color = 'var(--danger)';
+  }
+}
+
+function displayQuickAnalysis(analysis) {
+  const container = document.getElementById('audit-results');
+  if (analysis.status !== 'success') {
+    container.innerHTML = `<span style="color:var(--danger)">Error: ${analysis.message}</span>`;
+    return;
+  }
+  let html = `<div style="margin-bottom:0.5rem;font-weight:600;color:var(--accent);">📊 Analisis Cepat: ${analysis.file}</div>`;
+  html += `<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.8rem;">`;
+  html += `<div>Rows: <b>${analysis.rows}</b></div>`;
+  html += `<div>Columns: <b>${analysis.columns}</b></div>`;
+  html += `<div>Numeric: <b>${(analysis.numeric_columns || []).length}</b></div>`;
+  html += `<div>Anomalies: <b style="color:${(analysis.anomaly_count || 0) > 0 ? 'var(--danger)' : 'var(--success)'}">${analysis.anomaly_count || 0}</b></div>`;
+  html += `</div>`;
+  
+  if (analysis.anomalies && Object.keys(analysis.anomalies).length > 0) {
+    html += `<div style="color:var(--warn);font-weight:600;margin-bottom:0.3rem;">⚠️ Anomaly Flags:</div>`;
+    for (const [col, flags] of Object.entries(analysis.anomalies)) {
+      html += `<div style="margin-left:0.5rem;margin-bottom:0.3rem;">`;
+      html += `<div style="color:var(--accent);font-size:0.8rem;">${col}:</div>`;
+      for (const f of flags) {
+        html += `<div style="font-size:0.75rem;margin-left:0.5rem;">• [${f.method}] ${f.description}</div>`;
+      }
+      html += `</div>`;
+    }
+  }
+  
+  container.innerHTML = html;
+}
+
+async function runAudit() {
+  const jenis = document.getElementById('audit-type').value;
+  const filename = document.getElementById('audit-file-select').value;
+  const status = document.getElementById('audit-run-status');
+  const btn = document.getElementById('btn-run-audit');
+  
+  if (!filename) {
+    status.textContent = '✗ Pilih file terlebih dahulu';
+    status.style.color = 'var(--danger)';
+    return;
+  }
+  
+  btn.disabled = true;
+  status.textContent = `Running ${jenis} audit...`;
+  status.style.color = 'var(--accent)';
+  
+  try {
+    const resp = await fetch('/api/audit/run', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({jenis, filename})
+    });
+    const data = await resp.json();
+    if (data.status === 'success' && data.result) {
+      displayAuditResult(data.result);
+      status.textContent = `✓ Audit ${jenis} selesai`;
+      status.style.color = 'var(--success)';
+    } else {
+      status.textContent = `✗ ${data.message || 'Audit failed'}`;
+      status.style.color = 'var(--danger)';
+    }
+  } catch(e) {
+    status.textContent = `✗ Error: ${e.message}`;
+    status.style.color = 'var(--danger)';
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+function displayAuditResult(result) {
+  const container = document.getElementById('audit-results');
+  if (result.status === 'error') {
+    container.innerHTML = `<span style="color:var(--danger)">Error: ${result.error_message}</span>`;
+    destroyCharts();
+    return;
+  }
+  
+  const s = result.summary;
+  let html = `<div style="margin-bottom:0.5rem;font-weight:600;color:var(--accent);">✅ ${result.jenis.toUpperCase()} AUDIT RESULT</div>`;
+  
+  if (result.jenis === 'keuangan') {
+    html += `<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.8rem;">`;
+    html += `<div>Total BUMD: <b>${s.total_bumd}</b></div>`;
+    html += `<div>ROA &lt; 5%: <b style="color:var(--danger)">${s.roa_rendah}</b></div>`;
+    html += `<div>Underperforming: <b style="color:var(--danger)">${s.underperforming}</b></div>`;
+    html += `<div>Anomaly Flags: <b style="color:${s.anomaly_flags > 0 ? 'var(--warn)' : 'var(--success)'}">${s.anomaly_flags}</b></div>`;
+    html += `</div>`;
+    if (s.anomaly_details && Object.keys(s.anomaly_details).length > 0) {
+      html += `<div style="color:var(--warn);font-size:0.8rem;margin-bottom:0.5rem;">⚠️ Anomalies detected in ${Object.keys(s.anomaly_details).length} columns</div>`;
+    }
+  } else if (result.jenis === 'spi') {
+    html += `<div style="margin-bottom:0.5rem;">Entitas: <b>${s.nama_entitas}</b></div>`;
+    html += `<div style="margin-bottom:0.5rem;">Nilai SPI: <b style="color:var(--accent);font-size:1.2rem;">${s.nilai_total}</b> / 5.00</div>`;
+    html += `<div style="margin-bottom:0.5rem;">Kategori: <b style="color:${s.kategori === 'SANGAT BAIK' ? 'var(--success)' : s.kategori === 'BAIK' ? 'var(--success)' : s.kategori === 'CUKUP' ? 'var(--warn)' : 'var(--danger)'}">${s.kategori}</b></div>`;
+    html += `<div style="margin-bottom:0.5rem;">Rekomendasi: <b>${s.rekomendasi_count}</b> items</div>`;
+    if (s.rekomendasi && s.rekomendasi.length > 0) {
+      html += `<div style="font-size:0.8rem;margin-top:0.5rem;"><b>Top Recommendations:</b></div>`;
+      for (const r of s.rekomendasi.slice(0, 3)) {
+        html += `<div style="font-size:0.75rem;margin-left:0.5rem;color:var(--muted);">• [${r.prioritas}] ${r.komponen}</div>`;
+      }
+    }
+  } else if (result.jenis === 'kinerja') {
+    html += `<div style="margin-bottom:0.5rem;">Tahun: <b>${s.tahun}</b> | Total: <b>${s.total_entitas}</b> entitas</div>`;
+    html += `<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.8rem;">`;
+    html += `<div>Skor Tertinggi: <b style="color:var(--success)">${s.skor_tertinggi}</b></div>`;
+    html += `<div>Skor Terendah: <b style="color:var(--danger)">${s.skor_terendah}</b></div>`;
+    html += `</div>`;
+    if (s.predikat_distribution) {
+      html += `<div style="margin-bottom:0.5rem;font-size:0.8rem;">Distribusi: `;
+      for (const [p, n] of Object.entries(s.predikat_distribution)) {
+        const color = p === 'A' || p === 'B' ? 'var(--success)' : p === 'C' ? 'var(--warn)' : 'var(--danger)';
+        html += `<span style="color:${color};margin-right:0.5rem;">${p}: ${n}</span>`;
+      }
+      html += `</div>`;
+    }
+    if (s.top_5 && s.top_5.length > 0) {
+      html += `<div style="font-size:0.8rem;margin-top:0.5rem;"><b>🏆 Top Performer:</b></div>`;
+      html += `<div style="font-size:0.75rem;margin-left:0.5rem;color:var(--success);">1. ${s.top_5[0].nama} (${s.top_5[0].skor})</div>`;
+    }
+  }
+  
+  if (result.file_output) {
+    html += `<div style="margin-top:0.8rem;font-size:0.8rem;color:var(--muted);">📁 Output: ${result.file_output}</div>`;
+  }
+  
+  container.innerHTML = html;
+  
+  // Render charts if available
+  if (result.charts && Object.keys(result.charts).length > 0) {
+    renderCharts(result.charts);
+  } else {
+    destroyCharts();
+  }
+}
+
 // Init
 (async () => {
   await refreshServices();
   await loadModels();
+  await loadAuditFiles();
   setInterval(refreshServices, 3000);
   setInterval(loadLogs, 2000);
   setInterval(updateUptime, 1000);
+  setInterval(loadAuditFiles, 10000);  // Refresh file list every 10s
 })();
 </script>
 </body>

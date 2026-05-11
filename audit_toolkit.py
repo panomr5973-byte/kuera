@@ -149,6 +149,90 @@ class ExcelAuditProcessorV2:
         
         return df
     
+    def detect_anomalies(self, df, method='all'):
+        """Deteksi anomali menggunakan multiple methods
+        
+        Args:
+            df: DataFrame yang sudah diproses
+            method: 'iqr', 'zscore', 'benford', atau 'all'
+        
+        Returns:
+            Dict dengan hasil deteksi per kolom
+        """
+        print("\n🔍 Deteksi anomali...")
+        results = {}
+        numeric_cols = df.select_dtypes(include=['number']).columns.tolist()
+        
+        if not numeric_cols:
+            print("   ✗ Tidak ada kolom numerik")
+            return results
+        
+        for col in numeric_cols:
+            col_results = []
+            data = df[col].dropna()
+            
+            if len(data) < 10:
+                continue
+            
+            # IQR Method
+            if method in ('all', 'iqr'):
+                q1 = data.quantile(0.25)
+                q3 = data.quantile(0.75)
+                iqr = q3 - q1
+                lower = q1 - 1.5 * iqr
+                upper = q3 + 1.5 * iqr
+                iqr_outliers = data[(data < lower) | (data > upper)]
+                if len(iqr_outliers) > 0:
+                    col_results.append({
+                        'method': 'IQR',
+                        'count': len(iqr_outliers),
+                        'indices': iqr_outliers.index.tolist()[:20],  # Limit 20
+                        'description': f'{len(iqr_outliers)} outliers (batas: {lower:.2f} - {upper:.2f})'
+                    })
+            
+            # Z-Score Method
+            if method in ('all', 'zscore'):
+                mean = data.mean()
+                std = data.std()
+                if std > 0:
+                    z_scores = (data - mean) / std
+                    z_outliers = data[z_scores.abs() > 3]
+                    if len(z_outliers) > 0:
+                        col_results.append({
+                            'method': 'Z-Score',
+                            'count': len(z_outliers),
+                            'indices': z_outliers.index.tolist()[:20],
+                            'description': f'{len(z_outliers)} extreme values (|z| > 3)'
+                        })
+            
+            # Benford's Law (for positive values with wide range)
+            if method in ('all', 'benford'):
+                positive = data[data > 0]
+                if len(positive) >= 100 and positive.max() / positive.min() > 100:
+                    first_digits = positive.astype(str).str[0].astype(int)
+                    observed = first_digits.value_counts(normalize=True).sort_index()
+                    benford_expected = pd.Series({
+                        1: 0.301, 2: 0.176, 3: 0.125, 4: 0.097,
+                        5: 0.079, 6: 0.067, 7: 0.058, 8: 0.051, 9: 0.046
+                    })
+                    # Chi-square test approximation
+                    chi_sq = sum(((observed.get(d, 0) - expected) ** 2) / expected 
+                                for d, expected in benford_expected.items())
+                    if chi_sq > 15.5:  # Critical value for df=8, alpha=0.05
+                        col_results.append({
+                            'method': 'Benford',
+                            'count': 'N/A',
+                            'indices': [],
+                            'description': f"Deviasi dari Benford's Law (chi_sq={chi_sq:.2f}) - kemungkinan manipulasi"
+                        })
+            
+            if col_results:
+                results[col] = col_results
+        
+        total_flags = sum(len(v) for v in results.values())
+        print(f"   ✓ {total_flags} anomaly flags di {len(results)} kolom")
+        return results
+
     def export_clean(self, output_path, df=None):
         """Export data bersih ke Excel"""
         if df is None:

@@ -94,6 +94,70 @@ def create_app(process_manager, model_registry_loader) -> Flask:
         result = analyze_excel(filepath)
         return jsonify(result)
 
+    @app.route("/api/audit/templates")
+    def audit_templates():
+        from ..data.audit_connector import list_templates
+        return jsonify({"templates": list_templates()})
+
+    @app.route("/api/audit/run", methods=["POST"])
+    def audit_run():
+        from ..data.audit_connector import run_audit
+        data = request.get_json() or {}
+        jenis = data.get("jenis", "").lower()
+        filename = data.get("filename", "")
+        if not jenis or not filename:
+            return jsonify({"status": "error", "message": "jenis and filename required"}), 400
+        if jenis not in ("keuangan", "spi", "kinerja"):
+            return jsonify({"status": "error", "message": f"Invalid jenis: {jenis}"}), 400
+        upload_dir = Path(__file__).parent.parent.parent.parent / "data" / "uploads"
+        filepath = str(upload_dir / filename)
+        kwargs = {}
+        if jenis == "spi":
+            kwargs["nama_entitas"] = data.get("nama_entitas", "Entitas Audit")
+        elif jenis == "kinerja":
+            kwargs["tahun"] = int(data.get("tahun", 2024))
+        result = run_audit(jenis, filepath, **kwargs)
+        return jsonify(result)
+
+    @app.route("/api/audit/upload", methods=["POST"])
+    def audit_upload():
+        upload_dir = Path(__file__).parent.parent.parent.parent / "data" / "uploads"
+        upload_dir.mkdir(parents=True, exist_ok=True)
+        if "file" not in request.files:
+            return jsonify({"status": "error", "message": "No file part"}), 400
+        file = request.files["file"]
+        if file.filename == "":
+            return jsonify({"status": "error", "message": "No selected file"}), 400
+        if not (file.filename.endswith(".xlsx") or file.filename.endswith(".xls")):
+            return jsonify({"status": "error", "message": "Only .xlsx and .xls files allowed"}), 400
+        save_path = upload_dir / file.filename
+        file.save(str(save_path))
+        # Auto-analyze
+        from ..data.audit_connector import analyze_excel
+        analysis = analyze_excel(str(save_path))
+        return jsonify({
+            "status": "success",
+            "filename": file.filename,
+            "saved_to": str(save_path),
+            "analysis": analysis
+        })
+
+    @app.route("/api/audit/chart", methods=["POST"])
+    def audit_chart():
+        """Generate chart data from an existing audit result or raw analysis."""
+        from ..data.audit_workflow import generate_chart_data, AuditResult
+        data = request.get_json() or {}
+        jenis = data.get("jenis", "").lower()
+        summary = data.get("summary", {})
+        if not jenis or not summary:
+            return jsonify({"status": "error", "message": "jenis and summary required"}), 400
+        try:
+            result = AuditResult(jenis=jenis, status="success", file_input="", file_output=None, summary=summary)
+            charts = generate_chart_data(result)
+            return jsonify({"status": "success", "charts": charts})
+        except Exception as e:
+            return jsonify({"status": "error", "message": str(e)}), 500
+
     # ─── WORLDBANK ROUTES ────────────────────────────────────────────────
     @app.route("/api/economy/indonesia")
     def economy_indonesia():

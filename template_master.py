@@ -54,7 +54,7 @@ def run_audit_keuangan():
     print("="*70)
     
     try:
-        from audit_toolkit_complete import (
+        from audit_toolkit import (
             ExcelAuditProcessorV2, 
             BUMDAnalyzer, 
             AuditVisualizer,
@@ -224,7 +224,7 @@ def show_examples():
     print("""
 1. AUDIT KEUANGAN (Python Script):
    --------------------------------
-   from audit_toolkit_complete import (
+   from audit_toolkit import (
        ExcelAuditProcessorV2, BUMDAnalyzer
    )
    

@@ -19,6 +19,7 @@ This is `D:\workspace\ai_core\AI-Project`, home to KUERA AI — a local multi-mo
 5. **Model Frenzy** — Downloaded 12 models (29.45 GB). Created 18 redundant download scripts.
 6. **Persona & Cleanup** — Gave AI a character ("Protective Chuunibyou"). Archived 20 old files.
 7. **Unified Desktop** — Single control panel (port 7777) to manage all services. WebSocket gateway (port 18789).
+8. **Audit Workflow Integration** — Unified audit dashboard (Keuangan + SPI + Kinerja), real anomaly detection (IQR/Z-Score/Benford), DB maintenance scripts.
 
 ---
 
@@ -46,6 +47,39 @@ Every chat iteration should refine existing code, not spawn new files. There wer
 ---
 
 ## What Works Now
+
+| Component | File | Status |
+|-----------|------|--------|
+
+| **Audit Workflow** | `src/data/audit_workflow.py` | ✅ **NEW** — 3 jenis audit via UI |
+| **Anomaly Detection** | `audit_toolkit.py` | ✅ **NEW** — IQR + Z-Score + Benford |
+| **DB Maintenance** | `scripts/db_maintenance.py` | ✅ **NEW** — Vacuum + indexes |
+| **Real-time Charts** | `src/web/templates/control_panel.html` | ✅ **NEW** — Chart.js visualisasi audit |
+| Tests | `tests/` | ✅ 22 passed, 1 skipped |
+
+---
+
+## Recent Changes (2026-05-11)
+
+### Bug Fixes
+- `template_master.py`: Fixed broken `audit_toolkit_complete` import → `audit_toolkit`
+- `app/production_api.py`: Fixed `start_time` scoping bug (used before defined)
+- `app/dashboard_v2.py`: Fixed syntax error (newline inside if expression)
+
+### New Features
+- **Unified Audit Workflow**: Upload Excel → pilih jenis audit → hasil langsung di dashboard
+- **Real Anomaly Detection**: IQR outliers, Z-Score extremes, Benford's Law first-digit analysis
+- **API Endpoints**: `/api/audit/templates`, `/api/audit/run`, `/api/audit/upload`
+- **DB Maintenance**: `scripts/db_maintenance.py` — vacuum, analyze, create indexes, archive old data
+- **HEARTBEAT.md**: Periodic health checks configured
+
+### Test Coverage
+- Added `tests/test_audit_workflow.py` (8 tests)
+- Total: 18 passed, 1 skipped
+
+---
+
+## What Works Now (Legacy)
 
 | Component | File | Status |
 |-----------|------|--------|

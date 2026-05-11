@@ -1,6 +1,6 @@
 """KUERA AI — Audit Toolkit Connector.
 
-Wraps the legacy audit_toolkit.py to provide a clean API for the dashboard.
+Wraps the legacy audit_toolkit.py and audit_workflow.py to provide a clean API for the dashboard.
 """
 
 import json
@@ -13,6 +13,7 @@ sys.path.insert(0, str(BASE_DIR))
 
 # Lazy import to avoid loading heavy deps at startup
 _audit_toolkit = None
+_audit_workflow = None
 
 
 def _get_toolkit():
@@ -24,6 +25,18 @@ def _get_toolkit():
         except Exception as e:
             return None, str(e)
     return _audit_toolkit, None
+
+
+def _get_workflow():
+    global _audit_workflow
+    if _audit_workflow is None:
+        try:
+            # Import from src.data since audit_workflow lives there
+            from src.data import audit_workflow
+            _audit_workflow = audit_workflow
+        except Exception as e:
+            return None, str(e)
+    return _audit_workflow, None
 
 
 def analyze_excel(filepath: str) -> Dict:
@@ -56,15 +69,18 @@ def analyze_excel(filepath: str) -> Dict:
             "dtypes": {str(c): str(df[c].dtype) for c in df.columns},
         }
 
-        # Try anomaly detection if method exists
+        # Anomaly detection
         if hasattr(toolkit, 'detect_anomalies'):
             try:
                 anomalies = toolkit.detect_anomalies(df)
                 summary["anomalies"] = anomalies
+                summary["anomaly_count"] = sum(len(v) for v in anomalies.values())
             except Exception:
-                summary["anomalies"] = []
+                summary["anomalies"] = {}
+                summary["anomaly_count"] = 0
         else:
-            summary["anomalies"] = []
+            summary["anomalies"] = {}
+            summary["anomaly_count"] = 0
 
         # Numeric summary
         numeric_cols = df.select_dtypes(include=['number']).columns.tolist()
@@ -77,6 +93,39 @@ def analyze_excel(filepath: str) -> Dict:
 
     except Exception as e:
         return {"status": "error", "message": str(e)}
+
+
+def run_audit(jenis: str, filepath: str, **kwargs) -> Dict:
+    """Run a specific audit workflow.
+    
+    Args:
+        jenis: 'keuangan', 'spi', or 'kinerja'
+        filepath: Path to input Excel file
+        **kwargs: Additional parameters (e.g., nama_entitas, tahun)
+    
+    Returns:
+        Dict with audit results
+    """
+    workflow, error = _get_workflow()
+    if workflow is None:
+        return {"status": "error", "message": f"audit_workflow not available: {error}"}
+    
+    try:
+        result = workflow.run_audit(jenis, filepath, **kwargs)
+        return {"status": "success", "result": result}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
+
+def list_templates() -> List[Dict]:
+    """List available audit templates."""
+    workflow, error = _get_workflow()
+    if workflow is None:
+        return []
+    try:
+        return workflow.list_templates()
+    except Exception:
+        return []
 
 
 def list_uploaded_files() -> List[str]:

@@ -57,6 +57,9 @@ request_counts = {}
 models = {}
 model_metadata = {}
 
+# Startup time (moved here so /health endpoint can reference it)
+start_time = time.time()
+
 
 # ============== LIFESPAN MANAGEMENT ==============
 
