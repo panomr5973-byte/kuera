@@ -348,6 +348,30 @@ async def audit_chart(data: Dict):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+# ─── FORSA BUMDes ENDPOINTS ────────────────────────────────────────────
+
+@app.get("/api/audit/forsa/status")
+async def forsa_status():
+    from src.data.forsa_connector import get_forsa_status
+    return get_forsa_status()
+
+
+@app.post("/api/audit/forsa/run")
+async def forsa_run(data: Dict):
+    from src.data.forsa_connector import run_forsa_audit
+    mode = str(data.get("mode", "2"))
+    result = run_forsa_audit(mode=mode)
+    return result
+
+
+@app.get("/api/audit/forsa/files")
+async def forsa_files():
+    from src.data.forsa_connector import ForsaBridge
+    bridge = ForsaBridge()
+    files = bridge.list_output_files()
+    return {"files": files}
+
+
 # ─── MAIN ──────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
