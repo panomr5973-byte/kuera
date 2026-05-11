@@ -1,6 +1,6 @@
 {
   "project_name": "KUERA AI",
-  "version": "8.0.0-alpha",
+  "version": "v3.2.1",
   "codename": "Systematic Growth",
   "description": "Local-first AI workstation for government audit workflows (Government Audit Agency Indonesia)",
   "architecture": "Modular Orchestration",
