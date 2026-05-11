@@ -1,6 +1,6 @@
 # KUERA AI — Unified Desktop v3.1
 
-> Local-first AI workstation for government audit workflows (Government Audit Agency Indonesia)
+> Local-first AI workstation for government audit workflows 
 
 KUERA is a self-contained AI system that runs entirely on your local machine. It integrates local LLMs, audit automation tools, economic data analysis, and a unified control panel into a single workspace.
 
@@ -161,7 +161,7 @@ python sanitizer.py
 
 ## 🏗️ Built By
 
-**panomr5973** (panomr5973) — Auditor at Government Audit Agency Indonesia
+panomr5973
 
 ---
 
