@@ -38,6 +38,7 @@
     "entry_point": "main.py",
     "gateway": "gateway_server.py",
     "control_panel": "src/web/dashboard.py",
+    "api": "src/web/api.py",
     "process_manager": "src/core/process_manager.py",
     "service_registry": "src/core/service_registry.py",
     "logger_engine": "src/core/logger_engine.py",
@@ -48,6 +49,7 @@
     "integrity_check": "tools/integrity_check.py"
   },
   "deprecated_modules": {
+    "api_variants": "app/api.py, app/production_api.py, app/real_api.py, app/real_api_v2.py — Consolidated into src/web/api.py",
     "kuera_unified_desktop": "kuera_unified_desktop.py — Replaced by main.py",
     "integrity_cleanup": "KUERA_INTEGRITY_CLEANUP.py — Replaced by tools/integrity_check.py",
     "auto_interact": "auto_interact.py — Not integrated with current architecture",
