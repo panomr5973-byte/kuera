@@ -29,6 +29,7 @@ sys.path.insert(0, str(Path(__file__).parent.resolve()))
 
 from src.core.service_registry import load_services
 from src.core.process_manager import ProcessManager
+from src.core.logger_engine import log_startup, log_shutdown, log_activity
 from src.web.dashboard import create_app
 from src.models.registry import load_model_registry
 from src.utils.config import settings
@@ -64,12 +65,14 @@ def print_banner(logger):
 def main():
     logger = setup_logger("KUERA-Main")
     logger.info("Starting KUERA AI v%s", settings.app_version)
+    log_startup("KUERA Unified Desktop", settings.app_version)
 
     services = load_services()
     pm = ProcessManager(services)
     pm.start_monitoring()
 
     print_banner(logger)
+    log_activity("ProcessManager started", {"services_count": len(services)})
 
     # Auto-open browser
     def open_browser():
@@ -94,6 +97,7 @@ def main():
         logger.info("KeyboardInterrupt received. Shutting down.")
     finally:
         pm.stop_all()
+        log_shutdown("Graceful exit via KeyboardInterrupt or signal")
         print("[SHUTDOWN] All services stopped. Goodbye!")
         logger.info("Shutdown complete.")
 
