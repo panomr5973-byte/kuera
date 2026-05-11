@@ -60,8 +60,10 @@ Every chat iteration should refine existing code, not spawn new files. There wer
 | **Manifest** | `KUERA_MANIFEST.json` | ✅ **NEW** — Source of truth for AI |
 | **Integrity Check** | `tools/integrity_check.py` | ✅ **NEW** — Self-auditing (90/100) |
 | Tests | `tests/` | ✅ 22 passed, 1 skipped |
-| Root .py files | root/ | ✅ Cleaned: 57 scripts archived |
-| Git commits | `.git/` | ✅ 8 commits today (15 total) |
+| Root .py files | root/ | ✅ Cleaned: 61 scripts archived |
+| Git commits | `.git/` | ✅ 12 commits today (18 total) |
+| Docker | `Dockerfile` | ✅ v3.2.0 image ready |
+| Git tag | `v3.2.0` | ✅ Pushed to GitHub |
 
 ---
 
