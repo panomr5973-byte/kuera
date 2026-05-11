@@ -27,6 +27,7 @@ from datetime import datetime
 # Ensure src/ is on path
 sys.path.insert(0, str(Path(__file__).parent.resolve()))
 
+import json
 from src.core.service_registry import load_services
 from src.core.process_manager import ProcessManager
 from src.core.logger_engine import log_startup, log_shutdown, log_activity
@@ -34,6 +35,19 @@ from src.web.dashboard import create_app
 from src.models.registry import load_model_registry
 from src.utils.config import settings
 from src.utils.logger import setup_logger
+
+
+def load_manifest_info():
+    """Load version and phase from KUERA_MANIFEST.json."""
+    manifest_path = Path(__file__).parent / "KUERA_MANIFEST.json"
+    if manifest_path.exists():
+        try:
+            with open(manifest_path, "r", encoding="utf-8") as f:
+                manifest = json.load(f)
+            return manifest.get("version", "unknown"), manifest.get("phase", 0)
+        except Exception:
+            pass
+    return "unknown", 0
 
 
 def print_banner(logger):
@@ -63,9 +77,10 @@ def print_banner(logger):
 
 
 def main():
+    manifest_version, phase = load_manifest_info()
     logger = setup_logger("KUERA-Main")
-    logger.info("Starting KUERA AI v%s", settings.app_version)
-    log_startup("KUERA Unified Desktop", settings.app_version)
+    logger.info("Starting KUERA AI v%s (Manifest: %s, Phase: %s)", settings.app_version, manifest_version, phase)
+    log_startup("KUERA Unified Desktop", f"{settings.app_version} (Phase {phase})")
 
     services = load_services()
     pm = ProcessManager(services)

@@ -1,0 +1,152 @@
+{
+  "project_name": "KUERA AI",
+  "version": "8.0.0-alpha",
+  "codename": "Systematic Growth",
+  "description": "Local-first AI workstation for government audit workflows (Government Audit Agency Indonesia)",
+  "architecture": "Modular Orchestration",
+  "phase": 8,
+  "author": "panomr5973 (panomr5973)",
+  "created": "2026-05-11",
+  "rules": [
+    "NO new files in root. Root is sacred.",
+    "Edit existing modules. Do NOT create *_v2.py, fix_*.py, or duplicate variants.",
+    "Every execution MUST log to memory/ via logger_engine.py.",
+    "Every module MUST use pathlib.Path — no hardcoded C:\\ or D:\\ paths.",
+    "Import from src/ or tools/. Never import from root siblings.",
+    "Git commit after every feature change. Commit is your save point.",
+    "If entropy detected (>5 new untracked .py files), run sanitizer.py immediately.",
+    "Audit data NEVER leaves the machine unless explicitly exported by user."
+  ],
+  "paths": {
+    "root": ".",
+    "core": "./src/core",
+    "web": "./src/web",
+    "data": "./src/data",
+    "models": "./src/models",
+    "utils": "./src/utils",
+    "tools": "./tools",
+    "audit": ".",
+    "memory": "./memory",
+    "logs": "./logs",
+    "scripts": "./scripts",
+    "tests": "./tests",
+    "docs": "./docs",
+    "archive": "./archive",
+    "config": "./config"
+  },
+  "active_modules": {
+    "entry_point": "main.py",
+    "gateway": "gateway_server.py",
+    "control_panel": "src/web/dashboard.py",
+    "process_manager": "src/core/process_manager.py",
+    "service_registry": "src/core/service_registry.py",
+    "logger_engine": "src/core/logger_engine.py",
+    "audit_workflow": "src/data/audit_workflow.py",
+    "audit_connector": "src/data/audit_connector.py",
+    "worldbank_connector": "src/data/worldbank_connector.py",
+    "db_maintenance": "scripts/db_maintenance.py",
+    "integrity_check": "tools/integrity_check.py"
+  },
+  "deprecated_modules": {
+    "kuera_unified_desktop": "kuera_unified_desktop.py — Replaced by main.py",
+    "integrity_cleanup": "KUERA_INTEGRITY_CLEANUP.py — Replaced by tools/integrity_check.py",
+    "auto_interact": "auto_interact.py — Not integrated with current architecture",
+    "auto_interact_human": "auto_interact_human.py — Not integrated",
+    "auto_startup": "auto_startup.py — Not integrated",
+    "bulk_interact": "bulk_interact.py — Not integrated",
+    "check_download_progress": "check_download_progress.py — One-off utility",
+    "setup_ollama": "setup_ollama.py — One-off setup script",
+    "mega_fast": "mega_fast.py — Simulation script",
+    "mega_simulation": "mega_simulation.py — Simulation script",
+    "mcp_client_qt": "mcp_client_qt.py — Standalone MCP client",
+    "copy_to_wsl": "copy_to_wsl.py — One-off migration utility",
+    "data_knowledge_foundation": "data_knowledge_foundation.py — One-off setup",
+    "verify_env": "verify_env.py — Environment setup (run once)",
+    "update_registry_coder": "update_registry_coder.py — One-off registry update"
+  },
+  "utilities": {
+    "checkers": ["check_health.py", "check_models.py", "check_evolution.py", "check_worldbank_db.py"],
+    "maintenance": ["maintenance.py", "sanitizer.py"],
+    "runners": ["run_pipeline.py", "run_self_evolving.py", "start_scheduler.py", "start_scheduler_simple.py"],
+    "extractors": ["pdf_extractor.py", "file_processor.py", "docx_extractor.py"],
+    "integration": ["kuera_international_integration.py", "kuera_worldbank_integration.py", "kuera_worldbank_setup.py"],
+    "chat": ["interact.py", "kuera_international_chat.py", "kuera_worldbank_chat.py"],
+    "automation": ["kuwera_autostart.py", "kuwera_health_check.py", "kuwera_memory_bridge.py", "watch_evolution.py"],
+    "model_mgmt": ["kuera_llm_ctransformers.py", "kuera_multi_model_manager.py", "create_model_registry.py"],
+    "persona": ["kuera_persona.py"],
+    "migration": ["migrate_to_cloud.py", "kuwera_workspace_integration.py"],
+    "legacy_wrappers": ["kuera_with_check.py", "verify_and_start.py", "speedup_config.py"],
+    "agents": ["memory_agent.py"],
+    "analysis": ["indonesia_sabang_merauke.py"]
+  },
+  "active_ports": {
+    "control_panel": 7777,
+    "gateway": 18789,
+    "api_production": 8000,
+    "api_real": 8001,
+    "web_flask": 5000,
+    "admin_panel": 5001,
+    "dashboard_streamlit": 8501
+  },
+  "audit_types": [
+    {
+      "id": "keuangan",
+      "name": "Audit Keuangan",
+      "file": "audit_toolkit.py",
+      "class": "ExcelAuditProcessorV2",
+      "output": ["Excel", "PDF", "PNG"]
+    },
+    {
+      "id": "spi",
+      "name": "Audit SPI",
+      "file": "template_audit_spi.py",
+      "class": "AuditSPI",
+      "output": ["Excel"]
+    },
+    {
+      "id": "kinerja",
+      "name": "Audit Kinerja",
+      "file": "template_audit_kinerja.py",
+      "class": "AuditKinerja",
+      "output": ["Excel", "PNG"]
+    }
+  ],
+  "anti_patterns": [
+    {
+      "name": "Fix Spiral",
+      "description": "Creating fix_*.py or *_v2.py instead of editing existing files",
+      "severity": "CRITICAL",
+      "detection": "Root contains fix_* or *_v2.py files"
+    },
+    {
+      "name": "Download Obsession",
+      "description": "Multiple download scripts for the same task",
+      "severity": "HIGH",
+      "detection": "More than 2 download_*.py files in root"
+    },
+    {
+      "name": "Chat Proliferation",
+      "description": "Spawning new chat interfaces instead of refining existing",
+      "severity": "HIGH",
+      "detection": "More than 2 kuera_chat*.py files in root"
+    },
+    {
+      "name": "Hardcoded Paths",
+      "description": "Using C:\\ or D:\\ directly in code",
+      "severity": "MEDIUM",
+      "detection": "String literals containing drive letters in .py files"
+    },
+    {
+      "name": "Root Pollution",
+      "description": "New .py files appearing in root directory",
+      "severity": "MEDIUM",
+      "detection": "Untracked .py files in root"
+    }
+  ],
+  "entropy_thresholds": {
+    "warning": 3,
+    "critical": 5,
+    "max_root_py_files": 35,
+    "target_root_py_files": 25
+  }
+}
