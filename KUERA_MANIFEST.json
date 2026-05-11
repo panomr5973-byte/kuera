@@ -145,6 +145,12 @@
       "detection": "Untracked .py files in root"
     }
   ],
+  "deployment": {
+    "docker_image": "kuera-ai:3.2.0",
+    "dockerfile": "Dockerfile",
+    "compose": "docker-compose.yml",
+    "ports": [7777, 8000, 18789]
+  },
   "entropy_thresholds": {
     "warning": 3,
     "critical": 5,

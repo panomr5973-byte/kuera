@@ -1,0 +1,58 @@
+# KUERA Docker Ignore
+
+# Git
+.git/
+.gitignore
+
+# Virtual environments
+.venv/
+ai_env/
+venv/
+
+# Large model files (mount as volume instead)
+models/llm/*.gguf
+models/llm/*.bin
+models/llm/*.safetensors
+
+# Large databases (mount as volume instead)
+data/*.db
+data/*.db.bak
+data/*.sqlite
+
+# Logs
+logs/**/*.log
+logs/**/*.zip
+
+# Archives
+archive/
+archive_incomplete/
+archive_bat_old/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.swp
+*.swo
+
+# Docker itself
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation (optional — keep if you want docs inside image)
+# docs/

@@ -1,88 +1,47 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  # FastAPI Production API
-  api:
+  kuera:
     build: .
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./models:/app/models
-      - ./logs:/app/logs
-      - ./data:/app/data
-    environment:
-      - ENVIRONMENT=production
-      - LOG_LEVEL=INFO
-    command: python app/production_api.py
+    image: kuera-ai:3.2.0
+    container_name: kuera-ai
     restart: unless-stopped
+    ports:
+      - "7777:7777"   # Control Panel
+      - "8000:8000"   # Canonical API
+      - "18789:18789" # WebSocket Gateway
+    volumes:
+      # Persist data between restarts
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./memory:/app/memory
+      # Mount model directory (optional — large files)
+      # - ./models/llm:/app/models/llm:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - KUERA_ENV=docker
+      - KUERA_VERSION=3.2.0
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:7777/api/health')"]
       interval: 30s
       timeout: 10s
       retries: 3
+      start_period: 15s
+    networks:
+      - kuera-net
 
-  # Streamlit Dashboard
-  dashboard:
-    build: .
-    ports:
-      - "8501:8501"
-    volumes:
-      - ./models:/app/models
-      - ./data:/app/data
-      - ./reports:/app/reports
-    environment:
-      - STREAMLIT_SERVER_PORT=8501
-      - STREAMLIT_SERVER_HEADLESS=true
-    command: streamlit run app/dashboard.py --server.port=8501 --server.address=0.0.0.0
-    restart: unless-stopped
-    depends_on:
-      - api
+  # Optional: Nginx reverse proxy for production
+  # nginx:
+  #   image: nginx:alpine
+  #   ports:
+  #     - "80:80"
+  #   volumes:
+  #     - ./nginx.conf:/etc/nginx/nginx.conf:ro
+  #   depends_on:
+  #     - kuera
+  #   networks:
+  #     - kuera-net
 
-  # MLflow Tracking Server
-  mlflow:
-    image: python:3.10-slim
-    ports:
-      - "5000:5000"
-    volumes:
-      - ./mlruns:/mlruns
-      - ./mlartifacts:/mlartifacts
-    command: >
-      bash -c "
-        pip install mlflow &&
-        mlflow server
-        --host 0.0.0.0
-        --port 5000
-        --default-artifact-root /mlartifacts
-        --backend-store-uri sqlite:///mlruns/mlflow.db
-      "
-    restart: unless-stopped
-
-  # Redis (for rate limiting & caching in production)
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
-    restart: unless-stopped
-
-  # Monitoring (Prometheus)
-  prometheus:
-    image: prom/prometheus:latest
-    ports:
-      - "9090:9090"
-    volumes:
-      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
-    restart: unless-stopped
-
-  # Monitoring Dashboard (Grafana)
-  grafana:
-    image: grafana/grafana:latest
-    ports:
-      - "3000:3000"
-    environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin
-    volumes:
-      - grafana-storage:/var/lib/grafana
-    restart: unless-stopped
-
-volumes:
-  grafana-storage:
+networks:
+  kuera-net:
+    driver: bridge
