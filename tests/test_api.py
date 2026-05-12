@@ -59,6 +59,48 @@ class TestAPIAudit:
         assert r.status_code == 400
 
 
+class TestAPIAuditTrail:
+    def test_audit_history_empty(self):
+        r = client.get("/api/audit/history")
+        assert r.status_code == 200
+        data = r.json()
+        assert data["status"] == "success"
+        assert "runs" in data
+
+    def test_audit_history_with_jenis_filter(self):
+        r = client.get("/api/audit/history?jenis=keuangan&limit=5")
+        assert r.status_code == 200
+        data = r.json()
+        assert data["status"] == "success"
+
+    def test_audit_history_detail_not_found(self):
+        r = client.get("/api/audit/history/999999")
+        assert r.status_code == 404
+
+
+class TestAPIAuditUpload:
+    def test_audit_upload_no_file(self):
+        r = client.post("/api/audit/upload")
+        assert r.status_code == 422  # FastAPI requires file
+
+    def test_audit_upload_invalid_extension(self):
+        r = client.post(
+            "/api/audit/upload",
+            files={"file": ("test.txt", b"not an excel", "text/plain")},
+        )
+        assert r.status_code == 400
+
+
+class TestAPIAuditExport:
+    def test_audit_export_pdf_missing_params(self):
+        r = client.post("/api/audit/export/pdf", json={})
+        assert r.status_code == 400
+
+    def test_audit_export_pdf_unsupported_jenis(self):
+        r = client.post("/api/audit/export/pdf", json={"jenis": "spi", "summary": {"a": 1}})
+        assert r.status_code == 501
+
+
 class TestAPIBatch:
     def test_batch_predict_no_model(self):
         r = client.post("/predict/batch", json={"model_id": "nonexistent", "inputs": [{"a": 1}]})

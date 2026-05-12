@@ -8,12 +8,15 @@ Integrates three audit templates into a single callable workflow:
 
 import json
 import sys
+import time
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, asdict
 
 BASE_DIR = Path(__file__).parent.parent.parent.resolve()
 sys.path.insert(0, str(BASE_DIR))
+
+from src.core.audit_trail import log_audit_run
 
 
 @dataclass
@@ -518,13 +521,20 @@ def run_audit(jenis: str, filepath: str, **kwargs) -> Dict:
     }
     
     if jenis not in runners:
-        return asdict(AuditResult(
+        error_result = asdict(AuditResult(
             jenis=jenis, status='error', file_input=filepath,
             file_output=None, summary={},
             error_message=f"Jenis audit '{jenis}' tidak tersedia. Pilih: keuangan, spi, kinerja"
         ))
+        log_audit_run(
+            jenis=jenis, filename=Path(filepath).name,
+            status='error', summary={'error': error_result.get('error_message')}
+        )
+        return error_result
     
+    start = time.time()
     result = runners[jenis](filepath, **kwargs)
+    duration_ms = int((time.time() - start) * 1000)
     result_dict = asdict(result)
     
     # Generate chart data and attach to result
@@ -533,5 +543,19 @@ def run_audit(jenis: str, filepath: str, **kwargs) -> Dict:
         result_dict['charts'] = chart_data
     except Exception:
         result_dict['charts'] = {}
+    
+    # Log to audit trail
+    try:
+        log_audit_run(
+            jenis=result.jenis,
+            filename=Path(filepath).name,
+            status=result.status,
+            output_path=result.file_output,
+            summary=result.summary,
+            charts=result_dict.get('charts'),
+            duration_ms=duration_ms,
+        )
+    except Exception:
+        pass  # Never fail audit because of logging
     
     return result_dict

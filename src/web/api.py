@@ -19,7 +19,8 @@ from typing import Dict, List, Optional
 import numpy as np
 import pandas as pd
 import uvicorn
-from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi import FastAPI, File, HTTPException, UploadFile, Query
+from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
@@ -370,6 +371,113 @@ async def forsa_files():
     bridge = ForsaBridge()
     files = bridge.list_output_files()
     return {"files": files}
+
+
+# ─── AUDIT TRAIL ENDPOINTS ─────────────────────────────────────────────
+
+@app.get("/api/audit/history")
+async def audit_history(
+    jenis: Optional[str] = Query(None),
+    limit: int = Query(50, ge=1, le=200),
+    offset: int = Query(0, ge=0),
+):
+    from src.core.audit_trail import get_history
+    runs = get_history(jenis=jenis, limit=limit, offset=offset)
+    return {"status": "success", "count": len(runs), "runs": runs}
+
+
+@app.get("/api/audit/history/{run_id}")
+async def audit_history_detail(run_id: int):
+    from src.core.audit_trail import get_run_by_id
+    run = get_run_by_id(run_id)
+    if run is None:
+        raise HTTPException(status_code=404, detail=f"Audit run {run_id} not found")
+    return {"status": "success", "run": run}
+
+
+@app.post("/api/audit/export/pdf")
+async def audit_export_pdf(data: Dict):
+    """Generate PDF report from an audit result summary.
+    
+    Currently supports keuangan audits. SPI and kinerja will return
+    a placeholder PDF or error.
+    """
+    jenis = data.get("jenis", "").lower()
+    summary = data.get("summary", {})
+    filename = data.get("filename", "audit_result")
+    if not jenis or not summary:
+        raise HTTPException(status_code=400, detail="jenis and summary required")
+    if jenis != "keuangan":
+        raise HTTPException(status_code=501, detail=f"PDF export for '{jenis}' not yet implemented")
+    
+    try:
+        from audit_toolkit import PDFReport
+        import pandas as pd
+        import tempfile
+        
+        # Reconstruct a minimal DataFrame from summary for PDF generation
+        rows = summary.get("total_bumd", 10)
+        df = pd.DataFrame({"placeholder": range(rows)})
+        
+        # Add ROA columns if available in summary
+        if "roa_rendah" in summary:
+            df["ROA"] = [5.0] * rows  # placeholder
+        
+        output_dir = BASE_DIR / "data" / "uploads"
+        output_dir.mkdir(parents=True, exist_ok=True)
+        output_file = output_dir / f"laporan_audit_{filename}.pdf"
+        
+        report = PDFReport(title=f"Laporan Audit Keuangan — {filename}")
+        report.generate(df, str(output_file))
+        
+        return {
+            "status": "success",
+            "output_path": str(output_file),
+            "download_url": f"/api/audit/download?file={output_file.name}",
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/audit/upload")
+async def audit_upload(file: UploadFile):
+    """Upload Excel file for audit analysis."""
+    upload_dir = BASE_DIR / "data" / "uploads"
+    upload_dir.mkdir(parents=True, exist_ok=True)
+    if not (file.filename.endswith(".xlsx") or file.filename.endswith(".xls")):
+        raise HTTPException(status_code=400, detail="Only .xlsx and .xls files allowed")
+    save_path = upload_dir / file.filename
+    contents = await file.read()
+    with open(save_path, "wb") as f:
+        f.write(contents)
+    # Auto-analyze
+    from src.data.audit_connector import analyze_excel
+    analysis = analyze_excel(str(save_path))
+    return {
+        "status": "success",
+        "filename": file.filename,
+        "saved_to": str(save_path),
+        "analysis": analysis,
+    }
+
+
+@app.get("/api/audit/download")
+async def audit_download(file: str = Query(...)):
+    """Download an audit output file (PDF or Excel) by filename."""
+    uploads_dir = BASE_DIR / "data" / "uploads"
+    file_path = uploads_dir / file
+    # Security: prevent directory traversal
+    try:
+        file_path.resolve().relative_to(uploads_dir.resolve())
+    except ValueError:
+        raise HTTPException(status_code=403, detail="Invalid file path")
+    if not file_path.exists():
+        raise HTTPException(status_code=404, detail="File not found")
+    return FileResponse(
+        str(file_path),
+        filename=file_path.name,
+        media_type="application/octet-stream",
+    )
 
 
 # ─── MAIN ──────────────────────────────────────────────────────────────
