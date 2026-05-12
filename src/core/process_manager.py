@@ -14,6 +14,7 @@ import threading
 from pathlib import Path
 from dataclasses import dataclass, asdict
 from typing import Dict, List, Optional
+from collections import deque
 
 from ..utils.config import BASE_DIR, settings
 from .service_registry import ServiceConfig
@@ -42,7 +43,8 @@ class ProcessManager:
         self.statuses: Dict[str, ServiceStatus] = {}
         self.start_times: Dict[str, float] = {}
         self.restart_counts: Dict[str, int] = {k: 0 for k in services}
-        self.log_buffers: Dict[str, List[str]] = {k: [] for k in services}
+        max_buf = settings._data.get("logging", {}).get("max_log_buffer", 500)
+        self.log_buffers: Dict[str, deque] = {k: deque(maxlen=max_buf) for k in services}
         self._lock = threading.RLock()
         self._monitor_thread: Optional[threading.Thread] = None
         self._stop_event = threading.Event()
@@ -208,4 +210,5 @@ class ProcessManager:
             return {k: asdict(v) for k, v in self.statuses.items()}
 
     def get_logs(self, key: str, lines: int = 50) -> List[str]:
-        return self.log_buffers.get(key, [])[-lines:]
+        buf = self.log_buffers.get(key, deque())
+        return list(buf)[-lines:]

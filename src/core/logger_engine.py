@@ -41,7 +41,7 @@ def _system_snapshot() -> dict:
     try:
         mem = psutil.virtual_memory()
         return {
-            "cpu_percent": psutil.cpu_percent(interval=0.1),
+            "cpu_percent": psutil.cpu_percent(interval=None),
             "ram_used_gb": mem.used / (1024 ** 3),
             "ram_total_gb": mem.total / (1024 ** 3),
             "ram_percent": mem.percent,

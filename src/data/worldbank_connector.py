@@ -8,11 +8,13 @@ from pathlib import Path
 from typing import Dict, List
 
 from ..utils.config import settings
+from ..utils.cache import ttl_cache
 
 
 DB_PATH = settings.data_dir / "worldbank_indonesia.db"
 
 
+@ttl_cache(ttl_seconds=3600)
 def get_latest_economic_data() -> Dict:
     """Get the latest available data for all indicators.
 
@@ -112,6 +114,7 @@ def get_historical_data(indicator_code: str, years: int = 10) -> Dict:
         return {"status": "error", "message": str(e)}
 
 
+@ttl_cache(ttl_seconds=3600)
 def get_indicators_list() -> Dict:
     """Get list of all available indicators."""
     if not DB_PATH.exists():

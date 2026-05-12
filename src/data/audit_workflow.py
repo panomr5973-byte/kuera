@@ -6,12 +6,15 @@ Integrates three audit templates into a single callable workflow:
 - Audit Kinerja (performance scoring & ranking)
 """
 
+import hashlib
 import json
 import sys
 import time
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, asdict
+
+from src.utils.cache import ttl_cache
 
 BASE_DIR = Path(__file__).parent.parent.parent.resolve()
 sys.path.insert(0, str(BASE_DIR))
@@ -349,6 +352,13 @@ def list_templates() -> List[Dict]:
     ]
 
 
+def _chart_cache_key(result: AuditResult) -> str:
+    from src.utils.cache import _make_key
+    summary_json = json.dumps(result.summary, sort_keys=True, default=str)
+    return _make_key("generate_chart_data", (result.jenis,), {"summary_hash": hashlib.md5(summary_json.encode()).hexdigest()})
+
+
+@ttl_cache(ttl_seconds=300, key_func=lambda result: _chart_cache_key(result))
 def generate_chart_data(result: AuditResult) -> Dict[str, Any]:
     """Generate Chart.js compatible data from audit result.
     

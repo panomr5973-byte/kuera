@@ -31,32 +31,46 @@ logger = logging.getLogger(__name__)
 
 # Storage
 MODELS = {}
+MODEL_PATHS = {}
 MODEL_META = {}
 SAMPLES = {}
 START_TIME = time.time()
 
 
+def _lazy_load_model(model_id: str):
+    """Load a single .pkl model on first use."""
+    if model_id in MODELS:
+        return MODELS[model_id]
+    path = MODEL_PATHS.get(model_id)
+    if not path or not path.exists():
+        return None
+    try:
+        with open(path, "rb") as f:
+            model = pickle.load(f)
+        MODELS[model_id] = model
+        # Metadata
+        meta_file = path.parent / "model_metadata.json"
+        if meta_file.exists():
+            MODEL_META[model_id] = json.loads(meta_file.read_text())
+        logger.info("[OK] Lazy-loaded model: %s", model_id)
+        return model
+    except Exception as e:
+        logger.warning("[WARN] Failed to lazy-load %s: %s", path, e)
+        return None
+
+
 # ─── MODEL LOADING ─────────────────────────────────────────────────────
 
 def load_models():
-    """Load all .pkl models from models/."""
+    """Scan model filenames at startup; defer actual pickle.load until first use."""
     models_dir = BASE_DIR / "models"
     if not models_dir.exists():
         logger.warning("models/ directory not found")
         return
     for pkl_file in models_dir.glob("*.pkl"):
-        try:
-            with open(pkl_file, "rb") as f:
-                model = pickle.load(f)
-            model_id = pkl_file.stem
-            MODELS[model_id] = model
-            # Metadata
-            meta_file = pkl_file.parent / "model_metadata.json"
-            if meta_file.exists():
-                MODEL_META[model_id] = json.loads(meta_file.read_text())
-            logger.info("[OK] Loaded model: %s", model_id)
-        except Exception as e:
-            logger.warning("[WARN] Failed to load %s: %s", pkl_file, e)
+        model_id = pkl_file.stem
+        MODEL_PATHS[model_id] = pkl_file
+        logger.info("[OK] Registered model: %s", model_id)
 
 
 def load_samples():
@@ -148,8 +162,8 @@ async def root():
     return {
         "app": "KUERA AI API",
         "version": "3.0.0",
-        "models_loaded": len(MODELS),
-        "models": list(MODELS.keys()),
+        "models_loaded": len(MODEL_PATHS),
+        "models": list(MODEL_PATHS.keys()),
         "docs": "/docs",
         "health": "/health",
     }
@@ -168,23 +182,27 @@ async def health():
 @app.get("/models")
 async def list_models():
     result = []
-    for name in MODELS:
+    for name in MODEL_PATHS:
         meta = MODEL_META.get(name, {})
         result.append({
             "name": name,
             "type": meta.get("model_type", "unknown"),
             "framework": meta.get("framework", "sklearn"),
+            "loaded": name in MODELS,
         })
     return {"models": result}
 
 
 @app.get("/models/{model_name}")
 async def get_model_info(model_name: str):
-    if model_name not in MODELS:
+    if model_name not in MODEL_PATHS:
         raise HTTPException(status_code=404, detail=f"Model '{model_name}' not found")
+    # Lazy-load metadata if not already loaded
+    _lazy_load_model(model_name)
     return {
         "name": model_name,
         "metadata": MODEL_META.get(model_name, {}),
+        "loaded": model_name in MODELS,
     }
 
 
@@ -197,10 +215,12 @@ async def get_sample():
 
 @app.post("/predict", response_model=PredictResponse)
 async def predict(request: PredictRequest):
-    if request.model_id not in MODELS:
+    if request.model_id not in MODEL_PATHS:
         raise HTTPException(status_code=404, detail=f"Model '{request.model_id}' not found")
 
-    model = MODELS[request.model_id]
+    model = _lazy_load_model(request.model_id)
+    if model is None:
+        raise HTTPException(status_code=500, detail=f"Failed to load model '{request.model_id}'")
     input_data = request.input_data or SAMPLES.get("default")
 
     if not input_data:
@@ -228,10 +248,12 @@ async def predict_batch(request: BatchPredictRequest):
     if not request.inputs:
         raise HTTPException(status_code=400, detail="No input data provided")
 
-    if request.model_id not in MODELS:
+    if request.model_id not in MODEL_PATHS:
         raise HTTPException(status_code=404, detail=f"Model '{request.model_id}' not found")
 
-    model = MODELS[request.model_id]
+    model = _lazy_load_model(request.model_id)
+    if model is None:
+        raise HTTPException(status_code=500, detail=f"Failed to load model '{request.model_id}'")
 
     try:
         df = pd.DataFrame(request.inputs).fillna(0)
@@ -257,10 +279,12 @@ async def predict_batch(request: BatchPredictRequest):
 @app.post("/predict/file")
 async def predict_file(file: UploadFile, model_id: str = "best_model_logistic_regression"):
     """Upload CSV/Excel and get batch predictions."""
-    if model_id not in MODELS:
+    if model_id not in MODEL_PATHS:
         raise HTTPException(status_code=404, detail=f"Model '{model_id}' not found")
 
-    model = MODELS[model_id]
+    model = _lazy_load_model(model_id)
+    if model is None:
+        raise HTTPException(status_code=500, detail=f"Failed to load model '{model_id}'")
     try:
         if file.filename.endswith(".csv"):
             df = pd.read_csv(file.file)
