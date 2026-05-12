@@ -585,6 +585,18 @@ def run_audit(jenis: str, filepath: str, **kwargs) -> Dict:
     except Exception:
         result_dict['charts'] = {}
     
+    # Generate finding draft via LLM if summary exists
+    if result.status == 'success' and result.summary:
+        try:
+            from src.core.model_router import ModelRouter
+            router = ModelRouter()
+            llm_result = router.explain_audit_result(result.summary, jenis=result.jenis)
+            result_dict['finding_draft'] = llm_result.text
+            result_dict['finding_provider'] = llm_result.provider
+            result_dict['finding_model'] = llm_result.model
+        except Exception:
+            result_dict['finding_draft'] = None
+    
     # Log to audit trail
     try:
         log_audit_run(
