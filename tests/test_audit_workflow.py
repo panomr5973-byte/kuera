@@ -170,3 +170,23 @@ class TestAuditConnector:
         templates = list_templates()
         assert isinstance(templates, list)
         assert len(templates) == 3
+
+
+class TestBatchAudit:
+    def test_batch_audit_invalid_jenis(self):
+        from src.data.audit_workflow import run_batch_audit
+        result = run_batch_audit('invalid', ['test.xlsx'])
+        assert result['status'] == 'error' or result['failed'] == 1
+        assert result['total_files'] == 1
+
+    def test_batch_audit_empty_files(self):
+        from src.data.audit_workflow import run_batch_audit
+        result = run_batch_audit('keuangan', [])
+        assert result['total_files'] == 0
+        assert result['successful'] == 0
+
+    def test_batch_audit_multiple_files(self):
+        from src.data.audit_workflow import run_batch_audit
+        result = run_batch_audit('keuangan', ['nonexistent1.xlsx', 'nonexistent2.xlsx'])
+        assert result['total_files'] == 2
+        assert result['failed'] == 2

@@ -439,6 +439,25 @@ async def audit_export_pdf(data: Dict):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.post("/api/audit/batch")
+async def audit_batch(data: Dict):
+    """Run audit on multiple files sequentially."""
+    jenis = data.get("jenis", "").lower()
+    filenames = data.get("filenames", [])
+    if not jenis or not filenames:
+        raise HTTPException(status_code=400, detail="jenis and filenames required")
+    if jenis not in ("keuangan", "spi", "kinerja"):
+        raise HTTPException(status_code=400, detail=f"Invalid jenis: {jenis}")
+    from src.data.audit_workflow import run_batch_audit
+    kwargs = {}
+    if jenis == "spi":
+        kwargs["nama_entitas"] = data.get("nama_entitas", "Entitas Audit")
+    elif jenis == "kinerja":
+        kwargs["tahun"] = int(data.get("tahun", 2024))
+    result = run_batch_audit(jenis, filenames, **kwargs)
+    return result
+
+
 @app.post("/api/audit/upload")
 async def audit_upload(file: UploadFile):
     """Upload Excel file for audit analysis."""

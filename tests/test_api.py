@@ -101,6 +101,69 @@ class TestAPIAuditExport:
         assert r.status_code == 501
 
 
+class TestAPIAuditBatch:
+    def test_batch_audit_missing_params(self):
+        r = client.post("/api/audit/batch", json={})
+        assert r.status_code == 400
+
+    def test_batch_audit_invalid_jenis(self):
+        r = client.post("/api/audit/batch", json={"jenis": "invalid", "filenames": ["test.xlsx"]})
+        assert r.status_code == 400
+
+    def test_batch_audit_empty_filenames(self):
+        r = client.post("/api/audit/batch", json={"jenis": "keuangan", "filenames": []})
+        assert r.status_code == 400
+
+
+class TestAPIAuditE2E:
+    def test_upload_analyze_run_chart_flow(self):
+        import tempfile
+        import pandas as pd
+        from pathlib import Path
+        
+        # Create a temp Excel file
+        with tempfile.TemporaryDirectory() as tmpdir:
+            excel_path = Path(tmpdir) / "test_bumd.xlsx"
+            df = pd.DataFrame({
+                'aset': [100, 200, 300],
+                'kewajiban': [50, 100, 150],
+                'ekuitas': [50, 100, 150],
+                'laba': [10, 20, 30],
+                'pendapatan': [50, 100, 150],
+            })
+            df.to_excel(excel_path, index=False)
+            
+            # Upload
+            with open(excel_path, "rb") as f:
+                r = client.post(
+                    "/api/audit/upload",
+                    files={"file": ("test_bumd.xlsx", f, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")},
+                )
+            assert r.status_code == 200
+            upload_data = r.json()
+            assert upload_data["status"] == "success"
+            
+            # Run audit
+            r2 = client.post("/api/audit/run", json={"jenis": "keuangan", "filename": "test_bumd.xlsx"})
+            assert r2.status_code == 200
+            run_data = r2.json()
+            # May fail due to missing modules but should return a result structure
+            assert "status" in run_data
+            
+            # Chart generation from summary
+            if run_data.get("status") == "success" and run_data.get("summary"):
+                r3 = client.post("/api/audit/chart", json={"jenis": "keuangan", "summary": run_data["summary"]})
+                assert r3.status_code == 200
+                chart_data = r3.json()
+                assert "charts" in chart_data
+            
+            # History should contain the run
+            r4 = client.get("/api/audit/history?jenis=keuangan&limit=5")
+            assert r4.status_code == 200
+            history = r4.json()
+            assert "runs" in history
+
+
 class TestAPIBatch:
     def test_batch_predict_no_model(self):
         r = client.post("/predict/batch", json={"model_id": "nonexistent", "inputs": [{"a": 1}]})

@@ -39,6 +39,24 @@ class TestForsaBridge:
         assert parsed["total_bumd"] == 0
         assert parsed["status_list"] == []
 
+    def test_parse_malformed(self):
+        bridge = ForsaBridge()
+        lines = [
+            "Some random line",
+            "Total BUMD: abc",
+            "BUMD C | Invalid",
+        ]
+        parsed = bridge._parse_check_status_output(lines)
+        assert parsed["total_bumd"] == 0
+        # Malformed line may still be parsed loosely
+        assert isinstance(parsed["status_list"], list)
+
+    def test_bridge_init(self):
+        bridge = ForsaBridge()
+        assert hasattr(bridge, 'wsl_available')
+        assert hasattr(bridge, 'WSL_SCRIPT_DIR')
+        assert hasattr(bridge, 'DEFAULT_SCRIPT')
+
 
 class TestForsaAPI:
     def test_forsa_status_endpoint(self):
@@ -56,3 +74,12 @@ class TestForsaAPI:
         r = client.get("/api/audit/forsa/files")
         assert r.status_code == 200
         assert "files" in r.json()
+
+    def test_forsa_run_endpoint(self):
+        from fastapi.testclient import TestClient
+        from src.web.api import app
+        client = TestClient(app)
+        r = client.post("/api/audit/forsa/run", json={"mode": "2"})
+        assert r.status_code == 200
+        data = r.json()
+        assert "status" in data

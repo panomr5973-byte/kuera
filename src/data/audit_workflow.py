@@ -503,6 +503,37 @@ def generate_chart_data(result: AuditResult) -> Dict[str, Any]:
     return charts
 
 
+def run_batch_audit(jenis: str, filenames: List[str], **kwargs) -> Dict:
+    """Run audit on multiple files sequentially.
+    
+    Args:
+        jenis: 'keuangan', 'spi', or 'kinerja'
+        filenames: List of filenames in data/uploads/
+        **kwargs: Additional args passed to specific audit runner
+    
+    Returns:
+        Dict with combined summary and individual results
+    """
+    results = []
+    for filename in filenames:
+        upload_dir = BASE_DIR / "data" / "uploads"
+        filepath = str(upload_dir / filename)
+        result = run_audit(jenis, filepath, **kwargs)
+        results.append({"filename": filename, **result})
+    
+    successful = sum(1 for r in results if r.get("status") == "success")
+    failed = sum(1 for r in results if r.get("status") == "error")
+    
+    return {
+        "status": "success" if successful > 0 else "error",
+        "jenis": jenis,
+        "total_files": len(filenames),
+        "successful": successful,
+        "failed": failed,
+        "results": results,
+    }
+
+
 def run_audit(jenis: str, filepath: str, **kwargs) -> Dict:
     """Unified entry point to run any audit type.
     
