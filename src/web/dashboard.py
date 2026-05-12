@@ -84,6 +84,23 @@ def create_app(process_manager, model_registry_loader) -> Flask:
         from ..data.audit_connector import list_uploaded_files
         return jsonify({"files": list_uploaded_files()})
 
+    @app.route("/api/audit/files/<filename>", methods=["DELETE"])
+    def audit_delete_file(filename: str):
+        upload_dir = Path(__file__).parent.parent.parent.parent / "data" / "uploads"
+        file_path = upload_dir / filename
+        # Security: prevent directory traversal
+        try:
+            file_path.resolve().relative_to(upload_dir.resolve())
+        except ValueError:
+            return jsonify({"status": "error", "message": "Invalid file path"}), 403
+        if not file_path.exists():
+            return jsonify({"status": "error", "message": "File not found"}), 404
+        try:
+            file_path.unlink()
+            return jsonify({"status": "success", "message": f"{filename} deleted"})
+        except Exception as e:
+            return jsonify({"status": "error", "message": str(e)}), 500
+
     @app.route("/api/audit/analyze", methods=["POST"])
     def audit_analyze():
         from ..data.audit_connector import analyze_excel

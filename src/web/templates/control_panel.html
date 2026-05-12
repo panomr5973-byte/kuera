@@ -204,9 +204,12 @@
         </div>
         <div style="margin-bottom:1rem;">
           <label style="font-size:0.8rem;color:var(--muted);display:block;margin-bottom:0.3rem;">File yang Tersedia</label>
-          <select id="audit-file-select" style="width:100%;background:#0f172a;color:var(--text);border:1px solid #334155;padding:0.5rem;border-radius:6px;">
-            <option value="">-- Pilih file --</option>
-          </select>
+          <div style="display:flex;gap:0.5rem;">
+            <select id="audit-file-select" style="flex:1;background:#0f172a;color:var(--text);border:1px solid #334155;padding:0.5rem;border-radius:6px;">
+              <option value="">-- Pilih file --</option>
+            </select>
+            <button class="btn" onclick="deleteAuditFile()" style="padding:0.5rem 0.7rem;" title="Hapus file">🗑️</button>
+          </div>
         </div>
         <button class="btn btn-start" onclick="runAudit()" id="btn-run-audit" style="width:100%;">▶️ Jalankan Audit</button>
         <div id="audit-run-status" style="font-size:0.8rem;color:var(--muted);margin-top:0.5rem;"></div>
@@ -222,6 +225,17 @@
           <!-- Charts will be rendered here dynamically -->
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Audit History -->
+  <div style="margin-top:1.5rem;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.8rem;">
+      <h3 style="color:var(--accent);margin:0;">📜 Riwayat Audit</h3>
+      <button class="btn" onclick="loadAuditHistory()" style="font-size:0.75rem;padding:0.3rem 0.6rem;">🔄 Refresh</button>
+    </div>
+    <div id="audit-history-list" style="background:#0f172a;border:1px solid #334155;border-radius:8px;padding:1rem;font-size:0.85rem;min-height:60px;">
+      <span style="color:var(--muted);">Klik Refresh untuk memuat riwayat...</span>
     </div>
   </div>
 
@@ -577,10 +591,16 @@ function displayAuditResult(result) {
   }
   
   if (result.file_output) {
-    html += `<div style="margin-top:0.8rem;font-size:0.8rem;color:var(--muted);">📁 Output: ${result.file_output}</div>`;
+    const outputName = result.file_output.split(/[\\/]/).pop();
+    html += `<div style="margin-top:0.8rem;display:flex;gap:0.5rem;flex-wrap:wrap;">`;
+    html += `<a href="/api/audit/download?file=${encodeURIComponent(outputName)}" class="btn" style="font-size:0.8rem;padding:0.4rem 0.8rem;text-decoration:none;display:inline-block;" target="_blank">📥 Download Excel</a>`;
+    html += `<button class="btn" onclick="exportAuditPdf()" style="font-size:0.8rem;padding:0.4rem 0.8rem;">📄 Export PDF</button>`;
+    html += `</div>`;
+    html += `<div style="margin-top:0.3rem;font-size:0.75rem;color:var(--muted);">📁 ${result.file_output}</div>`;
   }
   
   container.innerHTML = html;
+  window.lastAuditResult = result;
   
   // Render charts if available
   if (result.charts && Object.keys(result.charts).length > 0) {
@@ -590,11 +610,77 @@ function displayAuditResult(result) {
   }
 }
 
+async function exportAuditPdf() {
+  const result = window.lastAuditResult;
+  if (!result || !result.summary) { showToast('Jalankan audit dulu'); return; }
+  showToast('Generating PDF...');
+  try {
+    const resp = await fetch('/api/audit/export/pdf', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({jenis: result.jenis, summary: result.summary, filename: result.file_input})
+    });
+    const data = await resp.json();
+    if (data.status === 'success' && data.download_url) {
+      window.open(data.download_url, '_blank');
+      showToast('PDF generated');
+    } else {
+      showToast('PDF failed: ' + (data.detail || data.message || 'Unknown'));
+    }
+  } catch(e) {
+    showToast('PDF error: ' + e.message);
+  }
+}
+
+async function loadAuditHistory() {
+  const container = document.getElementById('audit-history-list');
+  container.innerHTML = '<span style="color:var(--muted);">Loading...</span>';
+  const data = await api('/api/audit/history?limit=20');
+  if (!data.runs || data.runs.length === 0) {
+    container.innerHTML = '<span style="color:var(--muted);">Belum ada riwayat audit.</span>';
+    return;
+  }
+  let html = '<table style="width:100%;font-size:0.8rem;border-collapse:collapse;">';
+  html += '<tr style="text-align:left;border-bottom:1px solid #334155;color:var(--accent);"><th>ID</th><th>Waktu</th><th>Jenis</th><th>File</th><th>Status</th><th>Durasi</th></tr>';
+  for (const run of data.runs) {
+    const dt = new Date(run.timestamp).toLocaleString('id-ID', {hour12:false});
+    html += `<tr style="border-bottom:1px solid #1e293b;">
+      <td style="padding:0.3rem 0.2rem;">${run.id}</td>
+      <td style="padding:0.3rem 0.2rem;">${dt}</td>
+      <td style="padding:0.3rem 0.2rem;">${run.jenis}</td>
+      <td style="padding:0.3rem 0.2rem;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${run.filename}">${run.filename}</td>
+      <td style="padding:0.3rem 0.2rem;"><span style="color:${run.status==='success'?'var(--success)':'var(--danger)'}">${run.status}</span></td>
+      <td style="padding:0.3rem 0.2rem;">${run.duration_ms ? run.duration_ms + 'ms' : '-'}</td>
+    </tr>`;
+  }
+  html += '</table>';
+  container.innerHTML = html;
+}
+
+async function deleteAuditFile() {
+  const filename = document.getElementById('audit-file-select').value;
+  if (!filename) { showToast('Pilih file dulu'); return; }
+  if (!confirm(`Hapus file "${filename}"?`)) return;
+  try {
+    const resp = await fetch('/api/audit/files/' + encodeURIComponent(filename), {method: 'DELETE'});
+    const data = await resp.json();
+    if (data.status === 'success') {
+      showToast('File dihapus');
+      await loadAuditFiles();
+    } else {
+      showToast('Gagal: ' + (data.message || 'Unknown'));
+    }
+  } catch(e) {
+    showToast('Error: ' + e.message);
+  }
+}
+
 // Init
 (async () => {
   await refreshServices();
   await loadModels();
   await loadAuditFiles();
+  await loadAuditHistory();
   setInterval(refreshServices, 3000);
   setInterval(loadLogs, 2000);
   setInterval(updateUptime, 1000);
