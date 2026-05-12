@@ -523,6 +523,107 @@ async def audit_download(file: str = Query(...)):
     )
 
 
+# ─── AGENT / REASONING ENDPOINTS ───────────────────────────────────────
+
+@app.post("/api/agent/explain")
+async def agent_explain(data: Dict):
+    """Generate natural-language explanation of audit findings using LLM.
+
+    Routes to local or cloud model based on complexity and availability.
+    Anonymizes data before sending to cloud providers.
+    """
+    from src.core.model_router import ModelRouter
+    from src.core.anonymizer import Anonymizer
+
+    jenis = data.get("jenis", "keuangan")
+    summary = data.get("summary", {})
+    provider = data.get("provider", None)  # "local", "cloud", or auto
+
+    if not summary:
+        raise HTTPException(status_code=400, detail="summary required")
+
+    router = ModelRouter()
+    anonymizer = Anonymizer()
+
+    # Anonymize if going to cloud
+    effective_provider = provider or router._select_provider("", "high")
+    if effective_provider == "cloud":
+        sanitized = anonymizer.sanitize_dict(summary)
+        summary = json.loads(sanitized.text)
+
+    result = router.explain_audit_result(summary, jenis=jenis, provider=provider)
+
+    if result.error:
+        raise HTTPException(status_code=502, detail=result.error)
+
+    return {
+        "status": "success",
+        "finding_draft": result.text,
+        "provider": result.provider,
+        "model": result.model,
+        "tokens_used": result.tokens_used,
+        "latency_ms": result.latency_ms,
+    }
+
+
+@app.post("/api/agent/generate")
+async def agent_generate(data: Dict):
+    """General text generation through the model router."""
+    from src.core.model_router import ModelRouter
+    from src.core.anonymizer import Anonymizer
+
+    prompt = data.get("prompt", "")
+    system_prompt = data.get("system_prompt", "")
+    provider = data.get("provider", None)
+    complexity = data.get("complexity", "auto")
+    anonymize = data.get("anonymize", True)
+
+    if not prompt:
+        raise HTTPException(status_code=400, detail="prompt required")
+
+    router = ModelRouter()
+
+    if anonymize and (provider == "cloud" or provider is None):
+        anonymizer = Anonymizer()
+        sanitized = anonymizer.sanitize(prompt)
+        prompt = sanitized.text
+
+    result = router.generate(
+        prompt, system_prompt, provider=provider, task_complexity=complexity
+    )
+
+    if result.error:
+        raise HTTPException(status_code=502, detail=result.error)
+
+    return {
+        "status": "success",
+        "text": result.text,
+        "provider": result.provider,
+        "model": result.model,
+        "tokens_used": result.tokens_used,
+        "latency_ms": result.latency_ms,
+    }
+
+
+@app.get("/api/agent/providers")
+async def agent_providers():
+    """List available model providers and their status."""
+    from src.core.model_router import ModelRouter
+    router = ModelRouter()
+    return {
+        "local": {
+            "available": len(router.local.available) > 0,
+            "models": router.local.available,
+            "default": router.local._default_model,
+        },
+        "cloud": {
+            "available": router.cloud.enabled,
+            "model": router.cloud.model,
+            "base_url": router.cloud.base_url,
+        },
+    }
+
+
 # ─── MAIN ──────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
